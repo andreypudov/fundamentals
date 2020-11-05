@@ -4,6 +4,8 @@
 
 namespace Fundamentals.Sorting
 {
+    using System;
+
     /// <summary>
     /// Insertion sort is a simple sorting algorithm that builds the final
     /// sorted array (or list) one item at a time. It is much less efficient
@@ -14,8 +16,26 @@ namespace Fundamentals.Sorting
     {
         /// <inheritdoc />
         public void Sort<T>(T[] array)
+            where T : IComparable<T>
         {
-            throw new System.NotImplementedException();
+            if (array is null)
+            {
+                throw new ArgumentNullException(nameof(array));
+            }
+
+            for (int j = 1; j < array.Length; ++j)
+            {
+                T key = array[j];
+                int i = j - 1;
+
+                while ((i >= 0) && (array[i].CompareTo(key) > 0))
+                {
+                    array[i + 1] = array[i];
+                    i -= 1;
+                }
+
+                array[i + 1] = key;
+            }
         }
     }
 }

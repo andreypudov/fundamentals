@@ -10,6 +10,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fundamentals.Sorting", "src
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fundamentals.CommandLine", "src\Fundamentals.CommandLine\Fundamentals.CommandLine.csproj", "{9F0B9FF9-AA27-453C-920C-1DB829E19E7F}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fundamentals.Sorting.Test", "test\Fundamentals.Sorting.Test\Fundamentals.Sorting.Test.csproj", "{49CAB7A8-666C-4B4E-A173-7A78E0E8BBB4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,9 +30,16 @@ Global
 		{9F0B9FF9-AA27-453C-920C-1DB829E19E7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F0B9FF9-AA27-453C-920C-1DB829E19E7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F0B9FF9-AA27-453C-920C-1DB829E19E7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49CAB7A8-666C-4B4E-A173-7A78E0E8BBB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49CAB7A8-666C-4B4E-A173-7A78E0E8BBB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49CAB7A8-666C-4B4E-A173-7A78E0E8BBB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49CAB7A8-666C-4B4E-A173-7A78E0E8BBB4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{49CAB7A8-666C-4B4E-A173-7A78E0E8BBB4} = {EC0AA952-1B3E-411A-AD48-5C99C7EC5B12}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C802B563-6233-49A3-963F-79759E53776D}

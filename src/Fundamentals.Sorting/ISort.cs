@@ -15,7 +15,11 @@ namespace Fundamentals.Sorting
         /// Sorts the elements in an entire <see cref="Array"/> using the <see cref="IComparable{T}"/>
         /// generic interface implementation of each element of the Array.
         /// </summary>
+        /// <typeparam name="T">The type of the elements of the array.</typeparam>
         /// <param name="array">The one-dimensional, zero-based <see cref="Array"/> to sort.</param>
-        void Sort<T>(T[] array);
+        /// <exception cref="ArgumentNullException"><c>array</c> is <c>null</c>.</exception>
+        /// <exception cref="InvalidOperationException">One or more elements in <c>array</c> do not implement the <see cref="IComparable{T}"/> generic interface.</exception>
+        void Sort<T>(T[] array)
+            where T : IComparable<T>;
     }
 }

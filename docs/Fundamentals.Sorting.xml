@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Fundamentals.Sorting</name>
+    </assembly>
+    <members>
+        <member name="T:Fundamentals.Sorting.InsertionSort">
+            <summary>
+            Insertion sort is a simple sorting algorithm that builds the final
+            sorted array (or list) one item at a time. It is much less efficient
+            on large lists than more advanced algorithms such as quicksort,
+            heapsort, or merge sort.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Sorting.InsertionSort.Sort``1(``0[])">
+            <inheritdoc />
+        </member>
+        <member name="T:Fundamentals.Sorting.ISort">
+            <summary>
+            Exposes a method that sorts the elements in a one-dimensional array.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Sorting.ISort.Sort``1(``0[])">
+            <summary>
+            Sorts the elements in an entire <see cref="T:System.Array"/> using the <see cref="T:System.IComparable`1"/>
+            generic interface implementation of each element of the Array.
+            </summary>
+            <typeparam name="T">The type of the elements of the array.</typeparam>
+            <param name="array">The one-dimensional, zero-based <see cref="T:System.Array"/> to sort.</param>
+            <exception cref="T:System.ArgumentNullException"><c>array</c> is <c>null</c>.</exception>
+        </member>
+    </members>
+</doc>

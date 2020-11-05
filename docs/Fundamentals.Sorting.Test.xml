@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Fundamentals.Sorting.Test</name>
+    </assembly>
+    <members>
+        <member name="T:Fundamentals.Sorting.Test.InsertionSort">
+            <summary>
+            Represents a test class for <see cref="T:Fundamentals.Sorting.InsertionSort"/>.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Sorting.Test.InsertionSort.SortWorstCasePositive">
+            <summary>
+            Represents a positive test case for <see cref="M:Fundamentals.Sorting.InsertionSort.Sort``1(``0[])"/> method.
+            </summary>
+        </member>
+    </members>
+</doc>
