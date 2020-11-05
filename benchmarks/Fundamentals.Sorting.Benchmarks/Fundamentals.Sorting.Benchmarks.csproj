@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <Authors>Andrey Pudov</Authors>
@@ -7,22 +7,22 @@
     <Copyright>Copyright (c) Andrey Pudov. All Rights Reserved. Licensed under the Apache License, Version 2.0. See LICENSE.txt in the project root for license information.</Copyright>
 
     <LangVersion>8.0</LangVersion>
-    <NeutralLanguage>en-US</NeutralLanguage>
     <Nullable>enable</Nullable>
-    <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <IsPackable>false</IsPackable>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DefineConstants>TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1</DefineConstants>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-    <DocumentationFile>..\..\docs\Fundamentals.CommandLine.xml</DocumentationFile>
-    <NoWarn>1701;1702;1591</NoWarn>
+    <DocumentationFile>..\..\docs\Fundamentals.Sorting.Benchmarks.xml</DocumentationFile>
+    <NoWarn>CA1822</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType></DebugType>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-    <DocumentationFile>..\..\docs\Fundamentals.CommandLine.xml</DocumentationFile>
+    <DocumentationFile>..\..\docs\Fundamentals.Sorting.Benchmarks.xml</DocumentationFile>
+    <NoWarn>CA1822</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>
@@ -31,18 +31,11 @@
 
   <ItemGroup>
     <PackageReference Include="BenchmarkDotNet" Version="0.12.1" />
-    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="3.3.1">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-    <PackageReference Include="StyleCop.Analyzers" Version="1.2.0-beta.261">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
+    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="3.3.1" />
+    <PackageReference Include="StyleCop.Analyzers" Version="1.2.0-beta.261" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\benchmarks\Fundamentals.Sorting.Benchmarks\Fundamentals.Sorting.Benchmarks.csproj" />
-    <ProjectReference Include="..\Fundamentals.Resources\Fundamentals.Resources.csproj" />
+    <ProjectReference Include="..\..\src\Fundamentals.Sorting\Fundamentals.Sorting.csproj" />
   </ItemGroup>
 </Project>

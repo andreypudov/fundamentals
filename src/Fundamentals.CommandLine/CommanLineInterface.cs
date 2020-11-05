@@ -4,20 +4,22 @@
 
 namespace Fundamentals.Core
 {
-    using System;
+    using BenchmarkDotNet.Running;
 
     /// <summary>
     /// The Fundamentals CLI is a command-line interface for Fundamentals.
     /// </summary>
-    internal sealed class CommanLineInterface
+    public sealed class CommanLineInterface
     {
         /// <summary>
         /// The entry point of the application.
         /// </summary>
         /// <param name="args">The list of command-line arguments.</param>
-        private static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine(string.Join(',', args));
+            BenchmarkSwitcher
+                .FromAssembly(typeof(Sorting.Benchmark.InsertionSort).Assembly)
+                .Run(args);
         }
     }
 }

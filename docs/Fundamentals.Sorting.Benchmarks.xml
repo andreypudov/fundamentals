@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Fundamentals.Sorting.Benchmarks</name>
+    </assembly>
+    <members>
+        <member name="T:Fundamentals.Sorting.Benchmark.InsertionSort">
+            <summary>
+            Represents a benchmark for <see cref="T:Fundamentals.Sorting.InsertionSort"/>.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Sorting.Benchmark.InsertionSort.SortWorstCasePositive">
+            <summary>
+            Represents a positive benchmark for <see cref="M:Fundamentals.Sorting.InsertionSort.Sort``1(``0[])"/> method.
+            </summary>
+        </member>
+    </members>
+</doc>
