@@ -9,9 +9,20 @@
             Represents a test class for <see cref="T:Fundamentals.Sorting.InsertionSort"/>.
             </summary>
         </member>
-        <member name="M:Fundamentals.Sorting.Test.InsertionSort.SortWorstCasePositive">
+        <member name="T:Fundamentals.Sorting.Test.Sort`1">
             <summary>
-            Represents a positive test case for <see cref="M:Fundamentals.Sorting.InsertionSort.Sort``1(``0[])"/> method.
+            Represents a base test fixture for <see cref="N:Fundamentals.Sorting"/>.
+            </summary>
+            <typeparam name="T">The type of the sort implementation.</typeparam>
+        </member>
+        <member name="M:Fundamentals.Sorting.Test.Sort`1.Sort_Ordered_ReturnsSameSequence">
+            <summary>
+            Represents a positive test case for ordered sequence.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Sorting.Test.Sort`1.Sort_Reversed_ReturnsOrderedSequence">
+            <summary>
+            Represents a positive test case for reversed sequence.
             </summary>
         </member>
     </members>

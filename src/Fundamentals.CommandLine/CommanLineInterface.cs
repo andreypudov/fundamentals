@@ -9,13 +9,13 @@ namespace Fundamentals.Core
     /// <summary>
     /// The Fundamentals CLI is a command-line interface for Fundamentals.
     /// </summary>
-    public sealed class CommanLineInterface
+    internal static class CommanLineInterface
     {
         /// <summary>
         /// The entry point of the application.
         /// </summary>
         /// <param name="args">The list of command-line arguments.</param>
-        public static void Main(string[] args)
+        private static void Main(string[] args)
         {
             BenchmarkSwitcher
                 .FromAssembly(typeof(Sorting.Benchmark.InsertionSort).Assembly)
