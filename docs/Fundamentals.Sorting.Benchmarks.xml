@@ -21,9 +21,21 @@
             </summary>
             <param name="array">The source array to sort.</param>
         </member>
-        <member name="M:Fundamentals.Sorting.Benchmarks.Sort`1.Data">
+        <member name="M:Fundamentals.Sorting.Benchmarks.Sort`1.WorstCase(System.Int32[])">
             <summary>
-            Represents an enumeration of arguments for benchmarks.
+            Represents a positive test case for reversed sequence.
+            </summary>
+            <param name="array">The source array to sort.</param>
+        </member>
+        <member name="M:Fundamentals.Sorting.Benchmarks.Sort`1.BestCaseData">
+            <summary>
+            Represents an enumeration of arguments for best case benchmark.
+            </summary>
+            <returns>An enumeration of arguments for benchmarks.</returns>
+        </member>
+        <member name="M:Fundamentals.Sorting.Benchmarks.Sort`1.WorstCaseData">
+            <summary>
+            Represents an enumeration of arguments for worst case benchmark.
             </summary>
             <returns>An enumeration of arguments for benchmarks.</returns>
         </member>

@@ -19,7 +19,7 @@ namespace Fundamentals.Core
         private static void Main(/* string[] args */) =>
             BenchmarkRunner
                 .Run(
-                    typeof(Sorting.Benchmarks.SystemArraySort).Assembly,
+                    typeof(Sorting.Benchmarks.Sort<>).Assembly,
                     ManualConfig.Create(DefaultConfig.Instance)
                         .WithOption(ConfigOptions.JoinSummary, true)
                         .WithOption(ConfigOptions.DisableLogFile, true));

@@ -4,6 +4,7 @@
 
 namespace Fundamentals.Sorting.Benchmarks
 {
+    using System;
     using System.Collections.Generic;
     using System.Linq;
     using BenchmarkDotNet.Attributes;
@@ -20,7 +21,7 @@ namespace Fundamentals.Sorting.Benchmarks
         /// </summary>
         /// <param name="array">The source array to sort.</param>
         [Benchmark]
-        [ArgumentsSource(nameof(Data))]
+        [ArgumentsSource(nameof(BestCaseData))]
         public void BestCase(int[] array)
         {
             var sort = new T();
@@ -28,13 +29,35 @@ namespace Fundamentals.Sorting.Benchmarks
         }
 
         /// <summary>
-        /// Represents an enumeration of arguments for benchmarks.
+        /// Represents a positive test case for reversed sequence.
+        /// </summary>
+        /// <param name="array">The source array to sort.</param>
+        [Benchmark]
+        [ArgumentsSource(nameof(WorstCaseData))]
+        public void WorstCase(int[] array)
+        {
+            var sort = new T();
+            sort.Sort(array);
+        }
+
+        /// <summary>
+        /// Represents an enumeration of arguments for best case benchmark.
         /// </summary>
         /// <returns>An enumeration of arguments for benchmarks.</returns>
-        public IEnumerable<int[]> Data()
+        public IEnumerable<int[]> BestCaseData()
         {
             yield return Enumerable.Range(0, 16).ToArray();
             yield return Enumerable.Range(0, short.MaxValue).ToArray();
+        }
+
+        /// <summary>
+        /// Represents an enumeration of arguments for worst case benchmark.
+        /// </summary>
+        /// <returns>An enumeration of arguments for benchmarks.</returns>
+        public IEnumerable<int[]> WorstCaseData()
+        {
+            yield return Enumerable.Range(0, 16).Reverse().ToArray();
+            yield return Enumerable.Range(0, short.MaxValue).Reverse().ToArray();
         }
     }
 }
