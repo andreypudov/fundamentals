@@ -30,6 +30,20 @@
             <exception cref="T:System.ArgumentNullException"><c>array</c> is <c>null</c>.</exception>
             <exception cref="T:System.InvalidOperationException">One or more elements in <c>array</c> do not implement the <see cref="T:System.IComparable`1"/> generic interface.</exception>
         </member>
+        <member name="T:Fundamentals.Sorting.MergeSort">
+            <summary>
+            In computer science, merge sort (also commonly spelled mergesort) is
+            an efficient, general-purpose, comparison-based sorting algorithm.
+            Most implementations produce a stable sort, which means that the order
+            of equal elements is the same in the input and output. Merge sort is
+            a divide and conquer algorithm that was invented by John von Neumann
+            in 1945. A detailed description and analysis of bottom-up mergesort
+            appeared in a report by Goldstine and von Neumann as early as 1948.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Sorting.MergeSort.Sort``1(``0[])">
+            <inheritdoc />
+        </member>
         <member name="T:Fundamentals.Sorting.SystemArraySort">
             <summary>
             Represents a <see cref="M:System.Array.Sort``1(``0[])"/> implementation.

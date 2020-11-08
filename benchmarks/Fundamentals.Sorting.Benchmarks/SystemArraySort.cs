@@ -4,10 +4,14 @@
 
 namespace Fundamentals.Sorting.Benchmarks
 {
+    using BenchmarkDotNet.Attributes;
+
     /// <summary>
     /// Represents a benchmark for <see cref="System.Array.Sort{T}(T[])"/>.
     /// </summary>
+    [SimpleJob(launchCount: 10, warmupCount: 10, targetCount: 10)]
     public class SystemArraySort : Sort<Sorting.SystemArraySort>
     {
+        // Intentionally left bank
     }
 }

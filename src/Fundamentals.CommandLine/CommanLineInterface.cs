@@ -5,7 +5,6 @@
 namespace Fundamentals.Core
 {
     using BenchmarkDotNet.Configs;
-    using BenchmarkDotNet.Jobs;
     using BenchmarkDotNet.Running;
 
     /// <summary>

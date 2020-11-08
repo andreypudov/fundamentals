@@ -9,6 +9,11 @@
             Represents a benchmark for <see cref="T:Fundamentals.Sorting.InsertionSort"/>.
             </summary>
         </member>
+        <member name="T:Fundamentals.Sorting.Benchmarks.MergeSort">
+            <summary>
+            Represents a benchmark for <see cref="T:Fundamentals.Sorting.MergeSort"/>.
+            </summary>
+        </member>
         <member name="T:Fundamentals.Sorting.Benchmarks.Sort`1">
             <summary>
             Represents a base benchmark for <see cref="N:Fundamentals.Sorting"/>.
