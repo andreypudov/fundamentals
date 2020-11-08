@@ -25,5 +25,15 @@
             Represents a positive test case for reversed sequence.
             </summary>
         </member>
+        <member name="M:Fundamentals.Sorting.Test.Sort`1.Sort_Null_ThrowsArgumentNullException">
+            <summary>
+            Represents a positive test case for reversed sequence.
+            </summary>
+        </member>
+        <member name="T:Fundamentals.Sorting.Test.SystemArraySort">
+            <summary>
+            Represents a test class for <see cref="M:System.Array.Sort``1(``0[])"/>.
+            </summary>
+        </member>
     </members>
 </doc>

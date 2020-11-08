@@ -4,14 +4,32 @@
         <name>Fundamentals.Sorting.Benchmarks</name>
     </assembly>
     <members>
-        <member name="T:Fundamentals.Sorting.Benchmark.InsertionSort">
+        <member name="T:Fundamentals.Sorting.Benchmarks.InsertionSort">
             <summary>
             Represents a benchmark for <see cref="T:Fundamentals.Sorting.InsertionSort"/>.
             </summary>
         </member>
-        <member name="M:Fundamentals.Sorting.Benchmark.InsertionSort.SortWorstCasePositive">
+        <member name="T:Fundamentals.Sorting.Benchmarks.Sort`1">
             <summary>
-            Represents a positive benchmark for <see cref="M:Fundamentals.Sorting.InsertionSort.Sort``1(``0[])"/> method.
+            Represents a base benchmark for <see cref="N:Fundamentals.Sorting"/>.
+            </summary>
+            <typeparam name="T">The type of the sort implementation.</typeparam>
+        </member>
+        <member name="M:Fundamentals.Sorting.Benchmarks.Sort`1.BestCase(System.Int32[])">
+            <summary>
+            Represents a positive test case for ordered sequence.
+            </summary>
+            <param name="array">The source array to sort.</param>
+        </member>
+        <member name="M:Fundamentals.Sorting.Benchmarks.Sort`1.Data">
+            <summary>
+            Represents an enumeration of arguments for benchmarks.
+            </summary>
+            <returns>An enumeration of arguments for benchmarks.</returns>
+        </member>
+        <member name="T:Fundamentals.Sorting.Benchmarks.SystemArraySort">
+            <summary>
+            Represents a benchmark for <see cref="M:System.Array.Sort``1(``0[])"/>.
             </summary>
         </member>
     </members>

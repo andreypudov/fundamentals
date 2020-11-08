@@ -30,5 +30,13 @@
             <exception cref="T:System.ArgumentNullException"><c>array</c> is <c>null</c>.</exception>
             <exception cref="T:System.InvalidOperationException">One or more elements in <c>array</c> do not implement the <see cref="T:System.IComparable`1"/> generic interface.</exception>
         </member>
+        <member name="T:Fundamentals.Sorting.SystemArraySort">
+            <summary>
+            Represents a <see cref="M:System.Array.Sort``1(``0[])"/> implementation.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Sorting.SystemArraySort.Sort``1(``0[])">
+            <inheritdoc />
+        </member>
     </members>
 </doc>

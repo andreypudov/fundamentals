@@ -49,5 +49,18 @@ namespace Fundamentals.Sorting.Test
 
             Assert.AreEqual(expected, actual);
         }
+
+        /// <summary>
+        /// Represents a positive test case for reversed sequence.
+        /// </summary>
+        [Test]
+        public void Sort_Null_ThrowsArgumentNullException()
+        {
+            var sort = new T();
+
+#pragma warning disable CS8625 // Cannot convert null literal to non-nullable reference type.
+            Assert.Throws<ArgumentNullException>(() => sort.Sort<string>(null));
+#pragma warning restore CS8625 // Cannot convert null literal to non-nullable reference type.
+        }
     }
 }

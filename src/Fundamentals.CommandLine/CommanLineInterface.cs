@@ -4,6 +4,8 @@
 
 namespace Fundamentals.Core
 {
+    using BenchmarkDotNet.Configs;
+    using BenchmarkDotNet.Jobs;
     using BenchmarkDotNet.Running;
 
     /// <summary>
@@ -14,12 +16,12 @@ namespace Fundamentals.Core
         /// <summary>
         /// The entry point of the application.
         /// </summary>
-        /// <param name="args">The list of command-line arguments.</param>
-        private static void Main(string[] args)
-        {
-            BenchmarkSwitcher
-                .FromAssembly(typeof(Sorting.Benchmark.InsertionSort).Assembly)
-                .Run(args);
-        }
+        private static void Main(/* string[] args */) =>
+            BenchmarkRunner
+                .Run(
+                    typeof(Sorting.Benchmarks.SystemArraySort).Assembly,
+                    ManualConfig.Create(DefaultConfig.Instance)
+                        .WithOption(ConfigOptions.JoinSummary, true)
+                        .WithOption(ConfigOptions.DisableLogFile, true));
     }
 }
