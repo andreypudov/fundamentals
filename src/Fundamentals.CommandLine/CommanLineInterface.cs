@@ -15,12 +15,13 @@ namespace Fundamentals.Core
         /// <summary>
         /// The entry point of the application.
         /// </summary>
+        /// <param name="args">The list of command-line parameters.</param>
         private static void Main(string[] args) =>
             BenchmarkSwitcher
                 .FromAssembly(typeof(Sorting.Benchmarks.Sort<>).Assembly)
                 .Run(
                     args,
-                    ManualConfig.Create(new DebugInProcessConfig())
+                    ManualConfig.Create(DefaultConfig.Instance)
                         .WithOption(ConfigOptions.JoinSummary, true)
                         .WithOption(ConfigOptions.DisableLogFile, true));
     }
