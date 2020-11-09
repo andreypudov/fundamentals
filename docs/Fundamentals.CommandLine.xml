@@ -13,6 +13,7 @@
             <summary>
             The entry point of the application.
             </summary>
+            <param name="args">The list of command-line parameters.</param>
         </member>
     </members>
 </doc>

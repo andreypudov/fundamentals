@@ -51,6 +51,40 @@ namespace Fundamentals.Sorting.Test
         }
 
         /// <summary>
+        /// Represents a positive test case for negative sequence.
+        /// </summary>
+        [Test]
+        public void Sort_Negative_ReturnsOrderedSequence()
+        {
+            var actual = Enumerable.Range(short.MinValue, 0).ToArray();
+            var expected = (int[])actual.Clone();
+
+            var sort = new T();
+
+            Array.Sort(expected);
+            sort.Sort(actual);
+
+            Assert.IsTrue(expected.SequenceEqual(actual));
+        }
+
+        /// <summary>
+        /// Represents a positive test case for negative and positive sequences combined.
+        /// </summary>
+        [Test]
+        public void Sort_NegativePositive_ReturnsOrderedSequence()
+        {
+            var actual = Enumerable.Range(short.MinValue, 0).Concat(Enumerable.Range(1, short.MaxValue)).ToArray();
+            var expected = (int[])actual.Clone();
+
+            var sort = new T();
+
+            Array.Sort(expected);
+            sort.Sort(actual);
+
+            Assert.IsTrue(expected.SequenceEqual(actual));
+        }
+
+        /// <summary>
         /// Represents a positive test case for reversed sequence.
         /// </summary>
         [Test]

@@ -4,6 +4,11 @@
         <name>Fundamentals.Sorting.Test</name>
     </assembly>
     <members>
+        <member name="T:Fundamentals.Sorting.Test.BubbleSort">
+            <summary>
+            Represents a test class for <see cref="T:Fundamentals.Sorting.BubbleSort"/>.
+            </summary>
+        </member>
         <member name="T:Fundamentals.Sorting.Test.InsertionSort">
             <summary>
             Represents a test class for <see cref="T:Fundamentals.Sorting.InsertionSort"/>.
@@ -28,6 +33,16 @@
         <member name="M:Fundamentals.Sorting.Test.Sort`1.Sort_Reversed_ReturnsOrderedSequence">
             <summary>
             Represents a positive test case for reversed sequence.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Sorting.Test.Sort`1.Sort_Negative_ReturnsOrderedSequence">
+            <summary>
+            Represents a positive test case for negative sequence.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Sorting.Test.Sort`1.Sort_NegativePositive_ReturnsOrderedSequence">
+            <summary>
+            Represents a positive test case for negative and positive sequences combined.
             </summary>
         </member>
         <member name="M:Fundamentals.Sorting.Test.Sort`1.Sort_Null_ThrowsArgumentNullException">
