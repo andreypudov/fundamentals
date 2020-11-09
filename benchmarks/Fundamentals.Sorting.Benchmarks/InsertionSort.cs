@@ -4,12 +4,9 @@
 
 namespace Fundamentals.Sorting.Benchmarks
 {
-    using BenchmarkDotNet.Attributes;
-
     /// <summary>
     /// Represents a benchmark for <see cref="Sorting.InsertionSort"/>.
     /// </summary>
-    [SimpleJob(launchCount: 10, warmupCount: 10, targetCount: 10)]
     public class InsertionSort : Sort<Sorting.InsertionSort>
     {
         // Intentionally left bank

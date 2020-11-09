@@ -15,11 +15,12 @@ namespace Fundamentals.Core
         /// <summary>
         /// The entry point of the application.
         /// </summary>
-        private static void Main(/* string[] args */) =>
-            BenchmarkRunner
+        private static void Main(string[] args) =>
+            BenchmarkSwitcher
+                .FromAssembly(typeof(Sorting.Benchmarks.Sort<>).Assembly)
                 .Run(
-                    typeof(Sorting.Benchmarks.Sort<>).Assembly,
-                    ManualConfig.Create(DefaultConfig.Instance)
+                    args,
+                    ManualConfig.Create(new DebugInProcessConfig())
                         .WithOption(ConfigOptions.JoinSummary, true)
                         .WithOption(ConfigOptions.DisableLogFile, true));
     }

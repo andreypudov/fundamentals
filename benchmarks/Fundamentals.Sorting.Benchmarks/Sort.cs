@@ -16,6 +16,8 @@ namespace Fundamentals.Sorting.Benchmarks
     public abstract class Sort<T>
         where T : ISort, new()
     {
+        private readonly ISort sort = new T();
+
         /// <summary>
         /// Represents a positive test case for ordered sequence.
         /// </summary>
@@ -24,8 +26,12 @@ namespace Fundamentals.Sorting.Benchmarks
         [ArgumentsSource(nameof(BestCaseData))]
         public void BestCase(int[] array)
         {
-            var sort = new T();
-            sort.Sort(array);
+            if (array is null)
+            {
+                throw new ArgumentNullException(nameof(array));
+            }
+
+            this.sort.Sort((int[])array.Clone());
         }
 
         /// <summary>
@@ -36,8 +42,12 @@ namespace Fundamentals.Sorting.Benchmarks
         [ArgumentsSource(nameof(WorstCaseData))]
         public void WorstCase(int[] array)
         {
-            var sort = new T();
-            sort.Sort(array);
+            if (array is null)
+            {
+                throw new ArgumentNullException(nameof(array));
+            }
+
+            this.sort.Sort((int[])array.Clone());
         }
 
         /// <summary>

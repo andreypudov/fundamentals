@@ -9,7 +9,7 @@
             The Fundamentals CLI is a command-line interface for Fundamentals.
             </summary>
         </member>
-        <member name="M:Fundamentals.Core.CommanLineInterface.Main">
+        <member name="M:Fundamentals.Core.CommanLineInterface.Main(System.String[])">
             <summary>
             The entry point of the application.
             </summary>

@@ -22,7 +22,7 @@ namespace Fundamentals.Sorting.Test
         [Test]
         public void Sort_Ordered_ReturnsSameSequence()
         {
-            var actual = Enumerable.Range(0, 10).ToArray();
+            var actual = Enumerable.Range(0, short.MaxValue).ToArray();
             var expected = (int[])actual.Clone();
 
             var sort = new T();
@@ -30,7 +30,7 @@ namespace Fundamentals.Sorting.Test
             Array.Sort(expected);
             sort.Sort(actual);
 
-            Assert.AreEqual(expected, actual);
+            Assert.IsTrue(expected.SequenceEqual(actual));
         }
 
         /// <summary>
@@ -39,7 +39,7 @@ namespace Fundamentals.Sorting.Test
         [Test]
         public void Sort_Reversed_ReturnsOrderedSequence()
         {
-            var actual = Enumerable.Range(0, 10).Reverse().ToArray();
+            var actual = Enumerable.Range(0, short.MaxValue).Reverse().ToArray();
             var expected = (int[])actual.Clone();
 
             var sort = new T();
@@ -47,7 +47,7 @@ namespace Fundamentals.Sorting.Test
             Array.Sort(expected);
             sort.Sort(actual);
 
-            Assert.AreEqual(expected, actual);
+            Assert.IsTrue(expected.SequenceEqual(actual));
         }
 
         /// <summary>

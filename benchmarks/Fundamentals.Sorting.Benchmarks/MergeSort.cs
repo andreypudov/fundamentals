@@ -4,12 +4,9 @@
 
 namespace Fundamentals.Sorting.Benchmarks
 {
-    using BenchmarkDotNet.Attributes;
-
     /// <summary>
     /// Represents a benchmark for <see cref="Sorting.MergeSort"/>.
     /// </summary>
-    [SimpleJob(launchCount: 10, warmupCount: 10, targetCount: 10)]
     public class MergeSort : Sort<Sorting.MergeSort>
     {
         // Intentionally left bank
