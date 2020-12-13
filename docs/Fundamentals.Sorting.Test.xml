@@ -19,6 +19,11 @@
             Represents a test class for <see cref="T:Fundamentals.Sorting.MergeSort"/>.
             </summary>
         </member>
+        <member name="T:Fundamentals.Sorting.Test.SelectionSort">
+            <summary>
+            Represents a test class for <see cref="T:Fundamentals.Sorting.SelectionSort"/>.
+            </summary>
+        </member>
         <member name="T:Fundamentals.Sorting.Test.Sort`1">
             <summary>
             Represents a base test fixture for <see cref="N:Fundamentals.Sorting"/>.
