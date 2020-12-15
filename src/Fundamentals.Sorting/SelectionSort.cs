@@ -22,21 +22,21 @@ namespace Fundamentals.Sorting
                 throw new ArgumentNullException(nameof(array));
             }
 
-            int min;
+            int minimal;
             for (int i = 0; i < array.Length - 1; ++i)
             {
-                min = i;
+                minimal = i;
                 for (int j = i + 1; j < array.Length; ++j)
                 {
-                    if (array[j].CompareTo(array[min]) < 0)
+                    if (array[j].CompareTo(array[minimal]) < 0)
                     {
-                        min = j;
+                        minimal = j;
                     }
                 }
 
                 T buffer = array[i];
-                array[i] = array[min];
-                array[min] = buffer;
+                array[i] = array[minimal];
+                array[minimal] = buffer;
             }
         }
     }

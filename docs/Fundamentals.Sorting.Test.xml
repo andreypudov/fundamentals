@@ -9,6 +9,11 @@
             Represents a test class for <see cref="T:Fundamentals.Sorting.BubbleSort"/>.
             </summary>
         </member>
+        <member name="T:Fundamentals.Sorting.Test.BubbleSortWithFlag">
+            <summary>
+            Represents a test class for <see cref="T:Fundamentals.Sorting.BubbleSortWithFlag"/>.
+            </summary>
+        </member>
         <member name="T:Fundamentals.Sorting.Test.InsertionSort">
             <summary>
             Represents a test class for <see cref="T:Fundamentals.Sorting.InsertionSort"/>.

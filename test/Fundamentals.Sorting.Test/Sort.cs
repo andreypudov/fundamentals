@@ -92,9 +92,7 @@ namespace Fundamentals.Sorting.Test
         {
             var sort = new T();
 
-#pragma warning disable CS8625 // Cannot convert null literal to non-nullable reference type.
-            Assert.Throws<ArgumentNullException>(() => sort.Sort<string>(null));
-#pragma warning restore CS8625 // Cannot convert null literal to non-nullable reference type.
+            Assert.Throws<ArgumentNullException>(() => sort.Sort<string>(null!));
         }
     }
 }
