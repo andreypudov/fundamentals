@@ -14,6 +14,11 @@
             Represents a benchmark for <see cref="T:Fundamentals.Sorting.BubbleSortWithFlag"/>.
             </summary>
         </member>
+        <member name="T:Fundamentals.Sorting.Benchmarks.HeapSort">
+            <summary>
+            Represents a benchmark for <see cref="T:Fundamentals.Sorting.HeapSort"/>.
+            </summary>
+        </member>
         <member name="T:Fundamentals.Sorting.Benchmarks.InsertionSort">
             <summary>
             Represents a benchmark for <see cref="T:Fundamentals.Sorting.InsertionSort"/>.

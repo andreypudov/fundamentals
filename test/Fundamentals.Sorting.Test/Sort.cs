@@ -85,6 +85,40 @@ namespace Fundamentals.Sorting.Test
         }
 
         /// <summary>
+        /// Represents a positive test case for single element sequence.
+        /// </summary>
+        [Test]
+        public void Sort_SingleElement_ReturnsOrderedSequence()
+        {
+            var actual = new int[] { 16 };
+            var expected = (int[])actual.Clone();
+
+            var sort = new T();
+
+            Array.Sort(expected);
+            sort.Sort(actual);
+
+            Assert.IsTrue(expected.SequenceEqual(actual));
+        }
+
+        /// <summary>
+        /// Represents a positive test case for empty sequence.
+        /// </summary>
+        [Test]
+        public void Sort_Empty_ReturnsOrderedSequence()
+        {
+            var actual = Array.Empty<int>();
+            var expected = (int[])actual.Clone();
+
+            var sort = new T();
+
+            Array.Sort(expected);
+            sort.Sort(actual);
+
+            Assert.IsTrue(expected.SequenceEqual(actual));
+        }
+
+        /// <summary>
         /// Represents a positive test case for reversed sequence.
         /// </summary>
         [Test]

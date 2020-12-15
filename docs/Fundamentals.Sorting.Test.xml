@@ -14,6 +14,11 @@
             Represents a test class for <see cref="T:Fundamentals.Sorting.BubbleSortWithFlag"/>.
             </summary>
         </member>
+        <member name="T:Fundamentals.Sorting.Test.HeapSort">
+            <summary>
+            Represents a test class for <see cref="T:Fundamentals.Sorting.HeapSort"/>.
+            </summary>
+        </member>
         <member name="T:Fundamentals.Sorting.Test.InsertionSort">
             <summary>
             Represents a test class for <see cref="T:Fundamentals.Sorting.InsertionSort"/>.
@@ -53,6 +58,16 @@
         <member name="M:Fundamentals.Sorting.Test.Sort`1.Sort_NegativePositive_ReturnsOrderedSequence">
             <summary>
             Represents a positive test case for negative and positive sequences combined.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Sorting.Test.Sort`1.Sort_SingleElement_ReturnsOrderedSequence">
+            <summary>
+            Represents a positive test case for single element sequence.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Sorting.Test.Sort`1.Sort_Empty_ReturnsOrderedSequence">
+            <summary>
+            Represents a positive test case for empty sequence.
             </summary>
         </member>
         <member name="M:Fundamentals.Sorting.Test.Sort`1.Sort_Null_ThrowsArgumentNullException">
