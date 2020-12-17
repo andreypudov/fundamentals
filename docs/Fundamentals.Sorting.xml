@@ -89,6 +89,16 @@
         <member name="M:Fundamentals.Sorting.MergeSort.Sort``1(``0[])">
             <inheritdoc />
         </member>
+        <member name="T:Fundamentals.Sorting.RadixSort">
+            <summary>
+            Radix sort is a non-comparative sorting algorithm. It avoids
+            comparison by creating and distributing elements into buckets
+            according to their radix.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Sorting.RadixSort.Sort``1(``0[])">
+            <inheritdoc />
+        </member>
         <member name="T:Fundamentals.Sorting.SelectionSort">
             <summary>
             Selection sort is an in-place comparison sorting algorithm. It has

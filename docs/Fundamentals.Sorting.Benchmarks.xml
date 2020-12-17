@@ -29,6 +29,11 @@
             Represents a benchmark for <see cref="T:Fundamentals.Sorting.MergeSort"/>.
             </summary>
         </member>
+        <member name="T:Fundamentals.Sorting.Benchmarks.RadixSort">
+            <summary>
+            Represents a benchmark for <see cref="T:Fundamentals.Sorting.InsertionSort"/>.
+            </summary>
+        </member>
         <member name="T:Fundamentals.Sorting.Benchmarks.SelectionSort">
             <summary>
             Represents a benchmark for <see cref="T:Fundamentals.Sorting.SelectionSort"/>.
