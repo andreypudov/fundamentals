@@ -89,6 +89,17 @@
         <member name="M:Fundamentals.Sorting.MergeSort.Sort``1(``0[])">
             <inheritdoc />
         </member>
+        <member name="T:Fundamentals.Sorting.QuickSort">
+            <summary>
+            Quicksort is a divide-and-conquer algorithm. It works by selecting
+            a 'pivot' element from the array and partitioning the other elements
+            into two sub-arrays, according to whether they are less than or
+            greater than the pivot. The sub-arrays are then sorted recursively.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Sorting.QuickSort.Sort``1(``0[])">
+            <inheritdoc />
+        </member>
         <member name="T:Fundamentals.Sorting.RadixSort">
             <summary>
             Radix sort is a non-comparative sorting algorithm. It avoids

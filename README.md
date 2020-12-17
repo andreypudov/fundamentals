@@ -1,2 +1,2 @@
 # Fundamentals
-Analyzes essential algorithms and data structures.
+Analyzes essential algorithms and data structures
