@@ -34,6 +34,11 @@
             Represents a benchmark for <see cref="T:Fundamentals.Sorting.QuickSort"/>.
             </summary>
         </member>
+        <member name="T:Fundamentals.Sorting.Benchmarks.QuickSortDualPivot">
+            <summary>
+            Represents a benchmark for <see cref="T:Fundamentals.Sorting.QuickSortDualPivot"/>.
+            </summary>
+        </member>
         <member name="T:Fundamentals.Sorting.Benchmarks.QuickSortWithLomutoPartition">
             <summary>
             Represents a benchmark for <see cref="T:Fundamentals.Sorting.QuickSortWithLomutoPartition"/>.

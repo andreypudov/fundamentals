@@ -22,7 +22,7 @@ namespace Fundamentals.Sorting.Test
         [Test]
         public void Sort_Ordered_ReturnsSameSequence()
         {
-            var actual = Enumerable.Range(0, 8).ToArray();
+            var actual = Enumerable.Range(0, short.MaxValue).ToArray();
             var expected = (int[])actual.Clone();
 
             var sort = new T();
@@ -39,7 +39,7 @@ namespace Fundamentals.Sorting.Test
         [Test]
         public void Sort_Reversed_ReturnsOrderedSequence()
         {
-            var actual = Enumerable.Range(0, 8).Reverse().ToArray();
+            var actual = Enumerable.Range(0, short.MaxValue).Reverse().ToArray();
             var expected = (int[])actual.Clone();
 
             var sort = new T();
@@ -56,7 +56,7 @@ namespace Fundamentals.Sorting.Test
         [Test]
         public void Sort_Negative_ReturnsOrderedSequence()
         {
-            var actual = Enumerable.Range(-8, 0).ToArray();
+            var actual = Enumerable.Range(short.MinValue, 0).ToArray();
             var expected = (int[])actual.Clone();
 
             var sort = new T();
@@ -73,7 +73,7 @@ namespace Fundamentals.Sorting.Test
         [Test]
         public void Sort_NegativePositive_ReturnsOrderedSequence()
         {
-            var actual = Enumerable.Range(-8, 0).Concat(Enumerable.Range(1, 8)).ToArray();
+            var actual = Enumerable.Range(short.MinValue, 0).Concat(Enumerable.Range(1, short.MaxValue)).ToArray();
             var expected = (int[])actual.Clone();
 
             var sort = new T();
@@ -90,7 +90,7 @@ namespace Fundamentals.Sorting.Test
         [Test]
         public void Sort_SingleElement_ReturnsOrderedSequence()
         {
-            var actual = new int[] { 8 };
+            var actual = new int[] { 16 };
             var expected = (int[])actual.Clone();
 
             var sort = new T();
