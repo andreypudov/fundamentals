@@ -34,6 +34,11 @@
             Represents a test class for <see cref="T:Fundamentals.Sorting.QuickSort"/>.
             </summary>
         </member>
+        <member name="T:Fundamentals.Sorting.Test.QuickSortDualPivot">
+            <summary>
+            Represents a test class for <see cref="T:Fundamentals.Sorting.QuickSortDualPivot"/>.
+            </summary>
+        </member>
         <member name="T:Fundamentals.Sorting.Test.QuickSortWithLomutoPartition">
             <summary>
             Represents a test class for <see cref="T:Fundamentals.Sorting.QuickSortWithLomutoPartition"/>.
