@@ -23,6 +23,12 @@ namespace Fundamentals.Sorting
                 throw new ArgumentNullException(nameof(array));
             }
 
+            if (array.Length > short.MaxValue)
+            {
+                new QuickSort().Sort(array);
+                return;
+            }
+
             Sort(array, 0, array.Length - 1);
         }
 

@@ -58,7 +58,6 @@ namespace Fundamentals.Sorting.Benchmarks
         {
             yield return Enumerable.Range(0, 16).ToArray();
             yield return Enumerable.Range(0, short.MaxValue).ToArray();
-            yield return Enumerable.Range(0, ushort.MaxValue).ToArray();
         }
 
         /// <summary>
@@ -69,7 +68,6 @@ namespace Fundamentals.Sorting.Benchmarks
         {
             yield return Enumerable.Range(0, 16).Reverse().ToArray();
             yield return Enumerable.Range(0, short.MaxValue).Reverse().ToArray();
-            yield return Enumerable.Range(0, ushort.MaxValue).Reverse().ToArray();
         }
     }
 }

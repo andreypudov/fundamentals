@@ -39,11 +39,6 @@
             Represents a test class for <see cref="T:Fundamentals.Sorting.QuickSortDualPivot"/>.
             </summary>
         </member>
-        <member name="T:Fundamentals.Sorting.Test.QuickSortWithLomutoPartition">
-            <summary>
-            Represents a test class for <see cref="T:Fundamentals.Sorting.QuickSortWithLomutoPartition"/>.
-            </summary>
-        </member>
         <member name="T:Fundamentals.Sorting.Test.RadixSort">
             <summary>
             Represents a test class for <see cref="T:Fundamentals.Sorting.InsertionSort"/>.
@@ -66,6 +61,11 @@
             </summary>
         </member>
         <member name="M:Fundamentals.Sorting.Test.Sort`1.Sort_Reversed_ReturnsOrderedSequence">
+            <summary>
+            Represents a positive test case for reversed sequence.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Sorting.Test.Sort`1.Sort_LargeReversed_ReturnsOrderedSequence">
             <summary>
             Represents a positive test case for reversed sequence.
             </summary>
