@@ -6,11 +6,10 @@
     <RepositoryUrl>https://github.com/andreypudov/Fundamentals</RepositoryUrl>
     <Copyright>Copyright (c) Andrey Pudov. All Rights Reserved. Licensed under the Apache License, Version 2.0. See LICENSE.txt in the project root for license information.</Copyright>
 
-    <LangVersion>9.0</LangVersion>
-    <NeutralLanguage>en-US</NeutralLanguage>
+    <LangVersion>8.0</LangVersion>
     <Nullable>enable</Nullable>
-    <OutputType>Exe</OutputType>
     <TargetFramework>net5.0</TargetFramework>
+    <IsPackable>false</IsPackable>
     <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
     <EnableNETAnalyzers>true</EnableNETAnalyzers>
   </PropertyGroup>
@@ -18,13 +17,14 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DefineConstants>TRACE;DEBUG</DefineConstants>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-    <DocumentationFile>..\..\docs\Fundamentals.CommandLine.xml</DocumentationFile>
+    <DocumentationFile>..\..\docs\Fundamentals.Sorting.Benchmarks.xml</DocumentationFile>
+    <WarningLevel>5</WarningLevel>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType></DebugType>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-    <DocumentationFile>..\..\docs\Fundamentals.CommandLine.xml</DocumentationFile>
+    <DocumentationFile>..\..\docs\Fundamentals.Sorting.Benchmarks.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -37,8 +37,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\benchmarks\Fundamentals.Math.Benchmarks\Fundamentals.Math.Benchmarks.csproj" />
-    <ProjectReference Include="..\..\benchmarks\Fundamentals.Sorting.Benchmarks\Fundamentals.Sorting.Benchmarks.csproj" />
-    <ProjectReference Include="..\Fundamentals.Resources\Fundamentals.Resources.csproj" />
+    <ProjectReference Include="..\..\src\Fundamentals.Math\Fundamentals.Math.csproj" />
   </ItemGroup>
 </Project>

@@ -9,7 +9,7 @@
     <LangVersion>9.0</LangVersion>
     <NeutralLanguage>en-US</NeutralLanguage>
     <Nullable>enable</Nullable>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <TargetFramework>net5.0</TargetFramework>
     <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
     <EnableNETAnalyzers>true</EnableNETAnalyzers>
@@ -18,13 +18,14 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DefineConstants>TRACE;DEBUG</DefineConstants>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-    <DocumentationFile>..\..\docs\Fundamentals.CommandLine.xml</DocumentationFile>
+    <DocumentationFile>..\..\docs\Fundamentals.Math.xml</DocumentationFile>
+    <WarningLevel>5</WarningLevel>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType></DebugType>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-    <DocumentationFile>..\..\docs\Fundamentals.CommandLine.xml</DocumentationFile>
+    <DocumentationFile>..\..\docs\Fundamentals.Math.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -32,13 +33,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="BenchmarkDotNet" Version="0.12.1" />
     <PackageReference Include="StyleCop.Analyzers" Version="1.1.118" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\..\benchmarks\Fundamentals.Math.Benchmarks\Fundamentals.Math.Benchmarks.csproj" />
-    <ProjectReference Include="..\..\benchmarks\Fundamentals.Sorting.Benchmarks\Fundamentals.Sorting.Benchmarks.csproj" />
-    <ProjectReference Include="..\Fundamentals.Resources\Fundamentals.Resources.csproj" />
   </ItemGroup>
 </Project>

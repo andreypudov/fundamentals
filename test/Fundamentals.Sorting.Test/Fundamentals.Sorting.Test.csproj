@@ -20,6 +20,7 @@
     <DocumentationFile>..\..\docs\Fundamentals.Sorting.Test.xml</DocumentationFile>
     <WarningLevel>5</WarningLevel>
   </PropertyGroup>
+
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType></DebugType>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>

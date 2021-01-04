@@ -60,6 +60,19 @@
         <member name="M:Fundamentals.Sorting.InsertionSort.Sort``1(``0[])">
             <inheritdoc />
         </member>
+        <member name="T:Fundamentals.Sorting.IntExtensions">
+            <summary>
+            Provides extension methods for integer type.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Sorting.IntExtensions.Shift(System.Int32,System.Int32)">
+            <summary>
+            Unsigned right shift.
+            </summary>
+            <param name="value">The original integer value.</param>
+            <param name="digits">The number of digits to shoft.</param>
+            <returns>The value with number of digits shifted right.</returns>
+        </member>
         <member name="T:Fundamentals.Sorting.ISort">
             <summary>
             Exposes a method that sorts the elements in a one-dimensional array.
@@ -100,6 +113,17 @@
         <member name="M:Fundamentals.Sorting.QuickSort.Sort``1(``0[])">
             <inheritdoc />
         </member>
+        <member name="T:Fundamentals.Sorting.QuickSortAsync">
+            <summary>
+            Quicksort is a divide-and-conquer algorithm. It works by selecting
+            a 'pivot' element from the array and partitioning the other elements
+            into two sub-arrays, according to whether they are less than or
+            greater than the pivot. The sub-arrays are then sorted recursively.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Sorting.QuickSortAsync.Sort``1(``0[])">
+            <inheritdoc />
+        </member>
         <member name="T:Fundamentals.Sorting.QuickSortDualPivot">
             <summary>
             Quicksort is a divide-and-conquer algorithm. It works by selecting
@@ -111,7 +135,7 @@
         <member name="M:Fundamentals.Sorting.QuickSortDualPivot.Sort``1(``0[])">
             <inheritdoc />
         </member>
-        <member name="T:Fundamentals.Sorting.QuickSortWithLomutoPartition">
+        <member name="T:Fundamentals.Sorting.QuickSortDualPivotParallel">
             <summary>
             Quicksort is a divide-and-conquer algorithm. It works by selecting
             a 'pivot' element from the array and partitioning the other elements
@@ -119,7 +143,18 @@
             greater than the pivot. The sub-arrays are then sorted recursively.
             </summary>
         </member>
-        <member name="M:Fundamentals.Sorting.QuickSortWithLomutoPartition.Sort``1(``0[])">
+        <member name="M:Fundamentals.Sorting.QuickSortDualPivotParallel.Sort``1(``0[])">
+            <inheritdoc />
+        </member>
+        <member name="T:Fundamentals.Sorting.QuickSortParallel">
+            <summary>
+            Quicksort is a divide-and-conquer algorithm. It works by selecting
+            a 'pivot' element from the array and partitioning the other elements
+            into two sub-arrays, according to whether they are less than or
+            greater than the pivot. The sub-arrays are then sorted recursively.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Sorting.QuickSortParallel.Sort``1(``0[])">
             <inheritdoc />
         </member>
         <member name="T:Fundamentals.Sorting.RadixSort">

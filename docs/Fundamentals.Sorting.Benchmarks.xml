@@ -34,9 +34,24 @@
             Represents a benchmark for <see cref="T:Fundamentals.Sorting.QuickSort"/>.
             </summary>
         </member>
+        <member name="T:Fundamentals.Sorting.Benchmarks.QuickSortAsync">
+            <summary>
+            Represents a benchmark for <see cref="T:Fundamentals.Sorting.QuickSortAsync"/>.
+            </summary>
+        </member>
         <member name="T:Fundamentals.Sorting.Benchmarks.QuickSortDualPivot">
             <summary>
             Represents a benchmark for <see cref="T:Fundamentals.Sorting.QuickSortDualPivot"/>.
+            </summary>
+        </member>
+        <member name="T:Fundamentals.Sorting.Benchmarks.QuickSortDualPivotParallel">
+            <summary>
+            Represents a benchmark for <see cref="T:Fundamentals.Sorting.QuickSortDualPivotParallel"/>.
+            </summary>
+        </member>
+        <member name="T:Fundamentals.Sorting.Benchmarks.QuickSortParallel">
+            <summary>
+            Represents a benchmark for <see cref="T:Fundamentals.Sorting.QuickSortParallel"/>.
             </summary>
         </member>
         <member name="T:Fundamentals.Sorting.Benchmarks.RadixSort">

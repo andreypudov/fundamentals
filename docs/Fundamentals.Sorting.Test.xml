@@ -34,9 +34,24 @@
             Represents a test class for <see cref="T:Fundamentals.Sorting.QuickSort"/>.
             </summary>
         </member>
+        <member name="T:Fundamentals.Sorting.Test.QuickSortAsync">
+            <summary>
+            Represents a test class for <see cref="T:Fundamentals.Sorting.QuickSortAsync"/>.
+            </summary>
+        </member>
         <member name="T:Fundamentals.Sorting.Test.QuickSortDualPivot">
             <summary>
             Represents a test class for <see cref="T:Fundamentals.Sorting.QuickSortDualPivot"/>.
+            </summary>
+        </member>
+        <member name="T:Fundamentals.Sorting.Test.QuickSortDualPivotParallel">
+            <summary>
+            Represents a test class for <see cref="T:Fundamentals.Sorting.QuickSortDualPivotParallel"/>.
+            </summary>
+        </member>
+        <member name="T:Fundamentals.Sorting.Test.QuickSortParallel">
+            <summary>
+            Represents a test class for <see cref="T:Fundamentals.Sorting.QuickSortParallel"/>.
             </summary>
         </member>
         <member name="T:Fundamentals.Sorting.Test.RadixSort">
@@ -65,9 +80,14 @@
             Represents a positive test case for reversed sequence.
             </summary>
         </member>
+        <member name="M:Fundamentals.Sorting.Test.Sort`1.Sort_SmallReversed_ReturnsOrderedSequence">
+            <summary>
+            Represents a positive test case for small reversed sequence.
+            </summary>
+        </member>
         <member name="M:Fundamentals.Sorting.Test.Sort`1.Sort_LargeReversed_ReturnsOrderedSequence">
             <summary>
-            Represents a positive test case for reversed sequence.
+            Represents a positive test case for large reversed sequence.
             </summary>
         </member>
         <member name="M:Fundamentals.Sorting.Test.Sort`1.Sort_Negative_ReturnsOrderedSequence">

@@ -51,7 +51,24 @@ namespace Fundamentals.Sorting.Test
         }
 
         /// <summary>
-        /// Represents a positive test case for reversed sequence.
+        /// Represents a positive test case for small reversed sequence.
+        /// </summary>
+        [Test]
+        public void Sort_SmallReversed_ReturnsOrderedSequence()
+        {
+            var actual = Enumerable.Range(0, 16).Reverse().ToArray();
+            var expected = (int[])actual.Clone();
+
+            var sort = new T();
+
+            Array.Sort(expected);
+            sort.Sort(actual);
+
+            Assert.IsTrue(expected.SequenceEqual(actual));
+        }
+
+        /// <summary>
+        /// Represents a positive test case for large reversed sequence.
         /// </summary>
         [Test]
         public void Sort_LargeReversed_ReturnsOrderedSequence()

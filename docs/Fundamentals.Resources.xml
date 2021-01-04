@@ -20,5 +20,31 @@
               resource lookups using this strongly typed resource class.
             </summary>
         </member>
+        <member name="T:Fundamentals.Resources.Math.Fibonacci">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Fundamentals.Resources.Math.Fibonacci.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Fundamentals.Resources.Math.Fibonacci.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Fundamentals.Resources.Math.Fibonacci.IntMax8192">
+            <summary>
+              Looks up a localized string similar to 19837779011484912110559461611897879824756662368828587378125731561244809005006588121371157164936707185586771181243260782820753286323520090182436562876438635116476960211306972832533222236863626016800172539014814722044065130102307440630952925074514503935605189532219940195992194790816269264251180087247848390441574201688900421547904076394811580169955215549714375849278874613124202394423267087287281742933642142183231631120006129957572708387453830319393805616697066233355102111922953112963415574208931037616950346995 [rest of string was truncated]&quot;;.
+            </summary>
+        </member>
+        <member name="P:Fundamentals.Resources.Math.Fibonacci.ShortMax">
+            <summary>
+              Looks up a localized string similar to 35360880361910251126452669455620308660387507262425657057941083714154016794650589093384647824004993283027919607313323939587481595067472222147134949170928115661357214587989286173693816255284833068378030216363059713367182324054573396403520361220032505500441451957563674720887468066323851738392466777300957187437418311062000915453475751361169324293137342122365125588462334147487218603694369156524550864145525735730636023463266706293695003418558236279483304782942750830399629534398043401675124704063553894843835089507 [rest of string was truncated]&quot;;.
+            </summary>
+        </member>
     </members>
 </doc>

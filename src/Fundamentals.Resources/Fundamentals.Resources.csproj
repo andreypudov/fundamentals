@@ -21,6 +21,7 @@
     <DocumentationFile>..\..\docs\Fundamentals.Resources.xml</DocumentationFile>
     <WarningLevel>5</WarningLevel>
   </PropertyGroup>
+
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType></DebugType>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
@@ -36,6 +37,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="Math\Fibonacci.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Fibonacci.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Update="Resources\CompassPoints.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>CompassPoints.Designer.cs</LastGenOutput>
@@ -54,6 +59,11 @@
       <DependentUpon>Core.resx</DependentUpon>
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Math\Fibonacci.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Fibonacci.resx</DependentUpon>
     </Compile>
   </ItemGroup>
 </Project>

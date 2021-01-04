@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Fundamentals.Math</name>
+    </assembly>
+    <members>
+        <member name="T:Fundamentals.Math.FibonacciIterative">
+            <summary>
+            Represents an iterative implementation for <see cref="M:Fundamentals.Math.IFibonacci.Fibonacci(System.Int32)"/>.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Math.FibonacciIterative.Fibonacci(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="T:Fundamentals.Math.FibonacciRecursive">
+            <summary>
+            Represents an iterative implementation for <see cref="M:Fundamentals.Math.IFibonacci.Fibonacci(System.Int32)"/>.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Math.FibonacciRecursive.Fibonacci(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="T:Fundamentals.Math.IFibonacci">
+            <summary>
+            Exposes a method that returns the Fibonacci number at the given position.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Math.IFibonacci.Fibonacci(System.Int32)">
+            <summary>
+            Returns the Fibonacci number at the given position.
+            </summary>
+            <param name="position">The position of the number.</param>
+            <returns>The Fibonacci number at the given position.</returns>
+        </member>
+    </members>
+</doc>

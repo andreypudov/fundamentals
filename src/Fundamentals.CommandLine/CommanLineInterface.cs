@@ -18,7 +18,12 @@ namespace Fundamentals.Core
         /// <param name="args">The list of command-line parameters.</param>
         private static void Main(string[] args) =>
             BenchmarkSwitcher
-                .FromAssembly(typeof(Sorting.Benchmarks.Sort<>).Assembly)
+                .FromAssemblies(
+                new[]
+                {
+                    typeof(Math.Benchmarks.Fibonacci<>).Assembly,
+                    typeof(Sorting.Benchmarks.Sort<>).Assembly,
+                })
                 .Run(
                     args,
                     ManualConfig.Create(DefaultConfig.Instance)
