@@ -17,9 +17,24 @@
             <param name="color">The instance of the color.</param>
             <param name="name">The name of the color.</param>
         </member>
-        <member name="T:Fundamentals.Lang.CSharp.Tests.ConditionalOperators.IfConditionCSharp">
+        <member name="T:Fundamentals.Lang.CSharp.Tests.ConditionalOperators.IfStatement">
             <summary>
-            Represents a test class for <see cref="T:Fundamentals.Lang.CSharp.ConditionalOperators.IfCondition"/>.
+            Represents a test class for <see cref="T:Fundamentals.Lang.CSharp.ConditionalOperators.IfStatement"/>.
+            </summary>
+        </member>
+        <member name="T:Fundamentals.Lang.CSharp.Tests.ConditionalOperators.SwitchExpression">
+            <summary>
+            Represents a test class for <see cref="T:Fundamentals.Lang.CSharp.ConditionalOperators.SwitchExpression"/>.
+            </summary>
+        </member>
+        <member name="T:Fundamentals.Lang.CSharp.Tests.ConditionalOperators.SwitchStatement">
+            <summary>
+            Represents a test class for <see cref="T:Fundamentals.Lang.CSharp.ConditionalOperators.SwitchStatement"/>.
+            </summary>
+        </member>
+        <member name="T:Fundamentals.Lang.CSharp.Tests.ConditionalOperators.TernaryOperator">
+            <summary>
+            Represents a test class for <see cref="T:Fundamentals.Lang.CSharp.ConditionalOperators.TernaryOperator"/>.
             </summary>
         </member>
     </members>

@@ -17,13 +17,33 @@ namespace Fundamentals.Lang.CSharp.Benchmarks.ConditionalOperators
         private readonly IConditionalOperator op = new T();
 
         /// <summary>
-        /// Represents a positive test case for the conditional operator.
+        /// Represents a positive test case for the first element of the enumeration.
+        /// </summary>
+        /// <param name="color">The value of the color.</param>
+        /// <returns>The name of the color.</returns>
+        [Benchmark]
+        [Arguments(Color.White)]
+        public string First(Color color) =>
+            this.op.GetName(color);
+
+        /// <summary>
+        /// Represents a positive test case for the last element of the enumeration.
         /// </summary>
         /// <param name="color">The value of the color.</param>
         /// <returns>The name of the color.</returns>
         [Benchmark]
         [Arguments(Color.Purple)]
-        public string General(Color color) =>
+        public string Last(Color color) =>
+            this.op.GetName(color);
+
+        /// <summary>
+        /// Represents a positive test case for the first min-value of the enumeration.
+        /// </summary>
+        /// <param name="color">The value of the color.</param>
+        /// <returns>The name of the color.</returns>
+        [Benchmark]
+        [Arguments(Color.Black)]
+        public string MinValue(Color color) =>
             this.op.GetName(color);
     }
 }

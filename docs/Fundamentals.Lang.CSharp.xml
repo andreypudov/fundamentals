@@ -93,5 +93,13 @@
         <member name="M:Fundamentals.Lang.CSharp.ConditionalOperators.SwitchStatement.GetName(Fundamentals.Lang.CSharp.Color)">
             <inheritdoc />
         </member>
+        <member name="T:Fundamentals.Lang.CSharp.ConditionalOperators.TernaryOperator">
+            <summary>
+            Represents an if condition operator./>.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Lang.CSharp.ConditionalOperators.TernaryOperator.GetName(Fundamentals.Lang.CSharp.Color)">
+            <inheritdoc />
+        </member>
     </members>
 </doc>

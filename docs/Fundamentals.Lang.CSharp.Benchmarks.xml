@@ -10,9 +10,23 @@
             </summary>
             <typeparam name="T">The type of the <see cref="T:Fundamentals.Lang.CSharp.ConditionalOperators.IConditionalOperator"/> implementation.</typeparam>
         </member>
-        <member name="M:Fundamentals.Lang.CSharp.Benchmarks.ConditionalOperators.ConditionalOperator`1.General(Fundamentals.Lang.CSharp.Color)">
+        <member name="M:Fundamentals.Lang.CSharp.Benchmarks.ConditionalOperators.ConditionalOperator`1.First(Fundamentals.Lang.CSharp.Color)">
             <summary>
-            Represents a positive test case for the conditional operator.
+            Represents a positive test case for the first element of the enumeration.
+            </summary>
+            <param name="color">The value of the color.</param>
+            <returns>The name of the color.</returns>
+        </member>
+        <member name="M:Fundamentals.Lang.CSharp.Benchmarks.ConditionalOperators.ConditionalOperator`1.Last(Fundamentals.Lang.CSharp.Color)">
+            <summary>
+            Represents a positive test case for the last element of the enumeration.
+            </summary>
+            <param name="color">The value of the color.</param>
+            <returns>The name of the color.</returns>
+        </member>
+        <member name="M:Fundamentals.Lang.CSharp.Benchmarks.ConditionalOperators.ConditionalOperator`1.MinValue(Fundamentals.Lang.CSharp.Color)">
+            <summary>
+            Represents a positive test case for the first min-value of the enumeration.
             </summary>
             <param name="color">The value of the color.</param>
             <returns>The name of the color.</returns>
@@ -30,6 +44,11 @@
         <member name="T:Fundamentals.Lang.CSharp.Benchmarks.ConditionalOperators.SwitchStatement">
             <summary>
             Represents a benchmark for <see cref="T:Fundamentals.Lang.CSharp.ConditionalOperators.SwitchStatement"/>.
+            </summary>
+        </member>
+        <member name="T:Fundamentals.Lang.CSharp.Benchmarks.ConditionalOperators.TernaryOperator">
+            <summary>
+            Represents a benchmark for <see cref="T:Fundamentals.Lang.CSharp.ConditionalOperators.TernaryOperator"/>.
             </summary>
         </member>
     </members>
