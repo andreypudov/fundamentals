@@ -4,12 +4,12 @@
         <name>Fundamentals.CommandLine</name>
     </assembly>
     <members>
-        <member name="T:Fundamentals.Core.CommanLineInterface">
+        <member name="T:Fundamentals.CommandLine.CommandLineInterface">
             <summary>
             The Fundamentals CLI is a command-line interface for Fundamentals.
             </summary>
         </member>
-        <member name="M:Fundamentals.Core.CommanLineInterface.Main(System.String[])">
+        <member name="M:Fundamentals.CommandLine.CommandLineInterface.Main(System.String[])">
             <summary>
             The entry point of the application.
             </summary>

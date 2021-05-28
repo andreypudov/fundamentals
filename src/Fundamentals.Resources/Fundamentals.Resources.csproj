@@ -41,29 +41,35 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Fibonacci.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+
     <EmbeddedResource Update="Resources\CompassPoints.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>CompassPoints.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+
     <EmbeddedResource Update="Resources\CompassPoints.ru.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>CompassPoints.ru.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+
     <EmbeddedResource Condition=" '$(EnableDefaultEmbeddedResourceItems)' == 'true' " Update="Core.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Core.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
+
   <ItemGroup>
     <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Core.Designer.cs">
       <DependentUpon>Core.resx</DependentUpon>
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
     </Compile>
+
     <Compile Update="Math\Fibonacci.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>Fibonacci.resx</DependentUpon>
     </Compile>
   </ItemGroup>
+
 </Project>

@@ -1,8 +1,8 @@
-﻿// <copyright file="CommanLineInterface.cs" company="Andrey Pudov">
+﻿// <copyright file="CommandLineInterface.cs" company="Andrey Pudov">
 //     Copyright (c) Andrey Pudov. All Rights Reserved. Licensed under the Apache License, Version 2.0. See LICENSE.txt in the project root for license information.
 // </copyright>
 
-namespace Fundamentals.Core
+namespace Fundamentals.CommandLine
 {
     using BenchmarkDotNet.Configs;
     using BenchmarkDotNet.Running;
@@ -10,7 +10,7 @@ namespace Fundamentals.Core
     /// <summary>
     /// The Fundamentals CLI is a command-line interface for Fundamentals.
     /// </summary>
-    internal static class CommanLineInterface
+    internal static class CommandLineInterface
     {
         /// <summary>
         /// The entry point of the application.
@@ -21,6 +21,7 @@ namespace Fundamentals.Core
                 .FromAssemblies(
                 new[]
                 {
+                    typeof(Lang.CSharp.Benchmarks.ConditionalOperators.ConditionalOperator<>).Assembly,
                     typeof(Math.Benchmarks.Fibonacci<>).Assembly,
                     typeof(Sorting.Benchmarks.Sort<>).Assembly,
                 })

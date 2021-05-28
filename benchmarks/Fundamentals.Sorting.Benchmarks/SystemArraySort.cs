@@ -4,8 +4,6 @@
 
 namespace Fundamentals.Sorting.Benchmarks
 {
-    using BenchmarkDotNet.Attributes;
-
     /// <summary>
     /// Represents a benchmark for <see cref="System.Array.Sort{T}(T[])"/>.
     /// </summary>

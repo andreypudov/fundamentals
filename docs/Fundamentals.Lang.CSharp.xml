@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Fundamentals.Lang.CSharp</name>
+    </assembly>
+    <members>
+        <member name="T:Fundamentals.Lang.CSharp.Color">
+            <summary>
+            The enumeration of colors.
+            </summary>
+        </member>
+        <member name="F:Fundamentals.Lang.CSharp.Color.White">
+            <summary>The value of white color.</summary>
+        </member>
+        <member name="F:Fundamentals.Lang.CSharp.Color.Silver">
+            <summary>The value of silver color.</summary>
+        </member>
+        <member name="F:Fundamentals.Lang.CSharp.Color.Gray">
+            <summary>The value of gray color.</summary>
+        </member>
+        <member name="F:Fundamentals.Lang.CSharp.Color.Black">
+            <summary>The value of black color.</summary>
+        </member>
+        <member name="F:Fundamentals.Lang.CSharp.Color.Red">
+            <summary>The value of red color.</summary>
+        </member>
+        <member name="F:Fundamentals.Lang.CSharp.Color.Maroon">
+            <summary>The value of maroon color.</summary>
+        </member>
+        <member name="F:Fundamentals.Lang.CSharp.Color.Yellow">
+            <summary>The value of yellow color.</summary>
+        </member>
+        <member name="F:Fundamentals.Lang.CSharp.Color.Olive">
+            <summary>The value of olive color.</summary>
+        </member>
+        <member name="F:Fundamentals.Lang.CSharp.Color.Lime">
+            <summary>The value of lime color.</summary>
+        </member>
+        <member name="F:Fundamentals.Lang.CSharp.Color.Green">
+            <summary>The value of green color.</summary>
+        </member>
+        <member name="F:Fundamentals.Lang.CSharp.Color.Aqua">
+            <summary>The value of aqua color.</summary>
+        </member>
+        <member name="F:Fundamentals.Lang.CSharp.Color.Teal">
+            <summary>The value of teal color.</summary>
+        </member>
+        <member name="F:Fundamentals.Lang.CSharp.Color.Blue">
+            <summary>The value of blue color.</summary>
+        </member>
+        <member name="F:Fundamentals.Lang.CSharp.Color.Navy">
+            <summary>The value of navy color.</summary>
+        </member>
+        <member name="F:Fundamentals.Lang.CSharp.Color.Fuchsia">
+            <summary>The value of fuchsia color.</summary>
+        </member>
+        <member name="F:Fundamentals.Lang.CSharp.Color.Purple">
+            <summary>The value of purple color.</summary>
+        </member>
+        <member name="T:Fundamentals.Lang.CSharp.ConditionalOperators.IConditionalOperator">
+            <summary>
+            Exposes an operator that provides the conditional execution.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Lang.CSharp.ConditionalOperators.IConditionalOperator.GetName(Fundamentals.Lang.CSharp.Color)">
+            <summary>
+            Returns the name of the given color.
+            </summary>
+            <param name="color">The instance of the color.</param>
+            <returns>The name of the given color.</returns>
+        </member>
+        <member name="T:Fundamentals.Lang.CSharp.ConditionalOperators.IfStatement">
+            <summary>
+            Represents an if condition operator./>.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Lang.CSharp.ConditionalOperators.IfStatement.GetName(Fundamentals.Lang.CSharp.Color)">
+            <inheritdoc />
+        </member>
+        <member name="T:Fundamentals.Lang.CSharp.ConditionalOperators.SwitchExpression">
+            <summary>
+            Represents an if condition operator./>.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Lang.CSharp.ConditionalOperators.SwitchExpression.GetName(Fundamentals.Lang.CSharp.Color)">
+            <inheritdoc />
+        </member>
+        <member name="T:Fundamentals.Lang.CSharp.ConditionalOperators.SwitchStatement">
+            <summary>
+            Represents an if condition operator./>.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Lang.CSharp.ConditionalOperators.SwitchStatement.GetName(Fundamentals.Lang.CSharp.Color)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

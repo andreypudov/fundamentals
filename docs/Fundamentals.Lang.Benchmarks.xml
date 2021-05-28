@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Fundamentals.Lang.Benchmarks</name>
+    </assembly>
+    <members>
+        <member name="T:Fundamentals.Lang.Benchmarks.ConditionalOperators">
+            <summary>
+            Represents a base benchmark for <see cref="T:Fundamentals.Lang.CSharp.IfCondition"/>.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Lang.Benchmarks.ConditionalOperators.IfConditionCSharp(Fundamentals.Lang.CSharp.Color)">
+            <summary>
+            Represents the benchmark for <see cref="T:Fundamentals.Lang.CSharp.IfCondition"/>.
+            </summary>
+            <param name="color">The value of the color.</param>
+            <returns>The name of the color.</returns>
+        </member>
+        <member name="M:Fundamentals.Lang.Benchmarks.ConditionalOperators.PatternMatchingFSharp(Fundamentals.Lang.FSharp.Color.Color)">
+            <summary>
+            Represents the benchmark for <see cref="T:Fundamentals.Lang.FSharp.PatternMatching"/>.
+            </summary>
+            <param name="color">The value of the color.</param>
+            <returns>The name of the color.</returns>
+        </member>
+    </members>
+</doc>

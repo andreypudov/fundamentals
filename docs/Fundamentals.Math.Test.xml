@@ -40,11 +40,6 @@
             Represents a test class for <see cref="T:Fundamentals.Math.FibonacciIterative"/>.
             </summary>
         </member>
-        <member name="T:Fundamentals.Math.Test.FibonacciParallel">
-            <summary>
-            Represents a test class for <see cref="T:Fundamentals.Math.FibonacciParallel"/>.
-            </summary>
-        </member>
         <member name="T:Fundamentals.Math.Test.FibonacciRecursive">
             <summary>
             Represents a test class for <see cref="T:Fundamentals.Math.FibonacciRecursive"/>.

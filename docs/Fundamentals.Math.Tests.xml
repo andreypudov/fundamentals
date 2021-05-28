@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Fundamentals.Math.Tests</name>
+    </assembly>
+    <members>
+        <member name="T:Fundamentals.Math.Tests.Fibonacci`1">
+            <summary>
+            Represents a base test fixture for <see cref="T:Fundamentals.Math.IFibonacci"/>.
+            </summary>
+            <typeparam name="T">The type of the <see cref="T:Fundamentals.Math.IFibonacci"/> implementation.</typeparam>
+        </member>
+        <member name="M:Fundamentals.Math.Tests.Fibonacci`1.Fibonacci_First_ReturnsFirst">
+            <summary>
+            Represents a positive test case for the first number.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Math.Tests.Fibonacci`1.Fibonacci_Second_ReturnsSecond">
+            <summary>
+            Represents a positive test case for the second number.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Math.Tests.Fibonacci`1.Fibonacci_ShortMax_ReturnsSecond">
+            <summary>
+            Represents a positive test case for the maximum value of shot data type.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Math.Tests.Fibonacci`1.Fibonacci_IntMax_ReturnsSecond">
+            <summary>
+            Represents a positive test case for the maximum value of integer data type.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Math.Tests.Fibonacci`1.Fibonacci_NegativePosition_ThrowsArgumentException">
+            <summary>
+            Represents a negative test case for the negative number.
+            </summary>
+        </member>
+        <member name="T:Fundamentals.Math.Tests.FibonacciIterative">
+            <summary>
+            Represents a test class for <see cref="T:Fundamentals.Math.FibonacciIterative"/>.
+            </summary>
+        </member>
+        <member name="T:Fundamentals.Math.Tests.FibonacciRecursive">
+            <summary>
+            Represents a test class for <see cref="T:Fundamentals.Math.FibonacciRecursive"/>.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Fundamentals.Sorting.Tests</name>
+    </assembly>
+    <members>
+        <member name="T:Fundamentals.Sorting.Tests.BubbleSort">
+            <summary>
+            Represents a test class for <see cref="T:Fundamentals.Sorting.BubbleSort"/>.
+            </summary>
+        </member>
+        <member name="T:Fundamentals.Sorting.Tests.BubbleSortWithFlag">
+            <summary>
+            Represents a test class for <see cref="T:Fundamentals.Sorting.BubbleSortWithFlag"/>.
+            </summary>
+        </member>
+        <member name="T:Fundamentals.Sorting.Tests.HeapSort">
+            <summary>
+            Represents a test class for <see cref="T:Fundamentals.Sorting.HeapSort"/>.
+            </summary>
+        </member>
+        <member name="T:Fundamentals.Sorting.Tests.InsertionSort">
+            <summary>
+            Represents a test class for <see cref="T:Fundamentals.Sorting.InsertionSort"/>.
+            </summary>
+        </member>
+        <member name="T:Fundamentals.Sorting.Tests.MergeSort">
+            <summary>
+            Represents a test class for <see cref="T:Fundamentals.Sorting.MergeSort"/>.
+            </summary>
+        </member>
+        <member name="T:Fundamentals.Sorting.Tests.QuickSort">
+            <summary>
+            Represents a test class for <see cref="T:Fundamentals.Sorting.QuickSort"/>.
+            </summary>
+        </member>
+        <member name="T:Fundamentals.Sorting.Tests.QuickSortAsync">
+            <summary>
+            Represents a test class for <see cref="T:Fundamentals.Sorting.QuickSortAsync"/>.
+            </summary>
+        </member>
+        <member name="T:Fundamentals.Sorting.Tests.QuickSortDualPivot">
+            <summary>
+            Represents a test class for <see cref="T:Fundamentals.Sorting.QuickSortDualPivot"/>.
+            </summary>
+        </member>
+        <member name="T:Fundamentals.Sorting.Tests.QuickSortDualPivotParallel">
+            <summary>
+            Represents a test class for <see cref="T:Fundamentals.Sorting.QuickSortDualPivotParallel"/>.
+            </summary>
+        </member>
+        <member name="T:Fundamentals.Sorting.Tests.QuickSortParallel">
+            <summary>
+            Represents a test class for <see cref="T:Fundamentals.Sorting.QuickSortParallel"/>.
+            </summary>
+        </member>
+        <member name="T:Fundamentals.Sorting.Tests.RadixSort">
+            <summary>
+            Represents a test class for <see cref="T:Fundamentals.Sorting.InsertionSort"/>.
+            </summary>
+        </member>
+        <member name="T:Fundamentals.Sorting.Tests.SelectionSort">
+            <summary>
+            Represents a test class for <see cref="T:Fundamentals.Sorting.SelectionSort"/>.
+            </summary>
+        </member>
+        <member name="T:Fundamentals.Sorting.Tests.Sort`1">
+            <summary>
+            Represents a base test fixture for <see cref="N:Fundamentals.Sorting"/>.
+            </summary>
+            <typeparam name="T">The type of the sort implementation.</typeparam>
+        </member>
+        <member name="M:Fundamentals.Sorting.Tests.Sort`1.Sort_Ordered_ReturnsSameSequence">
+            <summary>
+            Represents a positive test case for ordered sequence.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Sorting.Tests.Sort`1.Sort_Reversed_ReturnsOrderedSequence">
+            <summary>
+            Represents a positive test case for reversed sequence.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Sorting.Tests.Sort`1.Sort_SmallReversed_ReturnsOrderedSequence">
+            <summary>
+            Represents a positive test case for small reversed sequence.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Sorting.Tests.Sort`1.Sort_LargeReversed_ReturnsOrderedSequence">
+            <summary>
+            Represents a positive test case for large reversed sequence.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Sorting.Tests.Sort`1.Sort_Negative_ReturnsOrderedSequence">
+            <summary>
+            Represents a positive test case for negative sequence.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Sorting.Tests.Sort`1.Sort_NegativePositive_ReturnsOrderedSequence">
+            <summary>
+            Represents a positive test case for negative and positive sequences combined.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Sorting.Tests.Sort`1.Sort_SingleElement_ReturnsOrderedSequence">
+            <summary>
+            Represents a positive test case for single element sequence.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Sorting.Tests.Sort`1.Sort_Empty_ReturnsOrderedSequence">
+            <summary>
+            Represents a positive test case for empty sequence.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Sorting.Tests.Sort`1.Sort_Null_ThrowsArgumentNullException">
+            <summary>
+            Represents a positive test case for reversed sequence.
+            </summary>
+        </member>
+        <member name="T:Fundamentals.Sorting.Tests.SystemArraySort">
+            <summary>
+            Represents a test class for <see cref="M:System.Array.Sort``1(``0[])"/>.
+            </summary>
+        </member>
+    </members>
+</doc>

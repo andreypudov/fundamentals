@@ -10,7 +10,7 @@ namespace Fundamentals.Math.Benchmarks
     /// <summary>
     /// Represents a base benchmark for <see cref="IFibonacci"/>.
     /// </summary>
-    /// <typeparam name="T">The type of the sort implementation.</typeparam>
+    /// <typeparam name="T">The type of the <see cref="IFibonacci"/> implementation.</typeparam>
     public abstract class Fibonacci<T>
         where T : IFibonacci, new()
     {
