@@ -33,6 +33,7 @@
 
   <ItemGroup>
     <Compile Include="ConditionalOperators\ConditionalOperator.fs" />
+    <Compile Include="ConditionalOperators\IfExpression.fs" />
     <Compile Include="ConditionalOperators\PatternMatching.fs" />
   </ItemGroup>
 
