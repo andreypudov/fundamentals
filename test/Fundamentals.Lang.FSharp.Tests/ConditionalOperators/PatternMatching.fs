@@ -4,7 +4,7 @@
 
 namespace Fundamentals.Lang.FSharp.Benchmarks.ConditionalOperators
 
-open NUnit.Framework;
+open NUnit.Framework
 
 [<TestFixture>]
 type PatternMatching() =

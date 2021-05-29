@@ -4,7 +4,7 @@
 
 namespace Fundamentals.Lang.FSharp.Benchmarks.ConditionalOperators
 
-open Fundamentals.Lang.FSharp;
+open Fundamentals.Lang.FSharp
 open Fundamentals.Lang.FSharp.ConditionalOperators
 open NUnit.Framework
 
