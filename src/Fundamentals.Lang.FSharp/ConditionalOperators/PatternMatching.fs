@@ -4,26 +4,26 @@
 
 namespace Fundamentals.Lang.FSharp.ConditionalOperators
 
-module PatternMatching =
+open Fundamentals.Lang.FSharp
 
-    open Fundamentals.Lang.FSharp.Color
-
-    let GetName color =
-        match color with
-        | Color.White -> "White"
-        | Color.Silver -> "Silver"
-        | Color.Gray -> "Gray"
-        | Color.Black -> "Black"
-        | Color.Red -> "Red"
-        | Color.Maroon -> "Maroon"
-        | Color.Yellow -> "Yellow"
-        | Color.Olive -> "Olive"
-        | Color.Lime -> "Lime"
-        | Color.Green -> "Green"
-        | Color.Aqua -> "Aqua"
-        | Color.Teal -> "Teal"
-        | Color.Blue -> "Blue"
-        | Color.Navy -> "Navy"
-        | Color.Fuchsia -> "Fuchsia"
-        | Color.Purple -> "Purple"
-        | _ -> "None"
+type PatternMatching() =
+   interface IConditionalOperator with
+      member this.GetName color =
+          match color with
+          | Color.White -> "White"
+          | Color.Silver -> "Silver"
+          | Color.Gray -> "Gray"
+          | Color.Black -> "Black"
+          | Color.Red -> "Red"
+          | Color.Maroon -> "Maroon"
+          | Color.Yellow -> "Yellow"
+          | Color.Olive -> "Olive"
+          | Color.Lime -> "Lime"
+          | Color.Green -> "Green"
+          | Color.Aqua -> "Aqua"
+          | Color.Teal -> "Teal"
+          | Color.Blue -> "Blue"
+          | Color.Navy -> "Navy"
+          | Color.Fuchsia -> "Fuchsia"
+          | Color.Purple -> "Purple"
+          | _ -> "None"

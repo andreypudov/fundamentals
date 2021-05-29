@@ -22,6 +22,7 @@ namespace Fundamentals.CommandLine
                 new[]
                 {
                     typeof(Lang.CSharp.Benchmarks.ConditionalOperators.ConditionalOperator<>).Assembly,
+                    typeof(Lang.FSharp.Benchmarks.ConditionalOperators.ConditionalOperator<>).Assembly,
                     typeof(Math.Benchmarks.Fibonacci<>).Assembly,
                     typeof(Sorting.Benchmarks.Sort<>).Assembly,
                 })

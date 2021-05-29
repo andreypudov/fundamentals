@@ -2,15 +2,7 @@
 //     Copyright (c) Andrey Pudov. All Rights Reserved. Licensed under the Apache License, Version 2.0. See LICENSE.txt in the project root for license information.
 // </copyright>
 
-namespace Fundamentals.Lang.CSharp.Benchmarks.ConditionalOperators
+namespace Fundamentals.Lang.FSharp.Benchmarks.ConditionalOperators
 
-module PatternMatching =
-
-    open Fundamentals.Lang.FSharp.Color
-    open Fundamentals.Lang.FSharp.ConditionalOperators.PatternMatching
-    open BenchmarkDotNet.Attributes;
-
-    [<Benchmark>]
-    [<Arguments(Color.Purple)>]
-    let ``Should return ``(color, name) =
-        GetName color |> should equal name
+type PatternMatching() =
+    inherit ConditionalOperator<Fundamentals.Lang.FSharp.ConditionalOperators.PatternMatching>()

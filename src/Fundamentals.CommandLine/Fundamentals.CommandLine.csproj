@@ -38,6 +38,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\benchmarks\Fundamentals.Lang.CSharp.Benchmarks\Fundamentals.Lang.CSharp.Benchmarks.csproj" />
+    <ProjectReference Include="..\..\benchmarks\Fundamentals.Lang.FSharp.Benchmarks\Fundamentals.Lang.FSharp.Benchmarks.fsproj" />
     <ProjectReference Include="..\..\benchmarks\Fundamentals.Math.Benchmarks\Fundamentals.Math.Benchmarks.csproj" />
     <ProjectReference Include="..\..\benchmarks\Fundamentals.Sorting.Benchmarks\Fundamentals.Sorting.Benchmarks.csproj" />
     <ProjectReference Include="..\Fundamentals.Resources\Fundamentals.Resources.csproj" />

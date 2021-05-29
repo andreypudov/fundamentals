@@ -31,11 +31,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Include="ConditionalOperators\ConditionalOperator.fs" />
     <Compile Include="ConditionalOperators\PatternMatching.fs" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Fundamentals.Lang.FSharp\Fundamentals.Lang.FSharp.csproj" />
     <ProjectReference Include="..\..\src\Fundamentals.Lang.FSharp\Fundamentals.Lang.FSharp.fsproj" />
   </ItemGroup>
 </Project>
