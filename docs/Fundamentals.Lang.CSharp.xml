@@ -77,6 +77,14 @@
         <member name="M:Fundamentals.Lang.CSharp.ConditionalOperators.IfStatement.GetName(Fundamentals.Lang.CSharp.Color)">
             <inheritdoc />
         </member>
+        <member name="T:Fundamentals.Lang.CSharp.ConditionalOperators.MultipleIfStatements">
+            <summary>
+            Represents an if condition operator./>.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Lang.CSharp.ConditionalOperators.MultipleIfStatements.GetName(Fundamentals.Lang.CSharp.Color)">
+            <inheritdoc />
+        </member>
         <member name="T:Fundamentals.Lang.CSharp.ConditionalOperators.SwitchExpression">
             <summary>
             Represents an if condition operator./>.

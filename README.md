@@ -8,6 +8,7 @@ Analyzes essential algorithms and data structures
 |        F# |     **IfExpression** |    First |  White |  **2.258 ns** | 0.1424 ns | 0.1462 ns |  2.218 ns |
 |        F# |      PatternMatching |    First |  White |      5.843 ns | 0.1660 ns | 0.2863 ns |  5.771 ns |
 |        C# |          IfStatement |    First |  White |      2.378 ns | 0.1428 ns | 0.2647 ns |  2.283 ns |
+|        C# | MultipleIfStatements |    First |  White |      2.390 ns | 0.1418 ns | 0.2593 ns |  2.254 ns |
 |        C# |     SwitchExpression |    First |  White |      3.687 ns | 0.1718 ns | 0.3141 ns |  3.647 ns |
 |        C# |      SwitchStatement |    First |  White |      3.716 ns | 0.1698 ns | 0.2929 ns |  3.602 ns |
 |        C# |      TernaryOperator |    First |  White |      2.269 ns | 0.1133 ns | 0.1113 ns |  2.255 ns |
@@ -15,6 +16,7 @@ Analyzes essential algorithms and data structures
 |        F# |         IfExpression |     Last | Purple |     11.862 ns | 0.2906 ns | 0.3230 ns | 11.792 ns |
 |        F# |      PatternMatching |     Last | Purple |      4.285 ns | 0.1712 ns | 0.1517 ns |  4.254 ns |
 |        C# |          IfStatement |     Last | Purple |     10.368 ns | 0.2935 ns | 0.2883 ns | 10.265 ns |
+|        C# | MultipleIfStatements |     Last | Purple |      9.431 ns | 0.2768 ns | 0.2311 ns |  9.493 ns |
 |        C# | **SwitchExpression** |     Last | Purple |  **3.512 ns** | 0.1551 ns | 0.1211 ns |  3.461 ns |
 |        C# |      SwitchStatement |     Last | Purple |      3.692 ns | 0.1662 ns | 0.3981 ns |  3.528 ns |
 |        C# |      TernaryOperator |     Last | Purple |      4.385 ns | 0.1792 ns | 0.2330 ns |  4.359 ns |
@@ -22,6 +24,7 @@ Analyzes essential algorithms and data structures
 |        F# |         IfExpression | MinValue |  Black |      5.680 ns | 0.2016 ns | 0.1787 ns |  5.584 ns |
 |        F# |  **PatternMatching** | MinValue |  Black |  **2.583 ns** | 0.0728 ns | 0.0608 ns |  2.574 ns |
 |        C# |          IfStatement | MinValue |  Black |      3.321 ns | 0.1359 ns | 0.1135 ns |  3.331 ns |
+|        C# | MultipleIfStatements | MinValue |  Black |      4.069 ns | 0.1802 ns | 0.2466 ns |  4.033 ns |
 |        C# |     SwitchExpression | MinValue |  Black |      2.962 ns | 0.1587 ns | 0.2738 ns |  2.881 ns |
 |        C# |      SwitchStatement | MinValue |  Black |      3.500 ns | 0.1687 ns | 0.2473 ns |  3.395 ns |
 |        C# |      TernaryOperator | MinValue |  Black |      4.313 ns | 0.1649 ns | 0.2086 ns |  4.248 ns |

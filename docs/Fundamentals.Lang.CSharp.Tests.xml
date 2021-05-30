@@ -22,6 +22,11 @@
             Represents a test class for <see cref="T:Fundamentals.Lang.CSharp.ConditionalOperators.IfStatement"/>.
             </summary>
         </member>
+        <member name="T:Fundamentals.Lang.CSharp.Tests.ConditionalOperators.MultipleIfStatements">
+            <summary>
+            Represents a test class for <see cref="T:Fundamentals.Lang.CSharp.ConditionalOperators.MultipleIfStatements"/>.
+            </summary>
+        </member>
         <member name="T:Fundamentals.Lang.CSharp.Tests.ConditionalOperators.SwitchExpression">
             <summary>
             Represents a test class for <see cref="T:Fundamentals.Lang.CSharp.ConditionalOperators.SwitchExpression"/>.
