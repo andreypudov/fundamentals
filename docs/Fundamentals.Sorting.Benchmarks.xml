@@ -1,29 +1,102 @@
 <?xml version="1.0"?>
 <doc>
     <assembly>
-        <name>Fundamentals.Math.Benchmarks</name>
+        <name>Fundamentals.Sorting.Benchmarks</name>
     </assembly>
     <members>
-        <member name="T:Fundamentals.Math.Benchmarks.Fibonacci`1">
+        <member name="T:Fundamentals.Sorting.Benchmarks.BubbleSort">
             <summary>
-            Represents a base benchmark for <see cref="T:Fundamentals.Math.IFibonacci"/>.
-            </summary>
-            <typeparam name="T">The type of the <see cref="T:Fundamentals.Math.IFibonacci"/> implementation.</typeparam>
-        </member>
-        <member name="M:Fundamentals.Math.Benchmarks.Fibonacci`1.General(System.Int32)">
-            <summary>
-            Represents a positive test case for reversed sequence.
-            </summary>
-            <param name="position">The position of the number.</param>
-        </member>
-        <member name="T:Fundamentals.Math.Benchmarks.FibonacciIterative">
-            <summary>
-            Represents a benchmark for <see cref="T:Fundamentals.Math.FibonacciIterative"/>.
+            Represents a benchmark for <see cref="T:Fundamentals.Sorting.BubbleSort"/>.
             </summary>
         </member>
-        <member name="T:Fundamentals.Math.Benchmarks.FibonacciRecursive">
+        <member name="T:Fundamentals.Sorting.Benchmarks.BubbleSortWithFlag">
             <summary>
-            Represents a benchmark for <see cref="T:Fundamentals.Math.FibonacciRecursive"/>.
+            Represents a benchmark for <see cref="T:Fundamentals.Sorting.BubbleSortWithFlag"/>.
+            </summary>
+        </member>
+        <member name="T:Fundamentals.Sorting.Benchmarks.HeapSort">
+            <summary>
+            Represents a benchmark for <see cref="T:Fundamentals.Sorting.HeapSort"/>.
+            </summary>
+        </member>
+        <member name="T:Fundamentals.Sorting.Benchmarks.InsertionSort">
+            <summary>
+            Represents a benchmark for <see cref="T:Fundamentals.Sorting.InsertionSort"/>.
+            </summary>
+        </member>
+        <member name="T:Fundamentals.Sorting.Benchmarks.MergeSort">
+            <summary>
+            Represents a benchmark for <see cref="T:Fundamentals.Sorting.MergeSort"/>.
+            </summary>
+        </member>
+        <member name="T:Fundamentals.Sorting.Benchmarks.QuickSort">
+            <summary>
+            Represents a benchmark for <see cref="T:Fundamentals.Sorting.QuickSort"/>.
+            </summary>
+        </member>
+        <member name="T:Fundamentals.Sorting.Benchmarks.QuickSortAsync">
+            <summary>
+            Represents a benchmark for <see cref="T:Fundamentals.Sorting.QuickSortAsync"/>.
+            </summary>
+        </member>
+        <member name="T:Fundamentals.Sorting.Benchmarks.QuickSortDualPivot">
+            <summary>
+            Represents a benchmark for <see cref="T:Fundamentals.Sorting.QuickSortDualPivot"/>.
+            </summary>
+        </member>
+        <member name="T:Fundamentals.Sorting.Benchmarks.QuickSortDualPivotParallel">
+            <summary>
+            Represents a benchmark for <see cref="T:Fundamentals.Sorting.QuickSortDualPivotParallel"/>.
+            </summary>
+        </member>
+        <member name="T:Fundamentals.Sorting.Benchmarks.QuickSortParallel">
+            <summary>
+            Represents a benchmark for <see cref="T:Fundamentals.Sorting.QuickSortParallel"/>.
+            </summary>
+        </member>
+        <member name="T:Fundamentals.Sorting.Benchmarks.RadixSort">
+            <summary>
+            Represents a benchmark for <see cref="T:Fundamentals.Sorting.InsertionSort"/>.
+            </summary>
+        </member>
+        <member name="T:Fundamentals.Sorting.Benchmarks.SelectionSort">
+            <summary>
+            Represents a benchmark for <see cref="T:Fundamentals.Sorting.SelectionSort"/>.
+            </summary>
+        </member>
+        <member name="T:Fundamentals.Sorting.Benchmarks.Sort`1">
+            <summary>
+            Represents a base benchmark for <see cref="N:Fundamentals.Sorting"/>.
+            </summary>
+            <typeparam name="T">The type of the sort implementation.</typeparam>
+        </member>
+        <member name="M:Fundamentals.Sorting.Benchmarks.Sort`1.BestCase(System.Int32[])">
+            <summary>
+            Represents a benchmark for ordered sequence.
+            </summary>
+            <param name="array">The source array to sort.</param>
+        </member>
+        <member name="M:Fundamentals.Sorting.Benchmarks.Sort`1.WorstCase(System.Int32[])">
+            <summary>
+            Represents a benchmark for reversed sequence.
+            </summary>
+            <param name="array">The source array to sort.</param>
+        </member>
+        <member name="M:Fundamentals.Sorting.Benchmarks.Sort`1.BestCaseData">
+            <summary>
+            Represents an enumeration of arguments for best case benchmark.
+            </summary>
+            <returns>An enumeration of arguments for benchmarks.</returns>
+        </member>
+        <member name="M:Fundamentals.Sorting.Benchmarks.Sort`1.WorstCaseData">
+            <summary>
+            Represents an enumeration of arguments for worst case benchmark.
+            </summary>
+            <returns>An enumeration of arguments for benchmarks.</returns>
+        </member>
+        <member name="T:Fundamentals.Sorting.Benchmarks.SystemArraySort">
+            <summary>
+            Represents a benchmark for <see cref="M:System.Array.Sort``1(``0[])"/>.
             </summary>
         </member>
     </members>

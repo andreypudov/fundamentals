@@ -18,8 +18,7 @@ namespace Fundamentals.Math.Tests
     {
         private readonly BigInteger zero = 0;
         private readonly BigInteger one = 1;
-        private readonly BigInteger shortMax = BigInteger.Parse(Resources.Math.Fibonacci.ShortMax);
-        private readonly BigInteger intMax = BigInteger.Parse(Resources.Math.Fibonacci.IntMax8192);
+        private readonly BigInteger f16 = BigInteger.Parse("987");
 
         /// <summary>
         /// Represents a positive test case for the first number.
@@ -36,18 +35,11 @@ namespace Fundamentals.Math.Tests
             Assert.AreEqual(this.one, new T().Fibonacci(1));
 
         /// <summary>
-        /// Represents a positive test case for the maximum value of shot data type.
+        /// Represents a positive test case for the 16s element of the Fibonacci sequence.
         /// </summary>
         [Test]
-        public void Fibonacci_ShortMax_ReturnsSecond() =>
-            Assert.AreEqual(this.shortMax, new T().Fibonacci(short.MaxValue));
-
-        /// <summary>
-        /// Represents a positive test case for the maximum value of integer data type.
-        /// </summary>
-        [Test]
-        public void Fibonacci_IntMax_ReturnsSecond() =>
-            Assert.AreEqual(this.intMax, new T().Fibonacci(int.MaxValue / 8192));
+        public void Fibonacci_f16_ReturnsSecond() =>
+            Assert.AreEqual(this.f16, new T().Fibonacci(16));
 
         /// <summary>
         /// Represents a negative test case for the negative number.

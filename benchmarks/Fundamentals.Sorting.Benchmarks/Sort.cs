@@ -19,7 +19,7 @@ namespace Fundamentals.Sorting.Benchmarks
         private readonly ISort sort = new T();
 
         /// <summary>
-        /// Represents a positive test case for ordered sequence.
+        /// Represents a benchmark for ordered sequence.
         /// </summary>
         /// <param name="array">The source array to sort.</param>
         [Benchmark]
@@ -35,7 +35,7 @@ namespace Fundamentals.Sorting.Benchmarks
         }
 
         /// <summary>
-        /// Represents a positive test case for reversed sequence.
+        /// Represents a benchmark for reversed sequence.
         /// </summary>
         /// <param name="array">The source array to sort.</param>
         [Benchmark]

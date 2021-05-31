@@ -14,10 +14,18 @@
         </member>
         <member name="T:Fundamentals.Math.FibonacciRecursive">
             <summary>
-            Represents an iterative implementation for <see cref="M:Fundamentals.Math.IFibonacci.Fibonacci(System.Int32)"/>.
+            Represents an resursive implementation for <see cref="M:Fundamentals.Math.IFibonacci.Fibonacci(System.Int32)"/>.
             </summary>
         </member>
         <member name="M:Fundamentals.Math.FibonacciRecursive.Fibonacci(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="T:Fundamentals.Math.FibonacciTailRecursive">
+            <summary>
+            Represents an tail recursive implementation for <see cref="M:Fundamentals.Math.IFibonacci.Fibonacci(System.Int32)"/>.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Math.FibonacciTailRecursive.Fibonacci(System.Int32)">
             <inheritdoc />
         </member>
         <member name="T:Fundamentals.Math.IFibonacci">

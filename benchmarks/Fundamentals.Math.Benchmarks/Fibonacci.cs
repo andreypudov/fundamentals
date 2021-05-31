@@ -17,13 +17,11 @@ namespace Fundamentals.Math.Benchmarks
         private readonly IFibonacci fibonacci = new T();
 
         /// <summary>
-        /// Represents a positive test case for reversed sequence.
+        /// Represents a general benchmark.
         /// </summary>
         /// <param name="position">The position of the number.</param>
         [Benchmark]
         [Arguments(16)]
-        [Arguments(short.MaxValue / 2)]
-        [Arguments(int.MaxValue / 8192)]
         public void General(int position) =>
             this.fibonacci.Fibonacci(position);
     }

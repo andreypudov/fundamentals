@@ -8,7 +8,7 @@ namespace Fundamentals.Math
     using System.Numerics;
 
     /// <summary>
-    /// Represents an iterative implementation for <see cref="IFibonacci.Fibonacci(int)"/>.
+    /// Represents an resursive implementation for <see cref="IFibonacci.Fibonacci(int)"/>.
     /// </summary>
     public class FibonacciRecursive : IFibonacci
     {
@@ -18,11 +18,6 @@ namespace Fundamentals.Math
             if (position < 0)
             {
                 throw new ArgumentException(nameof(position));
-            }
-
-            if (position > short.MaxValue / 2)
-            {
-                return new FibonacciIterative().Fibonacci(position);
             }
 
             return Compute(position);

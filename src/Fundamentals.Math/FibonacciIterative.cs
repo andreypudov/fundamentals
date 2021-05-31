@@ -15,23 +15,27 @@ namespace Fundamentals.Math
         /// <inheritdoc />
         public BigInteger Fibonacci(int position)
         {
-            var first = new BigInteger(0);
-            var second = new BigInteger(1);
-            var result = new BigInteger(position);
+            int previous = 0;
+            int current = 1;
 
             if (position < 0)
             {
                 throw new ArgumentException(nameof(position));
             }
 
-            for (int index = 2; index <= position; ++index)
+            if (position == 0)
             {
-                result = first + second;
-                first = second;
-                second = result;
+                return 0;
             }
 
-            return result;
+            for (int index = 2; index <= position; ++index)
+            {
+                int next = previous + current;
+                previous = current;
+                current = next;
+            }
+
+            return current;
         }
     }
 }

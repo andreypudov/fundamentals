@@ -20,14 +20,9 @@
             Represents a positive test case for the second number.
             </summary>
         </member>
-        <member name="M:Fundamentals.Math.Tests.Fibonacci`1.Fibonacci_ShortMax_ReturnsSecond">
+        <member name="M:Fundamentals.Math.Tests.Fibonacci`1.Fibonacci_f16_ReturnsSecond">
             <summary>
-            Represents a positive test case for the maximum value of shot data type.
-            </summary>
-        </member>
-        <member name="M:Fundamentals.Math.Tests.Fibonacci`1.Fibonacci_IntMax_ReturnsSecond">
-            <summary>
-            Represents a positive test case for the maximum value of integer data type.
+            Represents a positive test case for the 16s element of the Fibonacci sequence.
             </summary>
         </member>
         <member name="M:Fundamentals.Math.Tests.Fibonacci`1.Fibonacci_NegativePosition_ThrowsArgumentException">
@@ -43,6 +38,11 @@
         <member name="T:Fundamentals.Math.Tests.FibonacciRecursive">
             <summary>
             Represents a test class for <see cref="T:Fundamentals.Math.FibonacciRecursive"/>.
+            </summary>
+        </member>
+        <member name="T:Fundamentals.Math.Tests.FibonacciTailRecursive">
+            <summary>
+            Represents a test class for <see cref="T:Fundamentals.Math.FibonacciTailRecursive"/>.
             </summary>
         </member>
     </members>

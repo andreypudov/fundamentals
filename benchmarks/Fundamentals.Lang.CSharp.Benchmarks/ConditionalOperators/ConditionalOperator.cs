@@ -17,7 +17,7 @@ namespace Fundamentals.Lang.CSharp.Benchmarks.ConditionalOperators
         private readonly IConditionalOperator op = new T();
 
         /// <summary>
-        /// Represents a positive test case for the first element of the enumeration.
+        /// Represents a benchmark for the first element of the enumeration.
         /// </summary>
         /// <param name="color">The value of the color.</param>
         /// <returns>The name of the color.</returns>
@@ -27,7 +27,7 @@ namespace Fundamentals.Lang.CSharp.Benchmarks.ConditionalOperators
             this.op.GetName(color);
 
         /// <summary>
-        /// Represents a positive test case for the last element of the enumeration.
+        /// Represents a benchmark for the last element of the enumeration.
         /// </summary>
         /// <param name="color">The value of the color.</param>
         /// <returns>The name of the color.</returns>
@@ -37,7 +37,7 @@ namespace Fundamentals.Lang.CSharp.Benchmarks.ConditionalOperators
             this.op.GetName(color);
 
         /// <summary>
-        /// Represents a positive test case for the first min-value of the enumeration.
+        /// Represents a benchmark for the first min-value of the enumeration.
         /// </summary>
         /// <param name="color">The value of the color.</param>
         /// <returns>The name of the color.</returns>
