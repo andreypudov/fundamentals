@@ -14,7 +14,7 @@ namespace Fundamentals.Lang.CSharp.Benchmarks.ConditionalOperators
     public abstract class ConditionalOperator<T>
         where T : IConditionalOperator, new()
     {
-        private readonly IConditionalOperator op = new T();
+        private readonly T instance = new T();
 
         /// <summary>
         /// Represents a benchmark for the first element of the enumeration.
@@ -24,7 +24,7 @@ namespace Fundamentals.Lang.CSharp.Benchmarks.ConditionalOperators
         [Benchmark]
         [Arguments(Color.White)]
         public string First(Color color) =>
-            this.op.GetName(color);
+            this.instance.GetName(color);
 
         /// <summary>
         /// Represents a benchmark for the last element of the enumeration.
@@ -34,7 +34,7 @@ namespace Fundamentals.Lang.CSharp.Benchmarks.ConditionalOperators
         [Benchmark]
         [Arguments(Color.Purple)]
         public string Last(Color color) =>
-            this.op.GetName(color);
+            this.instance.GetName(color);
 
         /// <summary>
         /// Represents a benchmark for the first min-value of the enumeration.
@@ -44,6 +44,6 @@ namespace Fundamentals.Lang.CSharp.Benchmarks.ConditionalOperators
         [Benchmark]
         [Arguments(Color.Black)]
         public string MinValue(Color color) =>
-            this.op.GetName(color);
+            this.instance.GetName(color);
     }
 }

@@ -1,6 +1,15 @@
 # Fundamentals
 Analyzes essential algorithms and data structures
 
+## Error handling
+
+|                Type |          Mean |       Error |      StdDev |
+|-------------------- |--------------:|------------:|------------:|
+|           Exception | 10,594.225 ns | 195.7650 ns | 316.1240 ns |
+|     OutputParameter |      2.385 ns |   0.0899 ns |   0.1732 ns |
+|      **ReturnCode** |  **2.283 ns** |   0.0847 ns |   0.1071 ns |
+|        ReturnResult |      9.304 ns |   0.2272 ns |   0.4154 ns |
+
 ## Language expressions and operators
 
 | Namespace |                 Type |   Method |  color |          Mean |     Error |    StdDev |    Median |

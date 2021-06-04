@@ -14,7 +14,7 @@ namespace Fundamentals.Math.Benchmarks
     public abstract class Fibonacci<T>
         where T : IFibonacci, new()
     {
-        private readonly IFibonacci fibonacci = new T();
+        private readonly T instance = new T();
 
         /// <summary>
         /// Represents a general benchmark.
@@ -23,6 +23,6 @@ namespace Fundamentals.Math.Benchmarks
         [Benchmark]
         [Arguments(16)]
         public void General(int position) =>
-            this.fibonacci.Fibonacci(position);
+            this.instance.Fibonacci(position);
     }
 }

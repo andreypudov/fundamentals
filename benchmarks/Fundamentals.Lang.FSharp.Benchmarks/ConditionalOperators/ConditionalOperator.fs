@@ -10,15 +10,15 @@ open BenchmarkDotNet.Attributes
 
 [<AbstractClass>]
 type ConditionalOperator<'T when 'T :> IConditionalOperator and 'T : (new : unit -> 'T)>() =
-    let operator = new 'T()
+    let instance = new 'T()
 
     [<Benchmark>]
     [<Arguments(Color.White)>]
-    member this.First color = color |> operator.GetName
+    member this.First color = color |> instance.GetName
 
     [<Benchmark>]
     [<Arguments(Color.Purple)>]
-    member this.Last color = color |> operator.GetName
+    member this.Last color = color |> instance.GetName
 
     [<Benchmark>]    [<Arguments(Color.Black)>]
-    member this.MinValue color = color |> operator.GetName
+    member this.MinValue color = color |> instance.GetName

@@ -5,7 +5,7 @@
 namespace Fundamentals.Lang.CSharp.ConditionalOperators
 {
     /// <summary>
-    /// Represents an if condition operator./>.
+    /// Represents an if condition statement.
     /// </summary>
     public class MultipleIfStatements : IConditionalOperator
     {

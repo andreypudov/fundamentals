@@ -5,7 +5,7 @@
 namespace Fundamentals.Lang.CSharp.ConditionalOperators
 {
     /// <summary>
-    /// Represents an if condition operator./>.
+    /// Represents a ternary operator.
     /// </summary>
     public class TernaryOperator : IConditionalOperator
     {

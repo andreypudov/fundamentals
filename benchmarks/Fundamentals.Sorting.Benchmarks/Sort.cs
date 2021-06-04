@@ -16,7 +16,7 @@ namespace Fundamentals.Sorting.Benchmarks
     public abstract class Sort<T>
         where T : ISort, new()
     {
-        private readonly ISort sort = new T();
+        private readonly T instance = new T();
 
         /// <summary>
         /// Represents a benchmark for ordered sequence.
@@ -31,7 +31,7 @@ namespace Fundamentals.Sorting.Benchmarks
                 throw new ArgumentNullException(nameof(array));
             }
 
-            this.sort.Sort((int[])array.Clone());
+            this.instance.Sort((int[])array.Clone());
         }
 
         /// <summary>
@@ -47,7 +47,7 @@ namespace Fundamentals.Sorting.Benchmarks
                 throw new ArgumentNullException(nameof(array));
             }
 
-            this.sort.Sort((int[])array.Clone());
+            this.instance.Sort((int[])array.Clone());
         }
 
         /// <summary>

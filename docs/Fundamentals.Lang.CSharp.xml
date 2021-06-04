@@ -71,7 +71,7 @@
         </member>
         <member name="T:Fundamentals.Lang.CSharp.ConditionalOperators.IfStatement">
             <summary>
-            Represents an if condition operator./>.
+            Represents an if condition statement.
             </summary>
         </member>
         <member name="M:Fundamentals.Lang.CSharp.ConditionalOperators.IfStatement.GetName(Fundamentals.Lang.CSharp.Color)">
@@ -79,7 +79,7 @@
         </member>
         <member name="T:Fundamentals.Lang.CSharp.ConditionalOperators.MultipleIfStatements">
             <summary>
-            Represents an if condition operator./>.
+            Represents an if condition statement.
             </summary>
         </member>
         <member name="M:Fundamentals.Lang.CSharp.ConditionalOperators.MultipleIfStatements.GetName(Fundamentals.Lang.CSharp.Color)">
@@ -87,7 +87,7 @@
         </member>
         <member name="T:Fundamentals.Lang.CSharp.ConditionalOperators.SwitchExpression">
             <summary>
-            Represents an if condition operator./>.
+            Represents a switch expression.
             </summary>
         </member>
         <member name="M:Fundamentals.Lang.CSharp.ConditionalOperators.SwitchExpression.GetName(Fundamentals.Lang.CSharp.Color)">
@@ -95,7 +95,7 @@
         </member>
         <member name="T:Fundamentals.Lang.CSharp.ConditionalOperators.SwitchStatement">
             <summary>
-            Represents an if condition operator./>.
+            Represents a switch statement.
             </summary>
         </member>
         <member name="M:Fundamentals.Lang.CSharp.ConditionalOperators.SwitchStatement.GetName(Fundamentals.Lang.CSharp.Color)">
@@ -103,10 +103,92 @@
         </member>
         <member name="T:Fundamentals.Lang.CSharp.ConditionalOperators.TernaryOperator">
             <summary>
-            Represents an if condition operator./>.
+            Represents a ternary operator.
             </summary>
         </member>
         <member name="M:Fundamentals.Lang.CSharp.ConditionalOperators.TernaryOperator.GetName(Fundamentals.Lang.CSharp.Color)">
+            <inheritdoc />
+        </member>
+        <member name="T:Fundamentals.Lang.CSharp.ErrorHandling.Exception">
+            <summary>
+            Represents an error handling using exception.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Lang.CSharp.ErrorHandling.Exception.HandleError">
+            <inheritdoc />
+        </member>
+        <member name="T:Fundamentals.Lang.CSharp.ErrorHandling.IErrorHandler">
+            <summary>
+            Exposes an operator that provides the conditional execution.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Lang.CSharp.ErrorHandling.IErrorHandler.HandleError">
+            <summary>
+            Handles a simulated error in the execution.
+            </summary>
+        </member>
+        <member name="T:Fundamentals.Lang.CSharp.ErrorHandling.OutputParameter">
+            <summary>
+            Represents an error handling using an output parameter.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Lang.CSharp.ErrorHandling.OutputParameter.HandleError">
+            <inheritdoc />
+        </member>
+        <member name="T:Fundamentals.Lang.CSharp.ErrorHandling.Result">
+            <summary>
+            Represents the result of the execution.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Lang.CSharp.ErrorHandling.Result.#ctor(System.Boolean,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Fundamentals.Lang.CSharp.ErrorHandling.Result"/> class.
+            </summary>
+            <param name="success">The result flag of operation.</param>
+            <param name="error">The text of the error.</param>
+        </member>
+        <member name="P:Fundamentals.Lang.CSharp.ErrorHandling.Result.Success">
+            <summary>
+            Gets a value indicating whether operation completed with success status.
+            </summary>
+        </member>
+        <member name="P:Fundamentals.Lang.CSharp.ErrorHandling.Result.Failure">
+            <summary>
+            Gets a value indicating whether operation completed with failure status.
+            </summary>
+        </member>
+        <member name="P:Fundamentals.Lang.CSharp.ErrorHandling.Result.Error">
+            <summary>
+            Gets the text of the error.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Lang.CSharp.ErrorHandling.Result.Fail(System.String)">
+            <summary>
+            Constructs the instance of the <see cref="T:Fundamentals.Lang.CSharp.ErrorHandling.Result"/> with failure status.
+            </summary>
+            <param name="message">The text of the error.</param>
+            <returns>The new instance of the result.</returns>
+        </member>
+        <member name="M:Fundamentals.Lang.CSharp.ErrorHandling.Result.Ok">
+            <summary>
+            Constructs the instance of the <see cref="T:Fundamentals.Lang.CSharp.ErrorHandling.Result"/> with success status.
+            </summary>
+            <returns>The new instance of the result.</returns>
+        </member>
+        <member name="T:Fundamentals.Lang.CSharp.ErrorHandling.ReturnCode">
+            <summary>
+            Represents an error handling using error code.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Lang.CSharp.ErrorHandling.ReturnCode.HandleError">
+            <inheritdoc />
+        </member>
+        <member name="T:Fundamentals.Lang.CSharp.ErrorHandling.ReturnResult">
+            <summary>
+            Represents an error handling using result.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Lang.CSharp.ErrorHandling.ReturnResult.HandleError">
             <inheritdoc />
         </member>
     </members>
