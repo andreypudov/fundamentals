@@ -28,6 +28,8 @@
 
   <ItemGroup>
     <Compile Include="Color.fs" />
+    <Compile Include="TypeSystem\ITypeInference.fs" />
+    <Compile Include="TypeSystem\ParametersTypeInference.fs" />
     <Compile Include="ConditionalOperators\IConditionalOperator.fs" />
     <Compile Include="ConditionalOperators\IfExpression.fs" />
     <Compile Include="ConditionalOperators\PatternMatching.fs" />

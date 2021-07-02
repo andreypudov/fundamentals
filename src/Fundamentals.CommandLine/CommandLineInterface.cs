@@ -23,6 +23,7 @@ namespace Fundamentals.CommandLine
                 {
                     typeof(Lang.CSharp.Benchmarks.ConditionalOperators.ConditionalOperator<>).Assembly,
                     typeof(Lang.CSharp.Benchmarks.ErrorHandling.ErrorHandler<>).Assembly,
+                    typeof(Lang.FSharp.Benchmarks.TypeSystem.TypeInference<>).Assembly,
                     typeof(Lang.FSharp.Benchmarks.ConditionalOperators.ConditionalOperator<>).Assembly,
                     typeof(Math.Benchmarks.Fibonacci<>).Assembly,
                     typeof(Sorting.Benchmarks.Sort<>).Assembly,
