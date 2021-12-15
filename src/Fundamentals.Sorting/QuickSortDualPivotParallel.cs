@@ -69,7 +69,7 @@ public class QuickSortDualPivotParallel : ISort
         }
     }
 
-    private static (int p0, int p1) Partition<T>(T[] array, int lo, int hi)
+    private static (int P0, int P1) Partition<T>(T[] array, int lo, int hi)
         where T : IComparable<T>
     {
         if (array[lo].CompareTo(array[hi]) > 0)

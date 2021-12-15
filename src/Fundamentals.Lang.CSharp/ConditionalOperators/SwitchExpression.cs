@@ -30,7 +30,7 @@ public class SwitchExpression : IConditionalOperator
             Color.Navy => "Navy",
             Color.Fuchsia => "Fuchsia",
             Color.Purple => "Purple",
-            _ => "None"
+            _ => "None",
         };
     }
 }
