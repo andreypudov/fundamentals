@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Authors>Andrey Pudov</Authors>
     <Product>Fundamentals</Product>
-    <RepositoryUrl>https://github.com/andreypudov/Fundamentals</RepositoryUrl>
+    <RepositoryUrl>https://github.com/andreypudov/fundamentals</RepositoryUrl>
     <Copyright>Copyright (c) Andrey Pudov. All Rights Reserved. Licensed under the Apache License, Version 2.0. See LICENSE.txt in the project root for license information.</Copyright>
 
     <Nullable>enable</Nullable>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <IsPackable>false</IsPackable>
     <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
     <EnableNETAnalyzers>true</EnableNETAnalyzers>
