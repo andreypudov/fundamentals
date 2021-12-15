@@ -2,13 +2,12 @@
 //     Copyright (c) Andrey Pudov. All Rights Reserved. Licensed under the Apache License, Version 2.0. See LICENSE.txt in the project root for license information.
 // </copyright>
 
-namespace Fundamentals.Lang.CSharp.Benchmarks.ConditionalOperators
+namespace Fundamentals.Lang.CSharp.Benchmarks.ConditionalOperators;
+
+/// <summary>
+/// Represents a benchmark for <see cref="Fundamentals.Lang.CSharp.ConditionalOperators.MultipleIfStatements"/>.
+/// </summary>
+public class MultipleIfStatements : ConditionalOperator<Fundamentals.Lang.CSharp.ConditionalOperators.MultipleIfStatements>
 {
-    /// <summary>
-    /// Represents a benchmark for <see cref="Fundamentals.Lang.CSharp.ConditionalOperators.MultipleIfStatements"/>.
-    /// </summary>
-    public class MultipleIfStatements : ConditionalOperator<Fundamentals.Lang.CSharp.ConditionalOperators.MultipleIfStatements>
-    {
-        // Intentionally left bank
-    }
+    // Intentionally left bank
 }

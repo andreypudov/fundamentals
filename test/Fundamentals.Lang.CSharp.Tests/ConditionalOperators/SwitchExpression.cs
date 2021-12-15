@@ -2,16 +2,15 @@
 //     Copyright (c) Andrey Pudov. All Rights Reserved. Licensed under the Apache License, Version 2.0. See LICENSE.txt in the project root for license information.
 // </copyright>
 
-namespace Fundamentals.Lang.CSharp.Tests.ConditionalOperators
-{
-    using NUnit.Framework;
+namespace Fundamentals.Lang.CSharp.Tests.ConditionalOperators;
 
-    /// <summary>
-    /// Represents a test class for <see cref="Fundamentals.Lang.CSharp.ConditionalOperators.SwitchExpression"/>.
-    /// </summary>
-    [TestFixture]
-    public class SwitchExpression : ConditionalOperator<Fundamentals.Lang.CSharp.ConditionalOperators.SwitchExpression>
-    {
-        // Intentionally left bank
-    }
+using NUnit.Framework;
+
+/// <summary>
+/// Represents a test class for <see cref="Fundamentals.Lang.CSharp.ConditionalOperators.SwitchExpression"/>.
+/// </summary>
+[TestFixture]
+public class SwitchExpression : ConditionalOperator<Fundamentals.Lang.CSharp.ConditionalOperators.SwitchExpression>
+{
+    // Intentionally left bank
 }

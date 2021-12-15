@@ -2,32 +2,30 @@
 //     Copyright (c) Andrey Pudov. All Rights Reserved. Licensed under the Apache License, Version 2.0. See LICENSE.txt in the project root for license information.
 // </copyright>
 
-namespace Fundamentals.Math
+namespace Fundamentals.Math;
+
+using System.Numerics;
+
+/// <summary>
+/// Represents an resursive implementation for <see cref="IFibonacci.Fibonacci(int)"/>.
+/// </summary>
+public class FibonacciRecursive : IFibonacci
 {
-    using System;
-    using System.Numerics;
-
-    /// <summary>
-    /// Represents an resursive implementation for <see cref="IFibonacci.Fibonacci(int)"/>.
-    /// </summary>
-    public class FibonacciRecursive : IFibonacci
+    /// <inheritdoc />
+    public BigInteger Fibonacci(int position)
     {
-        /// <inheritdoc />
-        public BigInteger Fibonacci(int position)
+        if (position < 0)
         {
-            if (position < 0)
-            {
-                throw new ArgumentException(nameof(position));
-            }
-
-            return Compute(position);
+            throw new ArgumentException(nameof(position));
         }
 
-        private static BigInteger Compute(int position) => position switch
-        {
-            0 => 0,
-            1 => 1,
-            _ => Compute(position - 1) + Compute(position - 2),
-        };
+        return Compute(position);
     }
+
+    private static BigInteger Compute(int position) => position switch
+    {
+        0 => 0,
+        1 => 1,
+        _ => Compute(position - 1) + Compute(position - 2),
+    };
 }
