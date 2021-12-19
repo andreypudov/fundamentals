@@ -10,13 +10,13 @@ using System.Collections.Immutable;
 /// Represents an immutable list collection.
 /// </summary>
 /// <typeparam name="TItem">The type of elements in the coolection.</typeparam>
-public class ImmutableListCollection<TItem> : ICollection<IImmutableList<TItem>, TItem>
+public class ImmutableListCollection<TItem> : ICollection<ImmutableList<TItem>, TItem>
 {
     /// <inheritdoc />
-    public IImmutableList<TItem> Add(IImmutableList<TItem> collection, TItem item) =>
+    public ImmutableList<TItem> Add(ImmutableList<TItem> collection, TItem item) =>
         collection.Add(item);
 
     /// <inheritdoc />
-    public IImmutableList<TItem> Remove(IImmutableList<TItem> collection, TItem item) =>
+    public ImmutableList<TItem> Remove(ImmutableList<TItem> collection, TItem item) =>
         collection.Remove(item);
 }

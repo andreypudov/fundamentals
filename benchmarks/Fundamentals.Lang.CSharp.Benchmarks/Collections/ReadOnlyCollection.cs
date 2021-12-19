@@ -9,11 +9,8 @@ using System = System.Collections.ObjectModel;
 /// <summary>
 /// Represents a benchmark for <see cref="CSharp.Collections.ReadOnlyCollection{TItem}"/>.
 /// </summary>
-/// <typeparam name="TItem">The type of elements in the coolection.</typeparam>
-public class ReadOnlyCollection<TItem> : Collection<CSharp.Collections.ReadOnlyCollection<TItem>, System.ReadOnlyCollection<TItem>, TItem>
+public class ReadOnlyCollection : Collection<CSharp.Collections.ReadOnlyCollection<string>, System.ReadOnlyCollection<string>>
 {
-    // Intentionally left bank
-
     /// <inheritdoc />
-    public override System.ReadOnlyCollection<TItem> SmallCollection { get; set; } = new System.ReadOnlyCollection<TItem>(new List<TItem>());
+    public override System.ReadOnlyCollection<string> SmallCollection { get; set; } = new System.ReadOnlyCollection<string>(new List<string>());
 }

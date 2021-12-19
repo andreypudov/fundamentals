@@ -83,7 +83,7 @@
             Sorts the elements in an entire <see cref="T:System.Array"/> using the <see cref="T:System.IComparable`1"/>
             generic interface implementation of each element of the Array.
             </summary>
-            <typeparam name="T">The type of the elements of the array.</typeparam>
+            <typeparam name="T">The type of the elements in the array.</typeparam>
             <param name="array">The one-dimensional, zero-based <see cref="T:System.Array"/> to sort.</param>
             <exception cref="T:System.ArgumentNullException"><c>array</c> is <c>null</c>.</exception>
             <exception cref="T:System.InvalidOperationException">One or more elements in <c>array</c> do not implement the <see cref="T:System.IComparable`1"/> generic interface.</exception>

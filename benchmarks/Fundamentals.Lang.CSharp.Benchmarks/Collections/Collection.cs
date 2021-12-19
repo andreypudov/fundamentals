@@ -12,10 +12,11 @@ using Fundamentals.Lang.CSharp.Collections;
 /// </summary>
 /// <typeparam name="T">The type of the <see cref="ICollection{TCollection, T}"/> implementation.</typeparam>
 /// <typeparam name="TCollection">The type of the coolection.</typeparam>
-/// <typeparam name="TItem">The type of elements in the coolection.</typeparam>
-public abstract class Collection<T, TCollection, TItem>
-    where T : ICollection<TCollection, TItem>, new()
+public abstract class Collection<T, TCollection>
+    where T : ICollection<TCollection, string>, new()
 {
+    private static readonly string ItemValue = string.Join(string.Empty, Enumerable.Range(1, 32).ToArray());
+
     private readonly T instance = new T();
 
     /// <summary>
@@ -24,12 +25,10 @@ public abstract class Collection<T, TCollection, TItem>
     public abstract TCollection SmallCollection { get; set; }
 
     /// <summary>
-    /// Represents a benchmark for adding the element to the collection.
+    /// Represents a benchmark for adding the element to the small collection.
     /// </summary>
-    /// <param name="item">The item to be added to the end of the collection.</param>
-    /// <returns>The new collection with the object added.</returns>
+    /// <returns>The new collection with the item added.</returns>
     [Benchmark]
-    [Arguments(Color.White)]
-    public TCollection Add(TItem item) =>
-        this.instance.Add(this.SmallCollection, item);
+    public TCollection AddToSmallCollection() =>
+        this.instance.Add(this.SmallCollection, ItemValue);
 }

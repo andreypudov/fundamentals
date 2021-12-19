@@ -1,10 +1,44 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0"?>
 <doc>
-<assembly><name>Fundamentals.Lang.FSharp.Benchmarks</name></assembly>
-<members>
-</members>
-</doc>
-er name="T:Fundamentals.Lang.CSharp.Benchmarks.ConditionalOperators.ConditionalOperator`1">
+    <assembly>
+        <name>Fundamentals.Lang.CSharp.Benchmarks</name>
+    </assembly>
+    <members>
+        <member name="T:Fundamentals.Lang.CSharp.Benchmarks.Collections.Collection`2">
+            <summary>
+            Represents a base benchmark for collections./>.
+            </summary>
+            <typeparam name="T">The type of the <see cref="T:Fundamentals.Lang.CSharp.Collections.ICollection`2"/> implementation.</typeparam>
+            <typeparam name="TCollection">The type of the coolection.</typeparam>
+        </member>
+        <member name="P:Fundamentals.Lang.CSharp.Benchmarks.Collections.Collection`2.SmallCollection">
+            <summary>
+            Gets or sets the small collection of items.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Lang.CSharp.Benchmarks.Collections.Collection`2.AddToSmallColelction">
+            <summary>
+            Represents a benchmark for adding the element to the small collection.
+            </summary>
+            <returns>The new collection with the item added.</returns>
+        </member>
+        <member name="T:Fundamentals.Lang.CSharp.Benchmarks.Collections.ImmutableListCollection">
+            <summary>
+            Represents a benchmark for <see cref="T:Fundamentals.Lang.CSharp.Collections.ImmutableListCollection`1"/>.
+            </summary>
+        </member>
+        <member name="P:Fundamentals.Lang.CSharp.Benchmarks.Collections.ImmutableListCollection.SmallCollection">
+            <inheritdoc />
+        </member>
+        <member name="T:Fundamentals.Lang.CSharp.Benchmarks.Collections.ReadOnlyCollection">
+            <summary>
+            Represents a benchmark for <see cref="T:Fundamentals.Lang.CSharp.Collections.ReadOnlyCollection`1"/>.
+            </summary>
+        </member>
+        <member name="P:Fundamentals.Lang.CSharp.Benchmarks.Collections.ReadOnlyCollection.SmallCollection">
+            <inheritdoc />
+        </member>
+        <member name="T:Fundamentals.Lang.CSharp.Benchmarks.ConditionalOperators.ConditionalOperator`1">
             <summary>
             Represents a base benchmark for conditional operators./>.
             </summary>
