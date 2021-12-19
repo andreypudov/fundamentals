@@ -16,7 +16,7 @@
             Gets or sets the small collection of items.
             </summary>
         </member>
-        <member name="M:Fundamentals.Lang.CSharp.Benchmarks.Collections.Collection`2.AddToSmallColelction">
+        <member name="M:Fundamentals.Lang.CSharp.Benchmarks.Collections.Collection`2.AddToSmallCollection">
             <summary>
             Represents a benchmark for adding the element to the small collection.
             </summary>
@@ -28,6 +28,22 @@
             </summary>
         </member>
         <member name="P:Fundamentals.Lang.CSharp.Benchmarks.Collections.ImmutableListCollection.SmallCollection">
+            <inheritdoc />
+        </member>
+        <member name="T:Fundamentals.Lang.CSharp.Benchmarks.Collections.LinkedListCollection">
+            <summary>
+            Represents a benchmark for <see cref="T:Fundamentals.Lang.CSharp.Collections.LinkedListCollection`1"/>.
+            </summary>
+        </member>
+        <member name="P:Fundamentals.Lang.CSharp.Benchmarks.Collections.LinkedListCollection.SmallCollection">
+            <inheritdoc />
+        </member>
+        <member name="T:Fundamentals.Lang.CSharp.Benchmarks.Collections.ListCollection">
+            <summary>
+            Represents a benchmark for <see cref="T:Fundamentals.Lang.CSharp.Collections.ListCollection`1"/>.
+            </summary>
+        </member>
+        <member name="P:Fundamentals.Lang.CSharp.Benchmarks.Collections.ListCollection.SmallCollection">
             <inheritdoc />
         </member>
         <member name="T:Fundamentals.Lang.CSharp.Benchmarks.Collections.ReadOnlyCollection">

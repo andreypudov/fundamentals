@@ -39,6 +39,30 @@
         <member name="M:Fundamentals.Lang.CSharp.Collections.ImmutableListCollection`1.Remove(System.Collections.Immutable.ImmutableList{`0},`0)">
             <inheritdoc />
         </member>
+        <member name="T:Fundamentals.Lang.CSharp.Collections.LinkedListCollection`1">
+            <summary>
+            Represents an immutable list collection.
+            </summary>
+            <typeparam name="TItem">The type of elements in the coolection.</typeparam>
+        </member>
+        <member name="M:Fundamentals.Lang.CSharp.Collections.LinkedListCollection`1.Add(System.Collections.Generic.LinkedList{`0},`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Fundamentals.Lang.CSharp.Collections.LinkedListCollection`1.Remove(System.Collections.Generic.LinkedList{`0},`0)">
+            <inheritdoc />
+        </member>
+        <member name="T:Fundamentals.Lang.CSharp.Collections.ListCollection`1">
+            <summary>
+            Represents an immutable list collection.
+            </summary>
+            <typeparam name="TItem">The type of elements in the coolection.</typeparam>
+        </member>
+        <member name="M:Fundamentals.Lang.CSharp.Collections.ListCollection`1.Add(System.Collections.Generic.List{`0},`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Fundamentals.Lang.CSharp.Collections.ListCollection`1.Remove(System.Collections.Generic.List{`0},`0)">
+            <inheritdoc />
+        </member>
         <member name="T:Fundamentals.Lang.CSharp.Collections.ReadOnlyCollection`1">
             <summary>
             Represents an read only collection.
