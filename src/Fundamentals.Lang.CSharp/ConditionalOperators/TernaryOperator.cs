@@ -10,9 +10,8 @@ namespace Fundamentals.Lang.CSharp.ConditionalOperators;
 public class TernaryOperator : IConditionalOperator
 {
     /// <inheritdoc />
-    public string GetName(Color color)
-    {
-        return (color == Color.White) ? "White"
+    public string GetName(Color color) =>
+        (color == Color.White) ? "White"
             : (color == Color.Silver) ? "Silver"
             : (color == Color.Gray) ? "Gray"
             : (color == Color.Black) ? "Black"
@@ -29,5 +28,4 @@ public class TernaryOperator : IConditionalOperator
             : (color == Color.Fuchsia) ? "Fuchsia"
             : (color == Color.Purple) ? "Purple"
             : "None";
-    }
 }

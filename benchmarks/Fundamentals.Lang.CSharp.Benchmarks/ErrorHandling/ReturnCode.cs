@@ -5,9 +5,9 @@
 namespace Fundamentals.Lang.CSharp.Benchmarks.ErrorHandling;
 
 /// <summary>
-/// Represents a benchmark for <see cref="Fundamentals.Lang.CSharp.ErrorHandling.ReturnCode"/>.
+/// Represents a benchmark for <see cref="CSharp.ErrorHandling.ReturnCode"/>.
 /// </summary>
-public class ReturnCode : ErrorHandler<Fundamentals.Lang.CSharp.ErrorHandling.ReturnCode>
+public class ReturnCode : ErrorHandler<CSharp.ErrorHandling.ReturnCode>
 {
     // Intentionally left bank
 }

@@ -17,8 +17,5 @@ public class ReturnCode : IErrorHandler
         int errorCode = DummyMethod();
     }
 
-    private static int DummyMethod()
-    {
-        return ExitFailure;
-    }
+    private static int DummyMethod() => ExitFailure;
 }

@@ -12,10 +12,7 @@ public class OutputParameter : IErrorHandler
     private const int ExitFailure = -1;
 
     /// <inheritdoc />
-    public void HandleError()
-    {
-        DummyMethod(out int errorCode);
-    }
+    public void HandleError() => DummyMethod(out int errorCode);
 
     private static void DummyMethod(out int errorCode)
     {

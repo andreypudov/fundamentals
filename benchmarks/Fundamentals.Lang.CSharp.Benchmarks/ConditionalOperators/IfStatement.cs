@@ -5,9 +5,9 @@
 namespace Fundamentals.Lang.CSharp.Benchmarks.ConditionalOperators;
 
 /// <summary>
-/// Represents a benchmark for <see cref="Fundamentals.Lang.CSharp.ConditionalOperators.IfStatement"/>.
+/// Represents a benchmark for <see cref="CSharp.ConditionalOperators.IfStatement"/>.
 /// </summary>
-public class IfStatement : ConditionalOperator<Fundamentals.Lang.CSharp.ConditionalOperators.IfStatement>
+public class IfStatement : ConditionalOperator<CSharp.ConditionalOperators.IfStatement>
 {
     // Intentionally left bank
 }

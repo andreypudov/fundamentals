@@ -40,17 +40,11 @@ public class Result
     /// </summary>
     /// <param name="message">The text of the error.</param>
     /// <returns>The new instance of the result.</returns>
-    public static Result Fail(string message)
-    {
-        return new Result(false, message);
-    }
+    public static Result Fail(string message) => new Result(false, message);
 
     /// <summary>
     /// Constructs the instance of the <see cref="Result"/> with success status.
     /// </summary>
     /// <returns>The new instance of the result.</returns>
-    public static Result Ok()
-    {
-        return new Result(true, string.Empty);
-    }
+    public static Result Ok() => new Result(true, string.Empty);
 }

@@ -22,8 +22,5 @@ public class Exception : IErrorHandler
         }
     }
 
-    private static void DummyMethod()
-    {
-        throw new System.Exception();
-    }
+    private static void DummyMethod() => throw new System.Exception();
 }

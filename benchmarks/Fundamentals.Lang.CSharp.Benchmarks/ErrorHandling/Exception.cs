@@ -5,9 +5,9 @@
 namespace Fundamentals.Lang.CSharp.Benchmarks.ErrorHandling;
 
 /// <summary>
-/// Represents a benchmark for <see cref="Fundamentals.Lang.CSharp.ErrorHandling.Exception"/>.
+/// Represents a benchmark for <see cref="CSharp.ErrorHandling.Exception"/>.
 /// </summary>
-public class Exception : ErrorHandler<Fundamentals.Lang.CSharp.ErrorHandling.Exception>
+public class Exception : ErrorHandler<CSharp.ErrorHandling.Exception>
 {
     // Intentionally left bank
 }

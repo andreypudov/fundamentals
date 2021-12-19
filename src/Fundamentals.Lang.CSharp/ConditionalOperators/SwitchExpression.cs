@@ -10,9 +10,8 @@ namespace Fundamentals.Lang.CSharp.ConditionalOperators;
 public class SwitchExpression : IConditionalOperator
 {
     /// <inheritdoc />
-    public string GetName(Color color)
-    {
-        return color switch
+    public string GetName(Color color) =>
+        color switch
         {
             Color.White => "White",
             Color.Silver => "Silver",
@@ -32,5 +31,4 @@ public class SwitchExpression : IConditionalOperator
             Color.Purple => "Purple",
             _ => "None",
         };
-    }
 }

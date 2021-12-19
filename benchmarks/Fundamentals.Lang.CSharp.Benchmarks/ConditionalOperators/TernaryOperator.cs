@@ -5,9 +5,9 @@
 namespace Fundamentals.Lang.CSharp.Benchmarks.ConditionalOperators;
 
 /// <summary>
-/// Represents a benchmark for <see cref="Fundamentals.Lang.CSharp.ConditionalOperators.TernaryOperator"/>.
+/// Represents a benchmark for <see cref="CSharp.ConditionalOperators.TernaryOperator"/>.
 /// </summary>
-public class TernaryOperator : ConditionalOperator<Fundamentals.Lang.CSharp.ConditionalOperators.TernaryOperator>
+public class TernaryOperator : ConditionalOperator<CSharp.ConditionalOperators.TernaryOperator>
 {
     // Intentionally left bank
 }
