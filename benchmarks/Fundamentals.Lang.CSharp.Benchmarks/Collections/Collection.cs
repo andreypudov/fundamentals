@@ -15,20 +15,28 @@ using Fundamentals.Lang.CSharp.Collections;
 public abstract class Collection<T, TCollection>
     where T : ICollection<TCollection, string>, new()
 {
+    private const int NumberOfIterations = 128;
+
     private static readonly string ItemValue = string.Join(string.Empty, Enumerable.Range(1, 32).ToArray());
 
-    private readonly T instance = new T();
+    private readonly T instance = new();
 
     /// <summary>
-    /// Gets or sets the small collection of items.
+    /// Gets the small collection of items.
     /// </summary>
-    public abstract TCollection SmallCollection { get; set; }
+    public abstract TCollection EmptyCollection { get; }
 
     /// <summary>
     /// Represents a benchmark for adding the element to the small collection.
     /// </summary>
-    /// <returns>The new collection with the item added.</returns>
     [Benchmark]
-    public TCollection AddToSmallCollection() =>
-        this.instance.Add(this.SmallCollection, ItemValue);
+    public void AddToEmptyCollection()
+    {
+        var emptyColleciton = this.EmptyCollection;
+
+        for (int iteration = 0; iteration < NumberOfIterations; ++iteration)
+        {
+            this.instance.Add(emptyColleciton, $"{iteration}");
+        }
+    }
 }

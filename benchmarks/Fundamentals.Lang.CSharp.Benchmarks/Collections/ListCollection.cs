@@ -10,5 +10,5 @@ namespace Fundamentals.Lang.CSharp.Benchmarks.Collections;
 public class ListCollection : Collection<CSharp.Collections.ListCollection<string>, List<string>>
 {
     /// <inheritdoc />
-    public override List<string> SmallCollection { get; set; } = new List<string>();
+    public override List<string> EmptyCollection => new List<string>();
 }
