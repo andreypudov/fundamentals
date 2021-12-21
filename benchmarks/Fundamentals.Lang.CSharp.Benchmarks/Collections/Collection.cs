@@ -36,7 +36,7 @@ public abstract class Collection<T, TCollection>
 
         for (int iteration = 0; iteration < NumberOfIterations; ++iteration)
         {
-            this.instance.Add(emptyColleciton, $"{iteration}");
+            emptyColleciton = this.instance.Add(emptyColleciton, $"{iteration}");
         }
     }
 }
