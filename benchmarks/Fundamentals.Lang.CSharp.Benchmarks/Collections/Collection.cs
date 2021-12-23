@@ -14,29 +14,65 @@ using Fundamentals.Lang.CSharp.Collections;
 /// <typeparam name="TCollection">The type of the coolection.</typeparam>
 public abstract class Collection<T, TCollection>
     where T : ICollection<TCollection, string>, new()
+    where TCollection : System.Collections.ICollection
 {
-    private const int NumberOfIterations = 128;
+    /// <summary>
+    /// The data for the empty collection.
+    /// </summary>
+    public static readonly string[] EmptyData = Array.Empty<string>();
 
-    private static readonly string ItemValue = string.Join(string.Empty, Enumerable.Range(1, 32).ToArray());
+    /// <summary>
+    /// The data for the empty collection.
+    /// </summary>
+    public static readonly string[] SmallData = Enumerable.Range(1, (int)Math.Pow(2, 10)).Select(i => $"{i}").ToArray();
+
+    /// <summary>
+    /// The data for the empty collection.
+    /// </summary>
+    public static readonly string[] LargeData = Enumerable.Range(1, (int)Math.Pow(2, 15)).Select(i => $"{i}").ToArray();
+
+    private const int NumberOfIterations = 128;
 
     private readonly T instance = new();
 
     /// <summary>
-    /// Gets the small collection of items.
+    /// Gets the empty collection of items.
     /// </summary>
     public abstract TCollection EmptyCollection { get; }
 
     /// <summary>
-    /// Represents a benchmark for adding the element to the small collection.
+    /// Gets the small collection of items.
     /// </summary>
+    public abstract TCollection SmallCollection { get; }
+
+    /// <summary>
+    /// Gets the large collection of items.
+    /// </summary>
+    public abstract TCollection LargeCollection { get; }
+
+    /// <summary>
+    /// Represents a benchmark for adding the element to the empty collection.
+    /// </summary>
+    /// <param name="type">The type of the collection.</param>
     [Benchmark]
-    public void AddToEmptyCollection()
+    [Arguments(CollectionType.Empty)]
+    [Arguments(CollectionType.Small)]
+    [Arguments(CollectionType.Large)]
+    public void Add(CollectionType type)
     {
-        var emptyColleciton = this.EmptyCollection;
+        var collection = this.GetCollection(type);
 
         for (int iteration = 0; iteration < NumberOfIterations; ++iteration)
         {
-            emptyColleciton = this.instance.Add(emptyColleciton, $"{iteration}");
+            collection = this.instance.Add(collection, $"{iteration}");
         }
     }
+
+    private TCollection GetCollection(CollectionType type) => type switch
+    {
+        CollectionType.Empty => this.EmptyCollection,
+        CollectionType.Small => this.SmallCollection,
+        CollectionType.Large => this.LargeCollection,
+        _ => throw new ArgumentOutOfRangeException(nameof(type), $"Not expected collection type: {type}"),
+    };
 }

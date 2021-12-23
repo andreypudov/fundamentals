@@ -9,8 +9,12 @@ namespace Fundamentals.Lang.CSharp.Benchmarks.Collections;
 /// </summary>
 public class LinkedListCollection : Collection<CSharp.Collections.LinkedListCollection<string>, LinkedList<string>>
 {
-    private static readonly string[] Empty = Array.Empty<string>();
+    /// <inheritdoc />
+    public override LinkedList<string> EmptyCollection => new LinkedList<string>(EmptyData);
 
     /// <inheritdoc />
-    public override LinkedList<string> EmptyCollection => new LinkedList<string>(Empty);
+    public override LinkedList<string> SmallCollection => new LinkedList<string>(SmallData);
+
+    /// <inheritdoc />
+    public override LinkedList<string> LargeCollection => new LinkedList<string>(LargeData);
 }

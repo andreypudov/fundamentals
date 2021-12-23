@@ -11,8 +11,12 @@ using System = System.Collections.ObjectModel;
 /// </summary>
 public class ReadOnlyCollection : Collection<CSharp.Collections.ReadOnlyCollection<string>, System.ReadOnlyCollection<string>>
 {
-    private static readonly string[] Empty = Array.Empty<string>();
+    /// <inheritdoc />
+    public override System.ReadOnlyCollection<string> EmptyCollection => new System.ReadOnlyCollection<string>(EmptyData);
 
     /// <inheritdoc />
-    public override System.ReadOnlyCollection<string> EmptyCollection => new System.ReadOnlyCollection<string>(Empty);
+    public override System.ReadOnlyCollection<string> SmallCollection => new System.ReadOnlyCollection<string>(SmallData);
+
+    /// <inheritdoc />
+    public override System.ReadOnlyCollection<string> LargeCollection => new System.ReadOnlyCollection<string>(LargeData);
 }

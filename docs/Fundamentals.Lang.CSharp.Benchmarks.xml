@@ -11,14 +11,60 @@
             <typeparam name="T">The type of the <see cref="T:Fundamentals.Lang.CSharp.Collections.ICollection`2"/> implementation.</typeparam>
             <typeparam name="TCollection">The type of the coolection.</typeparam>
         </member>
+        <member name="F:Fundamentals.Lang.CSharp.Benchmarks.Collections.Collection`2.EmptyData">
+            <summary>
+            The data for the empty collection.
+            </summary>
+        </member>
+        <member name="F:Fundamentals.Lang.CSharp.Benchmarks.Collections.Collection`2.SmallData">
+            <summary>
+            The data for the empty collection.
+            </summary>
+        </member>
+        <member name="F:Fundamentals.Lang.CSharp.Benchmarks.Collections.Collection`2.LargeData">
+            <summary>
+            The data for the empty collection.
+            </summary>
+        </member>
         <member name="P:Fundamentals.Lang.CSharp.Benchmarks.Collections.Collection`2.EmptyCollection">
+            <summary>
+            Gets the empty collection of items.
+            </summary>
+        </member>
+        <member name="P:Fundamentals.Lang.CSharp.Benchmarks.Collections.Collection`2.SmallCollection">
             <summary>
             Gets the small collection of items.
             </summary>
         </member>
-        <member name="M:Fundamentals.Lang.CSharp.Benchmarks.Collections.Collection`2.AddToEmptyCollection">
+        <member name="P:Fundamentals.Lang.CSharp.Benchmarks.Collections.Collection`2.LargeCollection">
             <summary>
-            Represents a benchmark for adding the element to the small collection.
+            Gets the large collection of items.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Lang.CSharp.Benchmarks.Collections.Collection`2.Add(Fundamentals.Lang.CSharp.Benchmarks.Collections.CollectionType)">
+            <summary>
+            Represents a benchmark for adding the element to the empty collection.
+            </summary>
+            <param name="type">The type of the collection.</param>
+        </member>
+        <member name="T:Fundamentals.Lang.CSharp.Benchmarks.Collections.CollectionType">
+            <summary>
+            Represents the type of collection.
+            </summary>
+        </member>
+        <member name="F:Fundamentals.Lang.CSharp.Benchmarks.Collections.CollectionType.Empty">
+            <summary>
+            Represents the empty type of colleciton.
+            </summary>
+        </member>
+        <member name="F:Fundamentals.Lang.CSharp.Benchmarks.Collections.CollectionType.Small">
+            <summary>
+            Represents the small type of colleciton.
+            </summary>
+        </member>
+        <member name="F:Fundamentals.Lang.CSharp.Benchmarks.Collections.CollectionType.Large">
+            <summary>
+            Represents the large type of colleciton.
             </summary>
         </member>
         <member name="T:Fundamentals.Lang.CSharp.Benchmarks.Collections.ImmutableListCollection">
@@ -29,12 +75,24 @@
         <member name="P:Fundamentals.Lang.CSharp.Benchmarks.Collections.ImmutableListCollection.EmptyCollection">
             <inheritdoc />
         </member>
+        <member name="P:Fundamentals.Lang.CSharp.Benchmarks.Collections.ImmutableListCollection.SmallCollection">
+            <inheritdoc />
+        </member>
+        <member name="P:Fundamentals.Lang.CSharp.Benchmarks.Collections.ImmutableListCollection.LargeCollection">
+            <inheritdoc />
+        </member>
         <member name="T:Fundamentals.Lang.CSharp.Benchmarks.Collections.LinkedListCollection">
             <summary>
             Represents a benchmark for <see cref="T:Fundamentals.Lang.CSharp.Collections.LinkedListCollection`1"/>.
             </summary>
         </member>
         <member name="P:Fundamentals.Lang.CSharp.Benchmarks.Collections.LinkedListCollection.EmptyCollection">
+            <inheritdoc />
+        </member>
+        <member name="P:Fundamentals.Lang.CSharp.Benchmarks.Collections.LinkedListCollection.SmallCollection">
+            <inheritdoc />
+        </member>
+        <member name="P:Fundamentals.Lang.CSharp.Benchmarks.Collections.LinkedListCollection.LargeCollection">
             <inheritdoc />
         </member>
         <member name="T:Fundamentals.Lang.CSharp.Benchmarks.Collections.ListCollection">
@@ -45,12 +103,24 @@
         <member name="P:Fundamentals.Lang.CSharp.Benchmarks.Collections.ListCollection.EmptyCollection">
             <inheritdoc />
         </member>
+        <member name="P:Fundamentals.Lang.CSharp.Benchmarks.Collections.ListCollection.SmallCollection">
+            <inheritdoc />
+        </member>
+        <member name="P:Fundamentals.Lang.CSharp.Benchmarks.Collections.ListCollection.LargeCollection">
+            <inheritdoc />
+        </member>
         <member name="T:Fundamentals.Lang.CSharp.Benchmarks.Collections.ReadOnlyCollection">
             <summary>
             Represents a benchmark for <see cref="T:Fundamentals.Lang.CSharp.Collections.ReadOnlyCollection`1"/>.
             </summary>
         </member>
         <member name="P:Fundamentals.Lang.CSharp.Benchmarks.Collections.ReadOnlyCollection.EmptyCollection">
+            <inheritdoc />
+        </member>
+        <member name="P:Fundamentals.Lang.CSharp.Benchmarks.Collections.ReadOnlyCollection.SmallCollection">
+            <inheritdoc />
+        </member>
+        <member name="P:Fundamentals.Lang.CSharp.Benchmarks.Collections.ReadOnlyCollection.LargeCollection">
             <inheritdoc />
         </member>
         <member name="T:Fundamentals.Lang.CSharp.Benchmarks.ConditionalOperators.ConditionalOperator`1">
