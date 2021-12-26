@@ -20,6 +20,14 @@ public interface ICollection<TCollection, TItem>
     TCollection Add(TCollection collection, TItem item);
 
     /// <summary>
+    /// Finds the first node that contains the specified value.
+    /// </summary>
+    /// <param name="collection">The instance of the collection.</param>
+    /// <param name="value">The value to locate in the collection.</param>
+    /// <returns>The first node/value that contains the specified value, if found; otherwise, null.</returns>
+    TItem? Find(TCollection collection, TItem value);
+
+    /// <summary>
     /// Removes the first occurrence of a specific object from the collection.
     /// </summary>
     /// <param name="collection">The instance of the collection.</param>

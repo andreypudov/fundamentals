@@ -12,9 +12,6 @@ using System = System.Collections.ObjectModel;
 public class ReadOnlyCollection : Collection<CSharp.Collections.ReadOnlyCollection<string>, System.ReadOnlyCollection<string>>
 {
     /// <inheritdoc />
-    public override System.ReadOnlyCollection<string> EmptyCollection => new System.ReadOnlyCollection<string>(EmptyData);
-
-    /// <inheritdoc />
     public override System.ReadOnlyCollection<string> SmallCollection => new System.ReadOnlyCollection<string>(SmallData);
 
     /// <inheritdoc />

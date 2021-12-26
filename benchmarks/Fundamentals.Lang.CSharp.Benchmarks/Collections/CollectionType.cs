@@ -10,11 +10,6 @@ namespace Fundamentals.Lang.CSharp.Benchmarks.Collections;
 public enum CollectionType
 {
     /// <summary>
-    /// Represents the empty type of colleciton.
-    /// </summary>
-    Empty,
-
-    /// <summary>
     /// Represents the small type of colleciton.
     /// </summary>
     Small,

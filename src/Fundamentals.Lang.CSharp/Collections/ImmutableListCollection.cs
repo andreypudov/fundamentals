@@ -17,6 +17,10 @@ public class ImmutableListCollection<TItem> : ICollection<ImmutableList<TItem>, 
         collection.Add(item);
 
     /// <inheritdoc />
+    public TItem? Find(ImmutableList<TItem> collection, TItem value) =>
+        collection.Find(item => item!.Equals(value));
+
+    /// <inheritdoc />
     public ImmutableList<TItem> Remove(ImmutableList<TItem> collection, TItem item) =>
         collection.Remove(item);
 }

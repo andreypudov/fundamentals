@@ -26,11 +26,6 @@
             The data for the empty collection.
             </summary>
         </member>
-        <member name="P:Fundamentals.Lang.CSharp.Benchmarks.Collections.Collection`2.EmptyCollection">
-            <summary>
-            Gets the empty collection of items.
-            </summary>
-        </member>
         <member name="P:Fundamentals.Lang.CSharp.Benchmarks.Collections.Collection`2.SmallCollection">
             <summary>
             Gets the small collection of items.
@@ -43,18 +38,25 @@
         </member>
         <member name="M:Fundamentals.Lang.CSharp.Benchmarks.Collections.Collection`2.Add(Fundamentals.Lang.CSharp.Benchmarks.Collections.CollectionType)">
             <summary>
-            Represents a benchmark for adding the element to the empty collection.
+            Represents a benchmark for adding the element to the given collection.
+            </summary>
+            <param name="type">The type of the collection.</param>
+        </member>
+        <member name="M:Fundamentals.Lang.CSharp.Benchmarks.Collections.Collection`2.Find(Fundamentals.Lang.CSharp.Benchmarks.Collections.CollectionType)">
+            <summary>
+            Represents a benchmark for finding the element int the given collection.
+            </summary>
+            <param name="type">The type of the collection.</param>
+        </member>
+        <member name="M:Fundamentals.Lang.CSharp.Benchmarks.Collections.Collection`2.Remove(Fundamentals.Lang.CSharp.Benchmarks.Collections.CollectionType)">
+            <summary>
+            Represents a benchmark for removing the element from the given collection.
             </summary>
             <param name="type">The type of the collection.</param>
         </member>
         <member name="T:Fundamentals.Lang.CSharp.Benchmarks.Collections.CollectionType">
             <summary>
             Represents the type of collection.
-            </summary>
-        </member>
-        <member name="F:Fundamentals.Lang.CSharp.Benchmarks.Collections.CollectionType.Empty">
-            <summary>
-            Represents the empty type of colleciton.
             </summary>
         </member>
         <member name="F:Fundamentals.Lang.CSharp.Benchmarks.Collections.CollectionType.Small">
@@ -72,9 +74,6 @@
             Represents a benchmark for <see cref="T:Fundamentals.Lang.CSharp.Collections.ImmutableListCollection`1"/>.
             </summary>
         </member>
-        <member name="P:Fundamentals.Lang.CSharp.Benchmarks.Collections.ImmutableListCollection.EmptyCollection">
-            <inheritdoc />
-        </member>
         <member name="P:Fundamentals.Lang.CSharp.Benchmarks.Collections.ImmutableListCollection.SmallCollection">
             <inheritdoc />
         </member>
@@ -85,9 +84,6 @@
             <summary>
             Represents a benchmark for <see cref="T:Fundamentals.Lang.CSharp.Collections.LinkedListCollection`1"/>.
             </summary>
-        </member>
-        <member name="P:Fundamentals.Lang.CSharp.Benchmarks.Collections.LinkedListCollection.EmptyCollection">
-            <inheritdoc />
         </member>
         <member name="P:Fundamentals.Lang.CSharp.Benchmarks.Collections.LinkedListCollection.SmallCollection">
             <inheritdoc />
@@ -100,9 +96,6 @@
             Represents a benchmark for <see cref="T:Fundamentals.Lang.CSharp.Collections.ListCollection`1"/>.
             </summary>
         </member>
-        <member name="P:Fundamentals.Lang.CSharp.Benchmarks.Collections.ListCollection.EmptyCollection">
-            <inheritdoc />
-        </member>
         <member name="P:Fundamentals.Lang.CSharp.Benchmarks.Collections.ListCollection.SmallCollection">
             <inheritdoc />
         </member>
@@ -113,9 +106,6 @@
             <summary>
             Represents a benchmark for <see cref="T:Fundamentals.Lang.CSharp.Collections.ReadOnlyCollection`1"/>.
             </summary>
-        </member>
-        <member name="P:Fundamentals.Lang.CSharp.Benchmarks.Collections.ReadOnlyCollection.EmptyCollection">
-            <inheritdoc />
         </member>
         <member name="P:Fundamentals.Lang.CSharp.Benchmarks.Collections.ReadOnlyCollection.SmallCollection">
             <inheritdoc />

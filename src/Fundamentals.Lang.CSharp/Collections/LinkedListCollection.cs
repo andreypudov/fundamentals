@@ -18,6 +18,13 @@ public class LinkedListCollection<TItem> : ICollection<LinkedList<TItem>, TItem>
     }
 
     /// <inheritdoc />
+    public TItem? Find(LinkedList<TItem> collection, TItem value)
+    {
+        var node = collection.Find(value);
+        return node is null ? default(TItem?) : node.Value;
+    }
+
+    /// <inheritdoc />
     public LinkedList<TItem> Remove(LinkedList<TItem> collection, TItem item)
     {
         collection.Remove(item);

@@ -12,9 +12,6 @@ using System = System.Collections.Immutable;
 public class ImmutableListCollection : Collection<CSharp.Collections.ImmutableListCollection<string>, System.ImmutableList<string>>
 {
     /// <inheritdoc />
-    public override System.ImmutableList<string> EmptyCollection => System.ImmutableList.Create(EmptyData);
-
-    /// <inheritdoc />
     public override System.ImmutableList<string> SmallCollection => System.ImmutableList.Create(SmallData);
 
     /// <inheritdoc />
