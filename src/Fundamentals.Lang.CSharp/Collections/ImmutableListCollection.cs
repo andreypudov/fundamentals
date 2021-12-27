@@ -15,4 +15,8 @@ public class ImmutableListCollection<TItem> : ICollection<ImmutableList<TItem>, 
     /// <inheritdoc />
     public TItem? Find(ImmutableList<TItem> collection, TItem value) =>
         collection.Find(item => item!.Equals(value));
+
+    /// <inheritdoc />
+    public IEnumerable<TItem> Filter(ImmutableList<TItem> collection, Func<TItem, bool> predicate) =>
+        collection.Where(predicate);
 }

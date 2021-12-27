@@ -80,6 +80,21 @@ public abstract class Collection<T, TCollection>
         }
     }
 
+    /// <summary>
+    /// Represents a benchmark for filtering the odd elements from the given collection.
+    /// </summary>
+    /// <param name="type">The type of the collection.</param>
+    [Benchmark]
+    [Arguments(CollectionType.Small)]
+    [Arguments(CollectionType.Large)]
+    public void Filter(CollectionType type)
+    {
+        var collection = this.GetCollection(type);
+        static bool Predicate(string item) => item.Length % 2 == 0;
+
+        this.instance.Filter(this.GetCollection(type), Predicate);
+    }
+
     private TCollection GetCollection(CollectionType type) => type switch
     {
         CollectionType.Small => this.SmallCollection,

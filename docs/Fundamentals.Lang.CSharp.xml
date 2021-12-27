@@ -19,6 +19,14 @@
             <param name="value">The value to locate in the collection.</param>
             <returns>The first node/value that contains the specified value, if found; otherwise, null.</returns>
         </member>
+        <member name="M:Fundamentals.Lang.CSharp.Collections.ICollection`2.Filter(`0,System.Func{`1,System.Boolean})">
+            <summary>
+            Filters a sequence of values based on a predicate.
+            </summary>
+            <param name="collection">The collection to filter.</param>
+            <param name="predicate">A function to test each element for a condition.</param>
+            <returns>An IEnumerable{TItem} that contains elements from the input sequence that satisfy the condition.</returns>
+        </member>
         <member name="T:Fundamentals.Lang.CSharp.Collections.ImmutableArrayCollection`1">
             <summary>
             Represents an immutable array collection.
@@ -26,6 +34,9 @@
             <typeparam name="TItem">The type of elements in the collection.</typeparam>
         </member>
         <member name="M:Fundamentals.Lang.CSharp.Collections.ImmutableArrayCollection`1.Find(System.Collections.Immutable.ImmutableArray{`0},`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Fundamentals.Lang.CSharp.Collections.ImmutableArrayCollection`1.Filter(System.Collections.Immutable.ImmutableArray{`0},System.Func{`0,System.Boolean})">
             <inheritdoc />
         </member>
         <member name="T:Fundamentals.Lang.CSharp.Collections.ImmutableListCollection`1">
@@ -37,6 +48,9 @@
         <member name="M:Fundamentals.Lang.CSharp.Collections.ImmutableListCollection`1.Find(System.Collections.Immutable.ImmutableList{`0},`0)">
             <inheritdoc />
         </member>
+        <member name="M:Fundamentals.Lang.CSharp.Collections.ImmutableListCollection`1.Filter(System.Collections.Immutable.ImmutableList{`0},System.Func{`0,System.Boolean})">
+            <inheritdoc />
+        </member>
         <member name="T:Fundamentals.Lang.CSharp.Collections.LinkedListCollection`1">
             <summary>
             Represents an immutable list collection.
@@ -44,6 +58,9 @@
             <typeparam name="TItem">The type of elements in the collection.</typeparam>
         </member>
         <member name="M:Fundamentals.Lang.CSharp.Collections.LinkedListCollection`1.Find(System.Collections.Generic.LinkedList{`0},`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Fundamentals.Lang.CSharp.Collections.LinkedListCollection`1.Filter(System.Collections.Generic.LinkedList{`0},System.Func{`0,System.Boolean})">
             <inheritdoc />
         </member>
         <member name="T:Fundamentals.Lang.CSharp.Collections.ListCollection`1">
@@ -55,6 +72,9 @@
         <member name="M:Fundamentals.Lang.CSharp.Collections.ListCollection`1.Find(System.Collections.Generic.List{`0},`0)">
             <inheritdoc />
         </member>
+        <member name="M:Fundamentals.Lang.CSharp.Collections.ListCollection`1.Filter(System.Collections.Generic.List{`0},System.Func{`0,System.Boolean})">
+            <inheritdoc />
+        </member>
         <member name="T:Fundamentals.Lang.CSharp.Collections.ReadOnlyCollection`1">
             <summary>
             Represents an read only collection.
@@ -62,6 +82,9 @@
             <typeparam name="TItem">The type of elements in the collection.</typeparam>
         </member>
         <member name="M:Fundamentals.Lang.CSharp.Collections.ReadOnlyCollection`1.Find(System.Collections.ObjectModel.ReadOnlyCollection{`0},`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Fundamentals.Lang.CSharp.Collections.ReadOnlyCollection`1.Filter(System.Collections.ObjectModel.ReadOnlyCollection{`0},System.Func{`0,System.Boolean})">
             <inheritdoc />
         </member>
         <member name="T:Fundamentals.Lang.CSharp.Color">

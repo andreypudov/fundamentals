@@ -16,4 +16,8 @@ public class ReadOnlyCollection<TItem> : ICollection<System.ReadOnlyCollection<T
     /// <inheritdoc />
     public TItem? Find(System.ReadOnlyCollection<TItem> collection, TItem value) =>
         collection.First(item => item!.Equals(value));
+
+    /// <inheritdoc />
+    public IEnumerable<TItem> Filter(System.ReadOnlyCollection<TItem> collection, Func<TItem, bool> predicate) =>
+        collection.Where(predicate);
 }

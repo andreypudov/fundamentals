@@ -13,4 +13,8 @@ public class LinkedListCollection<TItem> : ICollection<LinkedList<TItem>, TItem>
     /// <inheritdoc />
     public TItem? Find(LinkedList<TItem> collection, TItem value) =>
         collection.First(item => item!.Equals(value));
+
+    /// <inheritdoc />
+    public IEnumerable<TItem> Filter(LinkedList<TItem> collection, Func<TItem, bool> predicate) =>
+        collection.Where(predicate);
 }

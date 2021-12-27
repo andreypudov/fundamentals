@@ -48,6 +48,12 @@
             </summary>
             <param name="type">The type of the collection.</param>
         </member>
+        <member name="M:Fundamentals.Lang.CSharp.Benchmarks.Collections.Collection`2.Filter(Fundamentals.Lang.CSharp.Benchmarks.Collections.CollectionType)">
+            <summary>
+            Represents a benchmark for filtering the odd elements from the given collection.
+            </summary>
+            <param name="type">The type of the collection.</param>
+        </member>
         <member name="T:Fundamentals.Lang.CSharp.Benchmarks.Collections.CollectionType">
             <summary>
             Represents the type of collection.

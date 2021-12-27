@@ -18,4 +18,12 @@ public interface ICollection<TCollection, TItem>
     /// <param name="value">The value to locate in the collection.</param>
     /// <returns>The first node/value that contains the specified value, if found; otherwise, null.</returns>
     TItem? Find(TCollection collection, TItem value);
+
+    /// <summary>
+    /// Filters a sequence of values based on a predicate.
+    /// </summary>
+    /// <param name="collection">The collection to filter.</param>
+    /// <param name="predicate">A function to test each element for a condition.</param>
+    /// <returns>An IEnumerable{TItem} that contains elements from the input sequence that satisfy the condition.</returns>
+    public IEnumerable<TItem> Filter(TCollection collection, Func<TItem, bool> predicate);
 }

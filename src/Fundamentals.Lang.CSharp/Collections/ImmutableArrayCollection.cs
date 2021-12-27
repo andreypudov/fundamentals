@@ -15,4 +15,8 @@ public class ImmutableArrayCollection<TItem> : ICollection<ImmutableArray<TItem>
     /// <inheritdoc />
     public TItem? Find(ImmutableArray<TItem> collection, TItem value) =>
         collection.First(item => item!.Equals(value));
+
+    /// <inheritdoc />
+    public IEnumerable<TItem> Filter(ImmutableArray<TItem> collection, Func<TItem, bool> predicate) =>
+        collection.Where(predicate);
 }
