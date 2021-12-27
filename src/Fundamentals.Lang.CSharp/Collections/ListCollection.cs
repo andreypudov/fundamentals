@@ -12,5 +12,5 @@ public class ListCollection<TItem> : ICollection<List<TItem>, TItem>
 {
     /// <inheritdoc />
     public TItem? Find(List<TItem> collection, TItem value) =>
-        collection.First(item => item!.Equals(value));
+        collection.Find(item => item!.Equals(value));
 }

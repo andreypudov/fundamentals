@@ -1,30 +1,30 @@
 ## Collections
 
-|                         Type |    Method |  type |          Mean |        Error |       StdDev |
-|----------------------------- |---------- |------ |--------------:|-------------:|-------------:|
-| **ImmutableArrayCollection** | FindFirst | Small |      12.41 us |     0.214 us |     0.200 us |
-|      ImmutableListCollection | FindFirst | Small |      85.68 us |     1.458 us |     1.293 us |
-|         LinkedListCollection | FindFirst | Small |      44.04 us |     0.881 us |     1.048 us |
-|               ListCollection | FindFirst | Small |      19.23 us |     0.375 us |     0.351 us |
-|           ReadOnlyCollection | FindFirst | Small |      14.75 us |     0.240 us |     0.224 us |
+|                         Type |    Method |  type |           Mean |         Error |        StdDev |         Median |
+|----------------------------- |---------- |------ |---------------:|--------------:|--------------:|---------------:|
+|     ImmutableArrayCollection | FindFirst | Small |       9.800 us |     0.1924 us |     0.2938 us |       9.816 us |
+|      ImmutableListCollection | FindFirst | Small |      54.345 us |     1.0816 us |     2.0315 us |      53.596 us |
+|         LinkedListCollection | FindFirst | Small |      25.409 us |     0.3998 us |     0.3338 us |      25.364 us |
+|           **ListCollection** | FindFirst | Small |       8.417 us |     0.1309 us |     0.1224 us |       8.428 us |
+|           ReadOnlyCollection | FindFirst | Small |       8.741 us |     0.1456 us |     0.2393 us |       8.672 us |
 |||||||
-| **ImmutableArrayCollection** |  FindLast | Small |     734.61 us |    14.652 us |    12.989 us |
-|      ImmutableListCollection |  FindLast | Small |   8,846.68 us |   172.720 us |   198.905 us |
-|         LinkedListCollection |  FindLast | Small |   2,659.40 us |    52.977 us |    52.030 us |
-|               ListCollection |  FindLast | Small |   2,328.01 us |    44.736 us |    43.936 us |
-|           ReadOnlyCollection |  FindLast | Small |   1,426.39 us |    27.950 us |    37.312 us |
+|     ImmutableArrayCollection |  FindLast | Small |     462.810 us |     8.8284 us |    11.1651 us |     461.476 us |
+|      ImmutableListCollection |  FindLast | Small |   5,034.331 us |    99.0277 us |   206.7078 us |   5,036.925 us |
+|         LinkedListCollection |  FindLast | Small |   1,709.818 us |    34.1118 us |    36.4992 us |   1,711.116 us |
+|           **ListCollection** |  FindLast | Small |     462.359 us |     9.1372 us |    14.7548 us |     464.668 us |
+|           ReadOnlyCollection |  FindLast | Small |     941.481 us |    18.7418 us |    30.7933 us |     935.237 us |
+
+|     ImmutableArrayCollection | FindFirst | Large |     128.537 us |     2.8581 us |     8.2462 us |     127.381 us |
+|      ImmutableListCollection | FindFirst | Large |     819.627 us |    10.9593 us |    10.2514 us |     817.383 us |
+|         LinkedListCollection | FindFirst | Large |     763.445 us |    15.2345 us |    38.4996 us |     746.063 us |
+|               ListCollection | FindFirst | Large |     122.249 us |     2.6092 us |     7.5280 us |     120.468 us |
+|       **ReadOnlyCollection** | FindFirst | Large |       8.540 us |     0.1413 us |     0.1253 us |       8.541 us |
 |||||||
-|     ImmutableArrayCollection | FindFirst | Large |     242.93 us |     4.351 us |     4.070 us |
-|      ImmutableListCollection | FindFirst | Large |   1,311.92 us |    25.715 us |    27.515 us |
-|         LinkedListCollection | FindFirst | Large |   1,123.92 us |    21.733 us |    19.266 us |
-|               ListCollection | FindFirst | Large |     273.34 us |     3.804 us |     3.372 us |
-|       **ReadOnlyCollection** | FindFirst | Large |      15.00 us |     0.295 us |     0.351 us |
-|||||||
-| **ImmutableArrayCollection** |  FindLast | Large |  33,315.33 us |   563.980 us |   527.547 us |
-|      ImmutableListCollection |  FindLast | Large | 309,230.75 us | 5,932.243 us | 7,285.328 us |
-|         LinkedListCollection |  FindLast | Large |  92,790.61 us | 1,733.559 us | 1,621.572 us |
-|               ListCollection |  FindLast | Large |  84,639.98 us | 1,672.494 us | 2,398.641 us |
-|           ReadOnlyCollection |  FindLast | Large |  53,965.93 us | 1,030.394 us | 1,011.985 us |
+|     ImmutableArrayCollection |  FindLast | Large |  20,816.414 us |   407.7623 us |   597.6927 us |  20,563.897 us |
+|      ImmutableListCollection |  FindLast | Large | 161,130.855 us | 1,242.6622 us | 1,101.5877 us | 161,122.837 us |
+|         LinkedListCollection |  FindLast | Large |  58,239.692 us |   588.2697 us |   521.4858 us |  58,212.561 us |
+|           **ListCollection** |  FindLast | Large |  19,221.029 us |   211.9653 us |   187.9017 us |  19,170.303 us |
+|           ReadOnlyCollection |  FindLast | Large |  35,747.563 us |   630.2854 us |   903.9365 us |  35,385.618 us |
 
 **Summary**
 

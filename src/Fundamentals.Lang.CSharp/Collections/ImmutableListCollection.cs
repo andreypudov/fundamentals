@@ -14,5 +14,5 @@ public class ImmutableListCollection<TItem> : ICollection<ImmutableList<TItem>, 
 {
     /// <inheritdoc />
     public TItem? Find(ImmutableList<TItem> collection, TItem value) =>
-        collection.First(item => item!.Equals(value));
+        collection.Find(item => item!.Equals(value));
 }
