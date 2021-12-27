@@ -19,11 +19,20 @@
             <param name="value">The value to locate in the collection.</param>
             <returns>The first node/value that contains the specified value, if found; otherwise, null.</returns>
         </member>
+        <member name="T:Fundamentals.Lang.CSharp.Collections.ImmutableArrayCollection`1">
+            <summary>
+            Represents an immutable array collection.
+            </summary>
+            <typeparam name="TItem">The type of elements in the collection.</typeparam>
+        </member>
+        <member name="M:Fundamentals.Lang.CSharp.Collections.ImmutableArrayCollection`1.Find(System.Collections.Immutable.ImmutableArray{`0},`0)">
+            <inheritdoc />
+        </member>
         <member name="T:Fundamentals.Lang.CSharp.Collections.ImmutableListCollection`1">
             <summary>
             Represents an immutable list collection.
             </summary>
-            <typeparam name="TItem">The type of elements in the coolection.</typeparam>
+            <typeparam name="TItem">The type of elements in the collection.</typeparam>
         </member>
         <member name="M:Fundamentals.Lang.CSharp.Collections.ImmutableListCollection`1.Find(System.Collections.Immutable.ImmutableList{`0},`0)">
             <inheritdoc />
@@ -32,7 +41,7 @@
             <summary>
             Represents an immutable list collection.
             </summary>
-            <typeparam name="TItem">The type of elements in the coolection.</typeparam>
+            <typeparam name="TItem">The type of elements in the collection.</typeparam>
         </member>
         <member name="M:Fundamentals.Lang.CSharp.Collections.LinkedListCollection`1.Find(System.Collections.Generic.LinkedList{`0},`0)">
             <inheritdoc />
@@ -41,7 +50,7 @@
             <summary>
             Represents an immutable list collection.
             </summary>
-            <typeparam name="TItem">The type of elements in the coolection.</typeparam>
+            <typeparam name="TItem">The type of elements in the collection.</typeparam>
         </member>
         <member name="M:Fundamentals.Lang.CSharp.Collections.ListCollection`1.Find(System.Collections.Generic.List{`0},`0)">
             <inheritdoc />
@@ -50,7 +59,7 @@
             <summary>
             Represents an read only collection.
             </summary>
-            <typeparam name="TItem">The type of elements in the coolection.</typeparam>
+            <typeparam name="TItem">The type of elements in the collection.</typeparam>
         </member>
         <member name="M:Fundamentals.Lang.CSharp.Collections.ReadOnlyCollection`1.Find(System.Collections.ObjectModel.ReadOnlyCollection{`0},`0)">
             <inheritdoc />

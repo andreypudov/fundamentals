@@ -63,6 +63,17 @@
             Represents the large type of colleciton.
             </summary>
         </member>
+        <member name="T:Fundamentals.Lang.CSharp.Benchmarks.Collections.ImmutableArrayCollection">
+            <summary>
+            Represents a benchmark for <see cref="T:Fundamentals.Lang.CSharp.Collections.ImmutableArrayCollection`1"/>.
+            </summary>
+        </member>
+        <member name="P:Fundamentals.Lang.CSharp.Benchmarks.Collections.ImmutableArrayCollection.SmallCollection">
+            <inheritdoc />
+        </member>
+        <member name="P:Fundamentals.Lang.CSharp.Benchmarks.Collections.ImmutableArrayCollection.LargeCollection">
+            <inheritdoc />
+        </member>
         <member name="T:Fundamentals.Lang.CSharp.Benchmarks.Collections.ImmutableListCollection">
             <summary>
             Represents a benchmark for <see cref="T:Fundamentals.Lang.CSharp.Collections.ImmutableListCollection`1"/>.

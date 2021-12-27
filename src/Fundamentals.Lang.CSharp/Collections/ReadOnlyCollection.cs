@@ -10,7 +10,7 @@ using System = System.Collections.ObjectModel;
 /// <summary>
 /// Represents an read only collection.
 /// </summary>
-/// <typeparam name="TItem">The type of elements in the coolection.</typeparam>
+/// <typeparam name="TItem">The type of elements in the collection.</typeparam>
 public class ReadOnlyCollection<TItem> : ICollection<System.ReadOnlyCollection<TItem>, TItem>
 {
     /// <inheritdoc />

@@ -7,7 +7,7 @@ namespace Fundamentals.Lang.CSharp.Collections;
 /// <summary>
 /// Represents an immutable list collection.
 /// </summary>
-/// <typeparam name="TItem">The type of elements in the coolection.</typeparam>
+/// <typeparam name="TItem">The type of elements in the collection.</typeparam>
 public class ListCollection<TItem> : ICollection<List<TItem>, TItem>
 {
     /// <inheritdoc />

@@ -9,7 +9,7 @@ using System.Collections.Immutable;
 /// <summary>
 /// Represents an immutable list collection.
 /// </summary>
-/// <typeparam name="TItem">The type of elements in the coolection.</typeparam>
+/// <typeparam name="TItem">The type of elements in the collection.</typeparam>
 public class ImmutableListCollection<TItem> : ICollection<ImmutableList<TItem>, TItem>
 {
     /// <inheritdoc />
