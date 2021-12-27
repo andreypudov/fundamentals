@@ -36,21 +36,15 @@
             Gets the large collection of items.
             </summary>
         </member>
-        <member name="M:Fundamentals.Lang.CSharp.Benchmarks.Collections.Collection`2.Add(Fundamentals.Lang.CSharp.Benchmarks.Collections.CollectionType)">
+        <member name="M:Fundamentals.Lang.CSharp.Benchmarks.Collections.Collection`2.FindFirst(Fundamentals.Lang.CSharp.Benchmarks.Collections.CollectionType)">
             <summary>
-            Represents a benchmark for adding the element to the given collection.
+            Represents a benchmark for finding the fist element in the given collection.
             </summary>
             <param name="type">The type of the collection.</param>
         </member>
-        <member name="M:Fundamentals.Lang.CSharp.Benchmarks.Collections.Collection`2.Find(Fundamentals.Lang.CSharp.Benchmarks.Collections.CollectionType)">
+        <member name="M:Fundamentals.Lang.CSharp.Benchmarks.Collections.Collection`2.FindLast(Fundamentals.Lang.CSharp.Benchmarks.Collections.CollectionType)">
             <summary>
-            Represents a benchmark for finding the element int the given collection.
-            </summary>
-            <param name="type">The type of the collection.</param>
-        </member>
-        <member name="M:Fundamentals.Lang.CSharp.Benchmarks.Collections.Collection`2.Remove(Fundamentals.Lang.CSharp.Benchmarks.Collections.CollectionType)">
-            <summary>
-            Represents a benchmark for removing the element from the given collection.
+            Represents a benchmark for finding the last element in the given collection.
             </summary>
             <param name="type">The type of the collection.</param>
         </member>

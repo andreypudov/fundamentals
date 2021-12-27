@@ -13,14 +13,6 @@ using System.Collections.Immutable;
 public class ImmutableListCollection<TItem> : ICollection<ImmutableList<TItem>, TItem>
 {
     /// <inheritdoc />
-    public ImmutableList<TItem> Add(ImmutableList<TItem> collection, TItem item) =>
-        collection.Add(item);
-
-    /// <inheritdoc />
     public TItem? Find(ImmutableList<TItem> collection, TItem value) =>
-        collection.Find(item => item!.Equals(value));
-
-    /// <inheritdoc />
-    public ImmutableList<TItem> Remove(ImmutableList<TItem> collection, TItem item) =>
-        collection.Remove(item);
+        collection.First(item => item!.Equals(value));
 }

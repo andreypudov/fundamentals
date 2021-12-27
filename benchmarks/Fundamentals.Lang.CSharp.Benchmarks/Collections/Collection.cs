@@ -46,57 +46,37 @@ public abstract class Collection<T, TCollection>
     public abstract TCollection LargeCollection { get; }
 
     /// <summary>
-    /// Represents a benchmark for adding the element to the given collection.
+    /// Represents a benchmark for finding the fist element in the given collection.
     /// </summary>
     /// <param name="type">The type of the collection.</param>
     [Benchmark]
     [Arguments(CollectionType.Small)]
     [Arguments(CollectionType.Large)]
-    public void Add(CollectionType type)
+    public void FindFirst(CollectionType type)
     {
         var collection = this.GetCollection(type);
 
         for (int iteration = 0; iteration < NumberOfIterations; ++iteration)
         {
-            collection = this.instance.Add(collection, $"{iteration}");
+            this.instance.Find(collection, $"{1}");
         }
     }
 
     /// <summary>
-    /// Represents a benchmark for finding the element int the given collection.
+    /// Represents a benchmark for finding the last element in the given collection.
     /// </summary>
     /// <param name="type">The type of the collection.</param>
     [Benchmark]
     [Arguments(CollectionType.Small)]
     [Arguments(CollectionType.Large)]
-    public void Find(CollectionType type)
+    public void FindLast(CollectionType type)
     {
         var collection = this.GetCollection(type);
-        int begin = collection.Count - NumberOfIterations;
-        int end = begin + NumberOfIterations;
+        var lastItem = this.GetCount(type);
 
-        for (int iteration = begin; iteration < end; ++iteration)
+        for (int iteration = 0; iteration < NumberOfIterations; ++iteration)
         {
-            this.instance.Find(collection, $"{iteration}");
-        }
-    }
-
-    /// <summary>
-    /// Represents a benchmark for removing the element from the given collection.
-    /// </summary>
-    /// <param name="type">The type of the collection.</param>
-    [Benchmark]
-    [Arguments(CollectionType.Small)]
-    [Arguments(CollectionType.Large)]
-    public void Remove(CollectionType type)
-    {
-        var collection = this.GetCollection(type);
-        int begin = collection.Count - NumberOfIterations;
-        int end = begin + NumberOfIterations;
-
-        for (int iteration = begin; iteration < end; ++iteration)
-        {
-            collection = this.instance.Remove(collection, $"{iteration}");
+            this.instance.Find(collection, $"{lastItem - 1}");
         }
     }
 
@@ -104,6 +84,13 @@ public abstract class Collection<T, TCollection>
     {
         CollectionType.Small => this.SmallCollection,
         CollectionType.Large => this.LargeCollection,
+        _ => throw new ArgumentOutOfRangeException(nameof(type), $"Not expected collection type: {type}"),
+    };
+
+    private int GetCount(CollectionType type) => type switch
+    {
+        CollectionType.Small => this.SmallCollection.Count,
+        CollectionType.Large => this.LargeCollection.Count,
         _ => throw new ArgumentOutOfRangeException(nameof(type), $"Not expected collection type: {type}"),
     };
 }

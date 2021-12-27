@@ -11,23 +11,6 @@ namespace Fundamentals.Lang.CSharp.Collections;
 public class LinkedListCollection<TItem> : ICollection<LinkedList<TItem>, TItem>
 {
     /// <inheritdoc />
-    public LinkedList<TItem> Add(LinkedList<TItem> collection, TItem item)
-    {
-        collection.AddLast(item);
-        return collection;
-    }
-
-    /// <inheritdoc />
-    public TItem? Find(LinkedList<TItem> collection, TItem value)
-    {
-        var node = collection.Find(value);
-        return node is null ? default(TItem?) : node.Value;
-    }
-
-    /// <inheritdoc />
-    public LinkedList<TItem> Remove(LinkedList<TItem> collection, TItem item)
-    {
-        collection.Remove(item);
-        return collection;
-    }
+    public TItem? Find(LinkedList<TItem> collection, TItem value) =>
+        collection.First(item => item!.Equals(value));
 }

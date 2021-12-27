@@ -14,14 +14,6 @@ using System = System.Collections.ObjectModel;
 public class ReadOnlyCollection<TItem> : ICollection<System.ReadOnlyCollection<TItem>, TItem>
 {
     /// <inheritdoc />
-    public System.ReadOnlyCollection<TItem> Add(System.ReadOnlyCollection<TItem> collection, TItem item) =>
-        collection.Concat(new[] { item }).ToList().AsReadOnly();
-
-    /// <inheritdoc />
     public TItem? Find(System.ReadOnlyCollection<TItem> collection, TItem value) =>
         collection.First(item => item!.Equals(value));
-
-    /// <inheritdoc />
-    public System.ReadOnlyCollection<TItem> Remove(System.ReadOnlyCollection<TItem> collection, TItem item) =>
-        collection.Except(new[] { item }).ToList().AsReadOnly();
 }

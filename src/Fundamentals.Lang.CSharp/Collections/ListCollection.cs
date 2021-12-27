@@ -11,20 +11,6 @@ namespace Fundamentals.Lang.CSharp.Collections;
 public class ListCollection<TItem> : ICollection<List<TItem>, TItem>
 {
     /// <inheritdoc />
-    public List<TItem> Add(List<TItem> collection, TItem item)
-    {
-        collection.Add(item);
-        return collection;
-    }
-
-    /// <inheritdoc />
     public TItem? Find(List<TItem> collection, TItem value) =>
-        collection.Find(item => item!.Equals(value));
-
-    /// <inheritdoc />
-    public List<TItem> Remove(List<TItem> collection, TItem item)
-    {
-        collection.Remove(item);
-        return collection;
-    }
+        collection.First(item => item!.Equals(value));
 }

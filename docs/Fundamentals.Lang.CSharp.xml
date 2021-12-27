@@ -11,14 +11,6 @@
             <typeparam name="TCollection">The type of the coolection.</typeparam>
             <typeparam name="TItem">The type of elements in the coolection.</typeparam>
         </member>
-        <member name="M:Fundamentals.Lang.CSharp.Collections.ICollection`2.Add(`0,`1)">
-            <summary>
-            Adds an object to the end of the collection.
-            </summary>
-            <param name="collection">The instance of the collection.</param>
-            <param name="item">The object to be added to the end of the collection. The value can be <c>null</c> for reference types.</param>
-            <returns>The new collection with the object added.</returns>
-        </member>
         <member name="M:Fundamentals.Lang.CSharp.Collections.ICollection`2.Find(`0,`1)">
             <summary>
             Finds the first node that contains the specified value.
@@ -27,27 +19,13 @@
             <param name="value">The value to locate in the collection.</param>
             <returns>The first node/value that contains the specified value, if found; otherwise, null.</returns>
         </member>
-        <member name="M:Fundamentals.Lang.CSharp.Collections.ICollection`2.Remove(`0,`1)">
-            <summary>
-            Removes the first occurrence of a specific object from the collection.
-            </summary>
-            <param name="collection">The instance of the collection.</param>
-            <param name="item">The object to remove from the collection The value can be <c>null</c> for reference types.</param>
-            <returns>The new collection with the object removed.</returns>
-        </member>
         <member name="T:Fundamentals.Lang.CSharp.Collections.ImmutableListCollection`1">
             <summary>
             Represents an immutable list collection.
             </summary>
             <typeparam name="TItem">The type of elements in the coolection.</typeparam>
         </member>
-        <member name="M:Fundamentals.Lang.CSharp.Collections.ImmutableListCollection`1.Add(System.Collections.Immutable.ImmutableList{`0},`0)">
-            <inheritdoc />
-        </member>
         <member name="M:Fundamentals.Lang.CSharp.Collections.ImmutableListCollection`1.Find(System.Collections.Immutable.ImmutableList{`0},`0)">
-            <inheritdoc />
-        </member>
-        <member name="M:Fundamentals.Lang.CSharp.Collections.ImmutableListCollection`1.Remove(System.Collections.Immutable.ImmutableList{`0},`0)">
             <inheritdoc />
         </member>
         <member name="T:Fundamentals.Lang.CSharp.Collections.LinkedListCollection`1">
@@ -56,13 +34,7 @@
             </summary>
             <typeparam name="TItem">The type of elements in the coolection.</typeparam>
         </member>
-        <member name="M:Fundamentals.Lang.CSharp.Collections.LinkedListCollection`1.Add(System.Collections.Generic.LinkedList{`0},`0)">
-            <inheritdoc />
-        </member>
         <member name="M:Fundamentals.Lang.CSharp.Collections.LinkedListCollection`1.Find(System.Collections.Generic.LinkedList{`0},`0)">
-            <inheritdoc />
-        </member>
-        <member name="M:Fundamentals.Lang.CSharp.Collections.LinkedListCollection`1.Remove(System.Collections.Generic.LinkedList{`0},`0)">
             <inheritdoc />
         </member>
         <member name="T:Fundamentals.Lang.CSharp.Collections.ListCollection`1">
@@ -71,13 +43,7 @@
             </summary>
             <typeparam name="TItem">The type of elements in the coolection.</typeparam>
         </member>
-        <member name="M:Fundamentals.Lang.CSharp.Collections.ListCollection`1.Add(System.Collections.Generic.List{`0},`0)">
-            <inheritdoc />
-        </member>
         <member name="M:Fundamentals.Lang.CSharp.Collections.ListCollection`1.Find(System.Collections.Generic.List{`0},`0)">
-            <inheritdoc />
-        </member>
-        <member name="M:Fundamentals.Lang.CSharp.Collections.ListCollection`1.Remove(System.Collections.Generic.List{`0},`0)">
             <inheritdoc />
         </member>
         <member name="T:Fundamentals.Lang.CSharp.Collections.ReadOnlyCollection`1">
@@ -86,13 +52,7 @@
             </summary>
             <typeparam name="TItem">The type of elements in the coolection.</typeparam>
         </member>
-        <member name="M:Fundamentals.Lang.CSharp.Collections.ReadOnlyCollection`1.Add(System.Collections.ObjectModel.ReadOnlyCollection{`0},`0)">
-            <inheritdoc />
-        </member>
         <member name="M:Fundamentals.Lang.CSharp.Collections.ReadOnlyCollection`1.Find(System.Collections.ObjectModel.ReadOnlyCollection{`0},`0)">
-            <inheritdoc />
-        </member>
-        <member name="M:Fundamentals.Lang.CSharp.Collections.ReadOnlyCollection`1.Remove(System.Collections.ObjectModel.ReadOnlyCollection{`0},`0)">
             <inheritdoc />
         </member>
         <member name="T:Fundamentals.Lang.CSharp.Color">
