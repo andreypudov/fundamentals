@@ -6,14 +6,17 @@
     <RepositoryUrl>https://github.com/andreypudov/fundamentals</RepositoryUrl>
     <Copyright>Copyright (c) Andrey Pudov. All Rights Reserved. Licensed under the Apache License, Version 2.0. See LICENSE.txt in the project root for license information.</Copyright>
 
+    <TargetFramework>net6.0</TargetFramework>
     <LangVersion>10.0</LangVersion>
-    <NeutralLanguage>en-US</NeutralLanguage>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <NeutralLanguage>en-US</NeutralLanguage>
     <OutputType>Library</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
+    <IsPackable>true</IsPackable>
+
     <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
     <EnableNETAnalyzers>true</EnableNETAnalyzers>
+    <CodeAnalysisTreatWarningsAsErrors>true</CodeAnalysisTreatWarningsAsErrors>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -24,7 +27,6 @@
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType></DebugType>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <DocumentationFile>..\..\docs\Fundamentals.Resources.xml</DocumentationFile>
   </PropertyGroup>
