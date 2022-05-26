@@ -10,8 +10,8 @@ namespace Fundamentals.Lang.CSharp.Benchmarks.Collections;
 public class ListCollection : Collection<CSharp.Collections.ListCollection<string>, List<string>>
 {
     /// <inheritdoc />
-    public override List<string> SmallCollection => new List<string>(SmallData);
+    public override List<string> SmallCollection => new(SmallData);
 
     /// <inheritdoc />
-    public override List<string> LargeCollection => new List<string>(LargeData);
+    public override List<string> LargeCollection => new(LargeData);
 }

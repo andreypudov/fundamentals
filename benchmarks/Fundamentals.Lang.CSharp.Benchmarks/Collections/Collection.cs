@@ -8,10 +8,10 @@ using BenchmarkDotNet.Attributes;
 using Fundamentals.Lang.CSharp.Collections;
 
 /// <summary>
-/// Represents a base benchmark for collections./>.
+/// Represents a base benchmark for <see cref="ICollection{TCollection, T}"/>.
 /// </summary>
 /// <typeparam name="T">The type of the <see cref="ICollection{TCollection, T}"/> implementation.</typeparam>
-/// <typeparam name="TCollection">The type of the coolection.</typeparam>
+/// <typeparam name="TCollection">The type of the collection.</typeparam>
 public abstract class Collection<T, TCollection>
     where T : ICollection<TCollection, string>, new()
     where TCollection : System.Collections.ICollection
@@ -52,36 +52,41 @@ public abstract class Collection<T, TCollection>
     [Benchmark]
     [Arguments(CollectionType.Small)]
     [Arguments(CollectionType.Large)]
-    public void FindFirst(CollectionType type)
-    {
-        var collection = this.GetCollection(type);
-
-        for (int iteration = 0; iteration < NumberOfIterations; ++iteration)
-        {
-            this.instance.Find(collection, $"{1}");
-        }
-    }
+    public void Add(CollectionType type) =>
+        this.instance.Add(this.GetCollection(type), $"{int.MaxValue}");
 
     /// <summary>
+    /// Represents a benchmark for finding the fist element in the given collection.
+    /// </summary>
+    /// <param name="type">The type of the collection.</param>
+    [Benchmark]
+    [Arguments(CollectionType.Small)]
+    [Arguments(CollectionType.Large)]
+    public void FindFirst(CollectionType type) =>
+        this.instance.Find(this.GetCollection(type), $"{1}");
+
+        /// <summary>
+    /// Represents a benchmark for finding the fist element in the given collection.
+    /// </summary>
+    /// <param name="type">The type of the collection.</param>
+    [Benchmark]
+    [Arguments(CollectionType.Small)]
+    [Arguments(CollectionType.Large)]
+    public void FindMiddle(CollectionType type) =>
+            this.instance.Find(this.GetCollection(type), $"{this.GetCount(type) / 2}");
+
+        /// <summary>
     /// Represents a benchmark for finding the last element in the given collection.
     /// </summary>
     /// <param name="type">The type of the collection.</param>
     [Benchmark]
     [Arguments(CollectionType.Small)]
     [Arguments(CollectionType.Large)]
-    public void FindLast(CollectionType type)
-    {
-        var collection = this.GetCollection(type);
-        var lastItem = this.GetCount(type);
+    public void FindLast(CollectionType type) =>
+            this.instance.Find(this.GetCollection(type), $"{this.GetCount(type) - 1}");
 
-        for (int iteration = 0; iteration < NumberOfIterations; ++iteration)
-        {
-            this.instance.Find(collection, $"{lastItem - 1}");
-        }
-    }
-
-    /// <summary>
-    /// Represents a benchmark for filtering the odd elements from the given collection.
+        /// <summary>
+    /// Represents a benchmark for filtering the even elements from the given collection.
     /// </summary>
     /// <param name="type">The type of the collection.</param>
     [Benchmark]

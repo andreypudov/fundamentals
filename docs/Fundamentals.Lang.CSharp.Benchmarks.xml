@@ -6,10 +6,10 @@
     <members>
         <member name="T:Fundamentals.Lang.CSharp.Benchmarks.Collections.Collection`2">
             <summary>
-            Represents a base benchmark for collections./>.
+            Represents a base benchmark for <see cref="T:Fundamentals.Lang.CSharp.Collections.ICollection`2"/>.
             </summary>
             <typeparam name="T">The type of the <see cref="T:Fundamentals.Lang.CSharp.Collections.ICollection`2"/> implementation.</typeparam>
-            <typeparam name="TCollection">The type of the coolection.</typeparam>
+            <typeparam name="TCollection">The type of the collection.</typeparam>
         </member>
         <member name="F:Fundamentals.Lang.CSharp.Benchmarks.Collections.Collection`2.EmptyData">
             <summary>
@@ -36,7 +36,19 @@
             Gets the large collection of items.
             </summary>
         </member>
+        <member name="M:Fundamentals.Lang.CSharp.Benchmarks.Collections.Collection`2.Add(Fundamentals.Lang.CSharp.Benchmarks.Collections.CollectionType)">
+            <summary>
+            Represents a benchmark for finding the fist element in the given collection.
+            </summary>
+            <param name="type">The type of the collection.</param>
+        </member>
         <member name="M:Fundamentals.Lang.CSharp.Benchmarks.Collections.Collection`2.FindFirst(Fundamentals.Lang.CSharp.Benchmarks.Collections.CollectionType)">
+            <summary>
+            Represents a benchmark for finding the fist element in the given collection.
+            </summary>
+            <param name="type">The type of the collection.</param>
+        </member>
+        <member name="M:Fundamentals.Lang.CSharp.Benchmarks.Collections.Collection`2.FindMiddle(Fundamentals.Lang.CSharp.Benchmarks.Collections.CollectionType)">
             <summary>
             Represents a benchmark for finding the fist element in the given collection.
             </summary>
@@ -50,9 +62,68 @@
         </member>
         <member name="M:Fundamentals.Lang.CSharp.Benchmarks.Collections.Collection`2.Filter(Fundamentals.Lang.CSharp.Benchmarks.Collections.CollectionType)">
             <summary>
-            Represents a benchmark for filtering the odd elements from the given collection.
+            Represents a benchmark for filtering the even elements from the given collection.
             </summary>
             <param name="type">The type of the collection.</param>
+        </member>
+        <member name="T:Fundamentals.Lang.CSharp.Benchmarks.Collections.CollectionCast">
+            <summary>
+            Represents a  benchmark for cast methods.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Lang.CSharp.Benchmarks.Collections.CollectionCast.ToArray(System.Int32[])">
+            <summary>
+            Represents a benchmark for casting using <see cref="M:System.Linq.Enumerable.ToArray``1(System.Collections.Generic.IEnumerable{``0})"/> method.
+            </summary>
+            <param name="array">The enumeration of integer numbers.</param>
+        </member>
+        <member name="M:Fundamentals.Lang.CSharp.Benchmarks.Collections.CollectionCast.ToList(System.Int32[])">
+            <summary>
+            Represents a benchmark for casting using <see cref="M:System.Linq.Enumerable.ToList``1(System.Collections.Generic.IEnumerable{``0})"/> method.
+            </summary>
+            <param name="array">The enumeration of integer numbers.</param>
+        </member>
+        <member name="M:Fundamentals.Lang.CSharp.Benchmarks.Collections.CollectionCast.ToHashSet(System.Int32[])">
+            <summary>
+            Represents a benchmark for casting using <see cref="M:System.Linq.Enumerable.ToHashSet``1(System.Collections.Generic.IEnumerable{``0})"/> method.
+            </summary>
+            <param name="array">The enumeration of integer numbers.</param>
+        </member>
+        <member name="M:Fundamentals.Lang.CSharp.Benchmarks.Collections.CollectionCast.ToImmutableArray(System.Int32[])">
+            <summary>
+            Represents a benchmark for casting using <see cref="M:System.Collections.Immutable.ImmutableArray.ToImmutableArray``1(System.Collections.Generic.IEnumerable{``0})"/> method.
+            </summary>
+            <param name="array">The enumeration of integer numbers.</param>
+        </member>
+        <member name="M:Fundamentals.Lang.CSharp.Benchmarks.Collections.CollectionCast.ToImmutableList(System.Int32[])">
+            <summary>
+            Represents a benchmark for casting using <see cref="M:System.Collections.Immutable.ImmutableList.ToImmutableList``1(System.Collections.Generic.IEnumerable{``0})"/> method.
+            </summary>
+            <param name="array">The enumeration of integer numbers.</param>
+        </member>
+        <member name="M:Fundamentals.Lang.CSharp.Benchmarks.Collections.CollectionCast.ToImmutableHashSet(System.Int32[])">
+            <summary>
+            Represents a benchmark for casting using <see cref="M:System.Collections.Immutable.ImmutableHashSet.ToImmutableHashSet``1(System.Collections.Generic.IEnumerable{``0})"/> method.
+            </summary>
+            <param name="array">The enumeration of integer numbers.</param>
+        </member>
+        <member name="M:Fundamentals.Lang.CSharp.Benchmarks.Collections.CollectionCast.ToImmutableSortedSet(System.Int32[])">
+            <summary>
+            Represents a benchmark for casting using <see cref="M:System.Collections.Immutable.ImmutableSortedSet.ToImmutableSortedSet``1(System.Collections.Generic.IEnumerable{``0})"/> method.
+            </summary>
+            <param name="array">The enumeration of integer numbers.</param>
+        </member>
+        <member name="M:Fundamentals.Lang.CSharp.Benchmarks.Collections.CollectionCast.ToReadOnly(System.Int32[])">
+            <summary>
+            Represents a benchmark for casting using <see cref="M:System.Collections.Generic.List`1.AsReadOnly"/> method.
+            </summary>
+            <param name="array">The enumeration of integer numbers.</param>
+        </member>
+        <member name="M:Fundamentals.Lang.CSharp.Benchmarks.Collections.CollectionCast.CaseData">
+            <summary>
+            Represents an enumeration of integer numbers.
+            </summary>
+            <returns>An enumeration of integer numbers.</returns>
         </member>
         <member name="T:Fundamentals.Lang.CSharp.Benchmarks.Collections.CollectionType">
             <summary>

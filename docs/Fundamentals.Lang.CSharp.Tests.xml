@@ -4,6 +4,54 @@
         <name>Fundamentals.Lang.CSharp.Tests</name>
     </assembly>
     <members>
+        <member name="T:Fundamentals.Lang.CSharp.Tests.Collections.Collection`2">
+            <summary>
+            Represents a base test fixture for <see cref="T:Fundamentals.Lang.CSharp.Collections.ICollection`2"/>.
+            </summary>
+            <typeparam name="T">The type of the <see cref="T:Fundamentals.Lang.CSharp.Collections.ICollection`2"/> implementation.</typeparam>
+            <typeparam name="TCollection">The type of the collection.</typeparam>
+        </member>
+        <member name="M:Fundamentals.Lang.CSharp.Tests.Collections.Collection`2.Add_AddToEnd_ReturnsCollectionWithValue">
+            <summary>
+            Represents a positive test case for adding a value to the collection.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Lang.CSharp.Tests.Collections.Collection`2.Find_FindValue_ReturnsGivenValue(System.String)">
+            <summary>
+            Represents a positive test case for finding a value in the collection.
+            </summary>
+            <param name="value">The value to find in the collection.</param>
+        </member>
+        <member name="M:Fundamentals.Lang.CSharp.Tests.Collections.Collection`2.Filter_FilterEven_ReturnsCollectionWithEvenNumbers">
+            <summary>
+            Represents a positive test case for filtering the collection.
+            </summary>
+        </member>
+        <member name="T:Fundamentals.Lang.CSharp.Tests.Collections.ImmutableArrayCollection">
+            <summary>
+            Represents a test case for <see cref="T:Fundamentals.Lang.CSharp.Collections.ImmutableArrayCollection`1"/>.
+            </summary>
+        </member>
+        <member name="T:Fundamentals.Lang.CSharp.Tests.Collections.ImmutableListCollection">
+            <summary>
+            Represents a test case for <see cref="T:Fundamentals.Lang.CSharp.Collections.ImmutableListCollection`1"/>.
+            </summary>
+        </member>
+        <member name="T:Fundamentals.Lang.CSharp.Tests.Collections.LinkedListCollection">
+            <summary>
+            Represents a test case for <see cref="T:Fundamentals.Lang.CSharp.Collections.LinkedListCollection`1"/>.
+            </summary>
+        </member>
+        <member name="T:Fundamentals.Lang.CSharp.Tests.Collections.ListCollection">
+            <summary>
+            Represents a test case for <see cref="T:Fundamentals.Lang.CSharp.Collections.ListCollection`1"/>.
+            </summary>
+        </member>
+        <member name="T:Fundamentals.Lang.CSharp.Tests.Collections.ReadOnlyCollection">
+            <summary>
+            Represents a test case for <see cref="T:Fundamentals.Lang.CSharp.Collections.ReadOnlyCollection`1"/>.
+            </summary>
+        </member>
         <member name="T:Fundamentals.Lang.CSharp.Tests.ConditionalOperators.ConditionalOperator`1">
             <summary>
             Represents a base test fixture for <see cref="T:Fundamentals.Lang.CSharp.ConditionalOperators.IConditionalOperator"/>.

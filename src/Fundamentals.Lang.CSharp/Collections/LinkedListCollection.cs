@@ -11,6 +11,17 @@ namespace Fundamentals.Lang.CSharp.Collections;
 public class LinkedListCollection<TItem> : ICollection<LinkedList<TItem>, TItem>
 {
     /// <inheritdoc />
+    public LinkedList<TItem> Build(TItem[] collection) =>
+        new(collection);
+
+    /// <inheritdoc />
+    public LinkedList<TItem> Add(LinkedList<TItem> collection, TItem value)
+    {
+        collection.AddLast(value);
+        return collection;
+    }
+
+    /// <inheritdoc />
     public TItem? Find(LinkedList<TItem> collection, TItem value) =>
         collection.First(item => item!.Equals(value));
 

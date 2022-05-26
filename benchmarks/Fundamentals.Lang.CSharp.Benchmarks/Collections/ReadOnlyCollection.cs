@@ -12,8 +12,8 @@ using System = System.Collections.ObjectModel;
 public class ReadOnlyCollection : Collection<CSharp.Collections.ReadOnlyCollection<string>, System.ReadOnlyCollection<string>>
 {
     /// <inheritdoc />
-    public override System.ReadOnlyCollection<string> SmallCollection => new System.ReadOnlyCollection<string>(SmallData);
+    public override System.ReadOnlyCollection<string> SmallCollection => new(SmallData);
 
     /// <inheritdoc />
-    public override System.ReadOnlyCollection<string> LargeCollection => new System.ReadOnlyCollection<string>(LargeData);
+    public override System.ReadOnlyCollection<string> LargeCollection => new(LargeData);
 }

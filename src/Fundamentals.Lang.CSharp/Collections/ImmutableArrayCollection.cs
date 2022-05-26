@@ -13,6 +13,14 @@ using System.Collections.Immutable;
 public class ImmutableArrayCollection<TItem> : ICollection<ImmutableArray<TItem>, TItem>
 {
     /// <inheritdoc />
+    public ImmutableArray<TItem> Build(TItem[] collection) =>
+        ImmutableArray.Create(collection);
+
+    /// <inheritdoc />
+    public ImmutableArray<TItem> Add(ImmutableArray<TItem> collection, TItem value) =>
+        collection.Add(value);
+
+    /// <inheritdoc />
     public TItem? Find(ImmutableArray<TItem> collection, TItem value) =>
         collection.First(item => item!.Equals(value));
 
