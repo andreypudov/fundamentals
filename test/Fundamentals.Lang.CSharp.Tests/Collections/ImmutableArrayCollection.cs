@@ -4,8 +4,8 @@
 
 namespace Fundamentals.Lang.CSharp.Tests.Collections;
 
-using System = System.Collections.Immutable;
 using NUnit.Framework;
+using System = System.Collections.Immutable;
 
 /// <summary>
 /// Represents a test case for <see cref="CSharp.Collections.ImmutableArrayCollection{TItem}"/>.

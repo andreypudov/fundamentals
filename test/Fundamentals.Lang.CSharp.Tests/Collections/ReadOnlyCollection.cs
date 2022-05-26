@@ -4,8 +4,8 @@
 
 namespace Fundamentals.Lang.CSharp.Tests.Collections;
 
-using System = System.Collections.ObjectModel;
 using NUnit.Framework;
+using System = System.Collections.ObjectModel;
 
 /// <summary>
 /// Represents a test case for <see cref="CSharp.Collections.ReadOnlyCollection{TItem}"/>.
