@@ -1,4 +1,4 @@
-## Casting of collections]
+## Casting of collections
 
 |               Method |        array |             Mean |         Error |        StdDev |
 |--------------------- |------------- |-----------------:|--------------:|--------------:|
