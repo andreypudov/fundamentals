@@ -36,10 +36,7 @@ public class BubbleSortWithFlag : ISort
             {
                 if (array[i].CompareTo(array[i + 1]) > 0)
                 {
-                    T temp = array[i];
-                    array[i] = array[i + 1];
-                    array[i + 1] = temp;
-
+                    (array[i], array[i + 1]) = (array[i + 1], array[i]);
                     sorted = false;
                 }
             }

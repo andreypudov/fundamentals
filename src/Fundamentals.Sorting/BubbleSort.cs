@@ -29,9 +29,7 @@ public class BubbleSort : ISort
             {
                 if (array[j].CompareTo(array[j - 1]) < 0)
                 {
-                    T temp = array[j];
-                    array[j] = array[j - 1];
-                    array[j - 1] = temp;
+                    (array[j], array[j - 1]) = (array[j - 1], array[j]);
                 }
             }
         }

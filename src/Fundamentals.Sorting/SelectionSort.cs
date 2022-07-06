@@ -20,10 +20,9 @@ public class SelectionSort : ISort
             throw new ArgumentNullException(nameof(array));
         }
 
-        int minimal;
         for (int i = 0; i < array.Length - 1; ++i)
         {
-            minimal = i;
+            var minimal = i;
             for (int j = i + 1; j < array.Length; ++j)
             {
                 if (array[j].CompareTo(array[minimal]) < 0)
@@ -32,9 +31,7 @@ public class SelectionSort : ISort
                 }
             }
 
-            T buffer = array[i];
-            array[i] = array[minimal];
-            array[minimal] = buffer;
+            (array[i], array[minimal]) = (array[minimal], array[i]);
         }
     }
 }

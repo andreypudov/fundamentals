@@ -1,59 +1,74 @@
 ## Sorting algorithms
 
-|                   Type |    Method |        array |               Mean |            Error |           StdDev |           Median |
-|----------------------- |---------- |------------- |-------------------:|-----------------:|-----------------:|-----------------:|
-|             BubbleSort |  BestCase |    Int32[16] |           251.2 ns |          4.94 ns |          5.69 ns |         249.2 ns |
-| **BubbleSortWithFlag** |  BestCase |    Int32[16] |       **121.5 ns** |          1.43 ns |          1.27 ns |         121.2 ns |
-|               HeapSort |  BestCase |    Int32[16] |           326.6 ns |          4.80 ns |          4.01 ns |         325.3 ns |
-|          InsertionSort |  BestCase |    Int32[16] |           187.1 ns |         10.22 ns |         28.49 ns |         190.9 ns |
-|              MergeSort |  BestCase |    Int32[16] |           449.6 ns |          7.59 ns |          6.34 ns |         449.5 ns |
-|              QuickSort |  BestCase |    Int32[16] |           190.5 ns |          2.16 ns |          1.80 ns |         190.8 ns |
-|     QuickSortDualPivot |  BestCase |    Int32[16] |           274.2 ns |          2.94 ns |          2.60 ns |         273.1 ns |
-|              RadixSort |  BestCase |    Int32[16] |         1,376.6 ns |         26.09 ns |         44.31 ns |       1,365.7 ns |
-|          SelectionSort |  BestCase |    Int32[16] |           298.2 ns |          5.85 ns |          8.57 ns |         294.1 ns |
-|        SystemArraySort |  BestCase |    Int32[16] |           139.5 ns |          4.55 ns |         12.91 ns |         134.8 ns |
+|                       Type |               Method |        array |             Mean |            Error |           StdDev |           Median |
+|--------------------------- |--------------------- |------------- |-----------------:|-----------------:|-----------------:|-----------------:|
+|                 BubbleSort |             BestCase |    Int32[16] |         259.7 ns |          5.14 ns |          9.53 ns |         255.9 ns |
+|         BubbleSortWithFlag |             BestCase |    Int32[16] |         126.5 ns |          2.57 ns |          6.63 ns |         125.4 ns |
+|                   HeapSort |             BestCase |    Int32[16] |         302.4 ns |          6.06 ns |         12.51 ns |         304.2 ns |
+|              InsertionSort |             BestCase |    Int32[16] |         127.4 ns |          0.54 ns |          0.51 ns |         127.5 ns |
+|                  MergeSort |             BestCase |    Int32[16] |         456.3 ns |          2.25 ns |          2.11 ns |         455.9 ns |
+|                  QuickSort |             BestCase |    Int32[16] |         162.0 ns |          0.53 ns |          0.50 ns |         161.8 ns |
+|             QuickSortAsync |             BestCase |    Int32[16] |         457.8 ns |          3.95 ns |          3.50 ns |         458.8 ns |
+|         QuickSortDualPivot |             BestCase |    Int32[16] |         259.3 ns |          2.74 ns |          2.57 ns |         258.3 ns |
+| QuickSortDualPivotParallel |             BestCase |    Int32[16] |      50,357.7 ns |      5,327.00 ns |     15,706.79 ns |      50,323.9 ns |
+|      **QuickSortParallel** |             BestCase |    Int32[16] |      **124.3 ns** |          1.44 ns |          1.20 ns |         124.6 ns |
+|                  RadixSort |             BestCase |    Int32[16] |       1,074.1 ns |          4.55 ns |          4.25 ns |       1,075.8 ns |
+|              SelectionSort |             BestCase |    Int32[16] |         239.9 ns |          0.62 ns |          0.55 ns |         239.7 ns |
+|            SystemArraySort |             BestCase |    Int32[16] |         131.3 ns |          0.32 ns |          0.30 ns |         131.2 ns |
+|         SystemParallelSort |             BestCase |    Int32[16] |      35,950.4 ns |      2,434.36 ns |      7,177.77 ns |      32,739.6 ns |
 |||||||
-|             BubbleSort | WorstCase |    Int32[16] |           243.1 ns |          4.86 ns |          9.25 ns |         239.7 ns |
-|     BubbleSortWithFlag | WorstCase |    Int32[16] |           332.0 ns |          6.62 ns |          8.13 ns |         328.9 ns |
-|               HeapSort | WorstCase |    Int32[16] |           292.3 ns |          5.38 ns |          6.20 ns |         290.6 ns |
-|          InsertionSort | WorstCase |    Int32[16] |           269.3 ns |          5.35 ns |         12.30 ns |         263.4 ns |
-|              MergeSort | WorstCase |    Int32[16] |           450.0 ns |          7.93 ns |         12.11 ns |         445.4 ns |
-|          **QuickSort** | WorstCase |    Int32[16] |       **200.4 ns** |          4.04 ns |          3.97 ns |         199.3 ns |
-|     QuickSortDualPivot | WorstCase |    Int32[16] |           262.1 ns |          1.93 ns |          1.71 ns |         262.0 ns |
-|              RadixSort | WorstCase |    Int32[16] |         1,323.7 ns |         25.15 ns |         27.95 ns |       1,318.2 ns |
-|          SelectionSort | WorstCase |    Int32[16] |           249.7 ns |          4.80 ns |          4.72 ns |         248.3 ns |
-|        SystemArraySort | WorstCase |    Int32[16] |           230.7 ns |          4.51 ns |         11.15 ns |         227.5 ns |
+|                 BubbleSort |            WorstCase |    Int32[16] |         252.2 ns |          5.01 ns |          9.29 ns |         250.0 ns |
+|         BubbleSortWithFlag |            WorstCase |    Int32[16] |         321.3 ns |          6.35 ns |          7.06 ns |         322.7 ns |
+|                   HeapSort |            WorstCase |    Int32[16] |         260.1 ns |          5.24 ns |         10.46 ns |         259.5 ns |
+|              InsertionSort |            WorstCase |    Int32[16] |         233.3 ns |          0.92 ns |          0.82 ns |         233.5 ns |
+|                  MergeSort |            WorstCase |    Int32[16] |         441.0 ns |          1.93 ns |          1.81 ns |         440.8 ns |
+|                  QuickSort |            WorstCase |    Int32[16] |         177.8 ns |          0.55 ns |          0.49 ns |         177.8 ns |
+|             QuickSortAsync |            WorstCase |    Int32[16] |         469.1 ns |          3.83 ns |          3.40 ns |         467.9 ns |
+|         QuickSortDualPivot |            WorstCase |    Int32[16] |         257.8 ns |          0.25 ns |          0.22 ns |         257.7 ns |
+| QuickSortDualPivotParallel |            WorstCase |    Int32[16] |      55,927.8 ns |      4,823.18 ns |     14,221.25 ns |      48,278.3 ns |
+|      **QuickSortParallel** |            WorstCase |    Int32[16] |     **123.7 ns** |          0.30 ns |          0.28 ns |         123.7 ns |
+|                  RadixSort |            WorstCase |    Int32[16] |       1,049.6 ns |          6.62 ns |          6.19 ns |       1,048.5 ns |
+|              SelectionSort |            WorstCase |    Int32[16] |         256.0 ns |          2.11 ns |          1.98 ns |         255.0 ns |
+|            SystemArraySort |            WorstCase |    Int32[16] |         205.1 ns |          2.60 ns |          2.43 ns |         203.9 ns |
+|         SystemParallelSort |            WorstCase |    Int32[16] |      40,708.1 ns |      2,858.90 ns |      8,429.53 ns |      38,796.1 ns |
 |||||||
-|             BubbleSort |  BestCase | Int32[32767] |   564,673,861.5 ns |  9,633,067.16 ns |  8,044,047.36 ns | 564,947,700.0 ns |
-| **BubbleSortWithFlag** |  BestCase | Int32[32767] |    **85,323.3 ns** |      1,702.63 ns |      2,441.86 ns |      85,493.8 ns |
-|               HeapSort |  BestCase | Int32[32767] |     2,689,166.9 ns |     45,260.31 ns |     40,122.09 ns |   2,672,935.4 ns |
-|          InsertionSort |  BestCase | Int32[32767] |       116,159.8 ns |      2,293.66 ns |      4,685.34 ns |     115,090.9 ns |
-|              MergeSort |  BestCase | Int32[32767] |     1,747,253.2 ns |     34,826.71 ns |     46,492.66 ns |   1,733,398.4 ns |
-|              QuickSort |  BestCase | Int32[32767] |       669,083.2 ns |     12,892.99 ns |     11,429.30 ns |     665,939.1 ns |
-|     QuickSortDualPivot |  BestCase | Int32[32767] |   440,986,300.0 ns |  4,364,975.57 ns |  3,407,885.81 ns | 439,952,800.0 ns |
-|              RadixSort |  BestCase | Int32[32767] |     1,978,051.6 ns |     39,128.41 ns |     56,116.79 ns |   1,960,058.4 ns |
-|          SelectionSort |  BestCase | Int32[32767] |   425,003,676.9 ns |  1,882,948.45 ns |  1,572,347.23 ns | 425,557,100.0 ns |
-|        SystemArraySort |  BestCase | Int32[32767] |       280,252.5 ns |      4,718.93 ns |      4,414.09 ns |     279,982.3 ns |
+|                 BubbleSort |             BestCase | Int32[32767] | 614,471,369.1 ns | 14,659,883.68 ns | 40,622,468.62 ns | 604,222,972.0 ns |
+|     **BubbleSortWithFlag** |             BestCase | Int32[32767] |  **66,026.7 ns** |        638.51 ns |        597.27 ns |      66,143.0 ns |
+|                   HeapSort |             BestCase | Int32[32767] |   2,142,887.1 ns |     37,535.86 ns |     51,379.51 ns |   2,130,498.8 ns |
+|              InsertionSort |             BestCase | Int32[32767] |      79,424.2 ns |        390.04 ns |        364.84 ns |      79,399.0 ns |
+|                  MergeSort |             BestCase | Int32[32767] |   1,638,651.2 ns |      5,669.72 ns |      5,026.06 ns |   1,639,351.1 ns |
+|                  QuickSort |             BestCase | Int32[32767] |     375,566.1 ns |      3,125.32 ns |      2,609.79 ns |     374,834.0 ns |
+|             QuickSortAsync |             BestCase | Int32[32767] |     355,031.0 ns |      7,000.82 ns |      6,548.58 ns |     351,212.7 ns |
+|         QuickSortDualPivot |             BestCase | Int32[32767] | 302,918,731.5 ns |    679,803.30 ns |    567,666.55 ns | 302,784,289.5 ns |
+| QuickSortDualPivotParallel |             BestCase | Int32[32767] | 300,364,069.9 ns |  4,971,156.87 ns |  4,650,023.22 ns | 298,790,846.0 ns |
+|          QuickSortParallel |             BestCase | Int32[32767] |     288,953.1 ns |     17,688.25 ns |     52,154.20 ns |     274,735.7 ns |
+|                  RadixSort |             BestCase | Int32[32767] |   1,682,951.0 ns |     27,690.17 ns |     25,901.41 ns |   1,694,119.4 ns |
+|              SelectionSort |             BestCase | Int32[32767] | 504,179,612.7 ns |  3,259,485.00 ns |  3,048,924.29 ns | 504,019,852.0 ns |
+|            SystemArraySort |             BestCase | Int32[32767] |     188,124.7 ns |        627.15 ns |        586.63 ns |     188,154.0 ns |
+|         SystemParallelSort |             BestCase | Int32[32767] |   1,464,195.5 ns |     78,745.28 ns |    232,182.24 ns |   1,314,865.5 ns |
 |||||||
-|             BubbleSort | WorstCase | Int32[32767] |   570,137,628.6 ns |  8,983,228.08 ns |  7,963,397.71 ns | 568,422,050.0 ns |
-|     BubbleSortWithFlag | WorstCase | Int32[32767] | 1,009,222,672.0 ns | 19,728,192.15 ns | 26,336,569.87 ns | 996,401,600.0 ns |
-|               HeapSort | WorstCase | Int32[32767] |     2,955,646.7 ns |    111,140.79 ns |    327,701.12 ns |   2,764,615.4 ns |
-|          InsertionSort | WorstCase | Int32[32767] |   604,236,800.0 ns |  6,581,047.42 ns |  5,495,472.65 ns | 600,669,000.0 ns |
-|              MergeSort | WorstCase | Int32[32767] |     1,673,416.8 ns |     30,105.19 ns |     25,139.20 ns |   1,675,587.9 ns |
-|              QuickSort | WorstCase | Int32[32767] |       556,126.3 ns |      7,484.30 ns |      6,634.64 ns |     554,901.8 ns |
-|     QuickSortDualPivot | WorstCase | Int32[32767] |   277,764,933.3 ns |  5,205,041.77 ns |  4,868,799.30 ns | 277,551,200.0 ns |
-|              RadixSort | WorstCase | Int32[32767] |     2,031,702.3 ns |     40,525.69 ns |     85,482.45 ns |   1,996,088.3 ns |
-|          SelectionSort | WorstCase | Int32[32767] |   383,472,083.3 ns |  1,902,940.09 ns |  1,485,690.45 ns | 383,576,850.0 ns |
-|    **SystemArraySort** | WorstCase | Int32[32767] |   **426,139.2 ns** |      8,377.62 ns |      6,995.69 ns |     425,500.0 ns |
-
+|                 BubbleSort |            WorstCase | Int32[32767] | 577,374,906.7 ns | 10,321,791.03 ns | 13,421,243.88 ns | 576,669,010.0 ns |
+|         BubbleSortWithFlag |            WorstCase | Int32[32767] | 948,637,609.8 ns | 18,327,998.68 ns | 18,821,505.25 ns | 946,279,032.0 ns |
+|                   HeapSort |            WorstCase | Int32[32767] |   2,171,113.6 ns |      4,403.02 ns |      4,118.59 ns |   2,171,215.5 ns |
+|              InsertionSort |            WorstCase | Int32[32767] | 493,729,845.2 ns |  3,507,060.02 ns |  3,108,917.36 ns | 493,754,759.0 ns |
+|                  MergeSort |            WorstCase | Int32[32767] |   1,602,728.0 ns |     11,891.30 ns |     11,123.13 ns |   1,599,094.8 ns |
+|                  QuickSort |            WorstCase | Int32[32767] |     378,429.4 ns |      7,799.06 ns |      6,913.66 ns |     380,504.6 ns |
+|             QuickSortAsync |            WorstCase | Int32[32767] |     343,294.3 ns |      1,103.88 ns |      1,032.57 ns |     343,067.9 ns |
+|         QuickSortDualPivot |            WorstCase | Int32[32767] | 290,819,501.9 ns |    311,528.22 ns |    276,161.65 ns | 290,886,189.5 ns |
+| QuickSortDualPivotParallel |            WorstCase | Int32[32767] | 302,519,258.5 ns |  5,972,295.97 ns |  6,638,191.14 ns | 300,248,480.0 ns |
+|      **QuickSortParallel** |            WorstCase | Int32[32767] | **296,307.4 ns** |     17,785.11 ns |     52,439.78 ns |     265,414.6 ns |
+|                  RadixSort |            WorstCase | Int32[32767] |   1,722,136.7 ns |      6,814.46 ns |      6,374.25 ns |   1,721,483.9 ns |
+|              SelectionSort |            WorstCase | Int32[32767] | 622,983,981.7 ns |  3,410,263.80 ns |  3,189,962.87 ns | 622,115,963.0 ns |
+|            SystemArraySort |            WorstCase | Int32[32767] |     307,275.6 ns |        344.86 ns |        269.24 ns |     307,298.1 ns |
+|         SystemParallelSort |            WorstCase | Int32[32767] |   1,457,326.4 ns |     74,076.93 ns |    218,417.50 ns |   1,326,029.9 ns |
 
 **Summary**
 
-BenchmarkDotNet=v0.12.1, OS=Windows 10.0.19041.685 (2004/?/20H1)<br>
-Intel Core i5-8365U CPU 1.60GHz (Coffee Lake), 1 CPU, 8 logical and 4 physical cores<br>
-.NET Core SDK=5.0.101<br>
-  [Host]     : .NET Core 5.0.1 (CoreCLR 5.0.120.57516, CoreFX 5.0.120.57516), X64 RyuJIT<br>
-  DefaultJob : .NET Core 5.0.1 (CoreCLR 5.0.120.57516, CoreFX 5.0.120.57516), X64 RyuJIT<br>
+BenchmarkDotNet=v0.13.1, OS=ubuntu 22.04<br>
+Intel Core i7-10850H CPU 2.70GHz, 1 CPU, 12 logical and 6 physical cores<br>
+.NET SDK=6.0.301<br>
+  [Host]     : .NET 6.0.6 (6.0.622.26707), X64 RyuJIT<br>
+  DefaultJob : .NET 6.0.6 (6.0.622.26707), X64 RyuJIT<br>
 
 **Legends**
 

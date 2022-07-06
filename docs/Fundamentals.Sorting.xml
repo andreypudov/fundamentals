@@ -185,5 +185,13 @@
         <member name="M:Fundamentals.Sorting.SystemArraySort.Sort``1(``0[])">
             <inheritdoc />
         </member>
+        <member name="T:Fundamentals.Sorting.SystemParallelSort">
+            <summary>
+            Represents a <see cref="M:System.Array.Sort``1(``0[])"/> implementation.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Sorting.SystemParallelSort.Sort``1(``0[])">
+            <inheritdoc />
+        </member>
     </members>
 </doc>

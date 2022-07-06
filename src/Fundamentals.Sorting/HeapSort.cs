@@ -35,10 +35,7 @@ public class HeapSort : ISort
 
         for (int i = length - 1; i >= 0; --i)
         {
-            T temp = array[0];
-            array[0] = array[i];
-            array[i] = temp;
-
+            (array[0], array[i]) = (array[i], array[0]);
             Heapify(array, i, 0);
         }
     }

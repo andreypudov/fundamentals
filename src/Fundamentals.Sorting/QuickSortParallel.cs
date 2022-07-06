@@ -47,7 +47,7 @@ public class QuickSortParallel : ISort
                 Parallel.Invoke(
                     new ParallelOptions()
                     {
-                        MaxDegreeOfParallelism = 2,
+                        MaxDegreeOfParallelism = 4,
                     },
                     () => Sort(array, lo, p - 1, depth - 1),
                     () => Sort(array, p + 1, hi, depth - 1));
@@ -96,10 +96,5 @@ public class QuickSortParallel : ISort
         }
     }
 
-    private static void Swap<T>(T[] array, int i, int j)
-    {
-        T temp = array[j];
-        array[j] = array[i];
-        array[i] = temp;
-    }
+    private static void Swap<T>(T[] array, int i, int j) => (array[j], array[i]) = (array[i], array[j]);
 }

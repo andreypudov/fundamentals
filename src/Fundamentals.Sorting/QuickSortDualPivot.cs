@@ -90,10 +90,5 @@ public class QuickSortDualPivot : ISort
         return (j, g);
     }
 
-    private static void Swap<T>(T[] array, int i, int j)
-    {
-        T temp = array[j];
-        array[j] = array[i];
-        array[i] = temp;
-    }
+    private static void Swap<T>(T[] array, int i, int j) => (array[j], array[i]) = (array[i], array[j]);
 }
