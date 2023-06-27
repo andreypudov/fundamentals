@@ -29,9 +29,9 @@
 ** Summary
 
 #+begin_quote
-BenchmarkDotNet=v0.13.5, OS=macOS Ventura 13.4 (22F66) [Darwin 22.5.0]\\
-Apple M1 Pro, 1 CPU, 10 logical and 10 physical cores\\
-.NET SDK=7.0.203\\
-  [Host]     : .NET 7.0.5 (7.0.523.17405), Arm64 RyuJIT AdvSIMD\\
-  DefaultJob : .NET 7.0.5 (7.0.523.17405), Arm64 RyuJIT AdvSIMD\\
+BenchmarkDotNet=v0.13.5, OS=macOS Ventura 13.4 (22F66) [Darwin 22.5.0]
+Apple M1 Pro, 1 CPU, 10 logical and 10 physical cores
+.NET SDK=7.0.203
+  [Host]     : .NET 7.0.5 (7.0.523.17405), Arm64 RyuJIT AdvSIMD
+  DefaultJob : .NET 7.0.5 (7.0.523.17405), Arm64 RyuJIT AdvSIMD
 #+end_quote

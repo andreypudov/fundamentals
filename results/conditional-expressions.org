@@ -29,9 +29,9 @@
 ** Summary
 
 #+begin_quote
-BenchmarkDotNet=v0.12.1, OS=Windows 10.0.19043\\
-Intel Xeon Gold 6130 CPU 2.10GHz, 1 CPU, 4 logical and 4 physical cores\\
-.NET Core SDK=5.0.300\\
-  [Host]     : .NET Core 5.0.6 (CoreCLR 5.0.621.22011, CoreFX 5.0.621.22011), X64 RyuJIT\\
-  DefaultJob : .NET Core 5.0.6 (CoreCLR 5.0.621.22011, CoreFX 5.0.621.22011), X64 RyuJIT\\
+BenchmarkDotNet=v0.12.1, OS=Windows 10.0.19043
+Intel Xeon Gold 6130 CPU 2.10GHz, 1 CPU, 4 logical and 4 physical cores
+.NET Core SDK=5.0.300
+  [Host]     : .NET Core 5.0.6 (CoreCLR 5.0.621.22011, CoreFX 5.0.621.22011), X64 RyuJIT
+  DefaultJob : .NET Core 5.0.6 (CoreCLR 5.0.621.22011, CoreFX 5.0.621.22011), X64 RyuJIT
 #+end_quote
