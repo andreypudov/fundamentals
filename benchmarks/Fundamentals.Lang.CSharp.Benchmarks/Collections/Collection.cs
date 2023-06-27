@@ -5,6 +5,7 @@
 namespace Fundamentals.Lang.CSharp.Benchmarks.Collections;
 
 using BenchmarkDotNet.Attributes;
+using Fundamentals.Lang.CSharp.Benchmarks.Core;
 using Fundamentals.Lang.CSharp.Collections;
 
 /// <summary>
@@ -17,21 +18,14 @@ public abstract class Collection<T, TCollection>
     where TCollection : System.Collections.ICollection
 {
     /// <summary>
-    /// The data for the empty collection.
-    /// </summary>
-    public static readonly string[] EmptyData = Array.Empty<string>();
-
-    /// <summary>
-    /// The data for the empty collection.
+    /// The data for the small collection.
     /// </summary>
     public static readonly string[] SmallData = Enumerable.Range(1, (int)Math.Pow(2, 10)).Select(i => $"{i}").ToArray();
 
     /// <summary>
-    /// The data for the empty collection.
+    /// The data for the large collection.
     /// </summary>
     public static readonly string[] LargeData = Enumerable.Range(1, (int)Math.Pow(2, 15)).Select(i => $"{i}").ToArray();
-
-    private const int NumberOfIterations = 128;
 
     private readonly T instance = new();
 

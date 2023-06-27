@@ -1,0 +1,31 @@
+* Casting of collections
+
+| Method               | array        | Mean             | Error         | StdDev        |
+|----------------------+--------------+------------------+---------------+---------------|
+| **ToArray**          | Int32[16]    | **32.01 ns**     | 0.378 ns      | 0.335 ns      |
+| ToList               | Int32[16]    | 44.14 ns         | 0.276 ns      | 0.245 ns      |
+| ToHashSet            | Int32[16]    | 243.53 ns        | 1.003 ns      | 0.939 ns      |
+| ToImmutableArray     | Int32[16]    | 40.31 ns         | 0.417 ns      | 0.390 ns      |
+| ToImmutableList      | Int32[16]    | 331.47 ns        | 1.050 ns      | 0.931 ns      |
+| ToImmutableHashSet   | Int32[16]    | 1,940.88 ns      | 20.822 ns     | 18.458 ns     |
+| ToImmutableSortedSet | Int32[16]    | 494.47 ns        | 2.487 ns      | 2.205 ns      |
+| ToReadOnly           | Int32[16]    | 49.88 ns         | 0.147 ns      | 0.123 ns      |
+|----------------------+--------------+------------------+---------------+---------------|
+| **ToArray**          | Int32[32767] | **44,212.03 ns** | 251.794 ns    | 223.208 ns    |
+| ToList               | Int32[32767] | 44,558.04 ns     | 359.319 ns    | 336.107 ns    |
+| ToHashSet            | Int32[32767] | 454,016.36 ns    | 4,090.385 ns  | 3,826.149 ns  |
+| ToImmutableArray     | Int32[32767] | 43,292.53 ns     | 50.850 ns     | 45.077 ns     |
+| ToImmutableList      | Int32[32767] | 727,015.67 ns    | 5,470.328 ns  | 5,116.948 ns  |
+| ToImmutableHashSet   | Int32[32767] | 12,465,921.53 ns | 49,814.875 ns | 44,159.589 ns |
+| ToImmutableSortedSet | Int32[32767] | 1,226,154.40 ns  | 16,679.988 ns | 15,602.471 ns |
+| ToReadOnly           | Int32[32767] | 43,774.33 ns     | 470.560 ns    | 440.162 ns    |
+
+** Summary
+
+#+begin_quote
+BenchmarkDotNet=v0.13.1, OS=ubuntu 22.04<br>
+Intel Core i7-10850H CPU 2.70GHz, 1 CPU, 12 logical and 6 physical cores<br>
+.NET SDK=6.0.300<br>
+  [Host]     : .NET 6.0.5 (6.0.522.21309), X64 RyuJIT<br>
+  DefaultJob : .NET 6.0.5 (6.0.522.21309), X64 RyuJIT<br>
+#+end_quote

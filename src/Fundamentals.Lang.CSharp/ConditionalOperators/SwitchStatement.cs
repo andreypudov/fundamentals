@@ -5,7 +5,7 @@
 namespace Fundamentals.Lang.CSharp.ConditionalOperators;
 
 /// <summary>
-/// Represents a switch statement.
+/// Represents a <c>switch</c> statement.
 /// </summary>
 public class SwitchStatement : IConditionalOperator
 {

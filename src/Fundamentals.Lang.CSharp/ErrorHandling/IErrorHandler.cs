@@ -5,7 +5,7 @@
 namespace Fundamentals.Lang.CSharp.ErrorHandling;
 
 /// <summary>
-/// Exposes an operator that provides the conditional execution.
+/// Exposes an operator that provides the error handling.
 /// </summary>
 public interface IErrorHandler
 {

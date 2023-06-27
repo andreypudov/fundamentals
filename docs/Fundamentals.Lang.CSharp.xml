@@ -199,7 +199,7 @@
         </member>
         <member name="T:Fundamentals.Lang.CSharp.ConditionalOperators.IfStatement">
             <summary>
-            Represents an if condition statement.
+            Represents an <c>if</c> condition statement.
             </summary>
         </member>
         <member name="M:Fundamentals.Lang.CSharp.ConditionalOperators.IfStatement.GetName(Fundamentals.Lang.CSharp.Color)">
@@ -207,7 +207,7 @@
         </member>
         <member name="T:Fundamentals.Lang.CSharp.ConditionalOperators.MultipleIfStatements">
             <summary>
-            Represents an if condition statement.
+            Represents an <c>if</c> condition statement.
             </summary>
         </member>
         <member name="M:Fundamentals.Lang.CSharp.ConditionalOperators.MultipleIfStatements.GetName(Fundamentals.Lang.CSharp.Color)">
@@ -215,7 +215,7 @@
         </member>
         <member name="T:Fundamentals.Lang.CSharp.ConditionalOperators.SwitchExpression">
             <summary>
-            Represents a switch expression.
+            Represents a <c>switch</c> expression.
             </summary>
         </member>
         <member name="M:Fundamentals.Lang.CSharp.ConditionalOperators.SwitchExpression.GetName(Fundamentals.Lang.CSharp.Color)">
@@ -223,7 +223,7 @@
         </member>
         <member name="T:Fundamentals.Lang.CSharp.ConditionalOperators.SwitchStatement">
             <summary>
-            Represents a switch statement.
+            Represents a <c>switch</c> statement.
             </summary>
         </member>
         <member name="M:Fundamentals.Lang.CSharp.ConditionalOperators.SwitchStatement.GetName(Fundamentals.Lang.CSharp.Color)">
@@ -247,7 +247,7 @@
         </member>
         <member name="T:Fundamentals.Lang.CSharp.ErrorHandling.IErrorHandler">
             <summary>
-            Exposes an operator that provides the conditional execution.
+            Exposes an operator that provides the error handling.
             </summary>
         </member>
         <member name="M:Fundamentals.Lang.CSharp.ErrorHandling.IErrorHandler.HandleError">
@@ -317,6 +317,91 @@
             </summary>
         </member>
         <member name="M:Fundamentals.Lang.CSharp.ErrorHandling.ReturnResult.HandleError">
+            <inheritdoc />
+        </member>
+        <member name="T:Fundamentals.Lang.CSharp.IterationStatements.DoStatement">
+            <summary>
+            Represents a <c>do</c> statement.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Lang.CSharp.IterationStatements.DoStatement.Sum(System.Int32[])">
+            <inheritdoc />
+        </member>
+        <member name="M:Fundamentals.Lang.CSharp.IterationStatements.DoStatement.Sum(System.Collections.Generic.List{System.Int32})">
+            <inheritdoc />
+        </member>
+        <member name="T:Fundamentals.Lang.CSharp.IterationStatements.ForeachSpanStruct">
+            <summary>
+            Represents a <c>foreach</c> statement.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Lang.CSharp.IterationStatements.ForeachSpanStruct.Sum(System.Int32[])">
+            <inheritdoc />
+        </member>
+        <member name="M:Fundamentals.Lang.CSharp.IterationStatements.ForeachSpanStruct.Sum(System.Collections.Generic.List{System.Int32})">
+            <inheritdoc />
+        </member>
+        <member name="T:Fundamentals.Lang.CSharp.IterationStatements.ForeachStatement">
+            <summary>
+            Represents a <c>foreach</c> statement.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Lang.CSharp.IterationStatements.ForeachStatement.Sum(System.Int32[])">
+            <inheritdoc />
+        </member>
+        <member name="M:Fundamentals.Lang.CSharp.IterationStatements.ForeachStatement.Sum(System.Collections.Generic.List{System.Int32})">
+            <inheritdoc />
+        </member>
+        <member name="T:Fundamentals.Lang.CSharp.IterationStatements.ForStatement">
+            <summary>
+            Represents a <c>for</c> statement.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Lang.CSharp.IterationStatements.ForStatement.Sum(System.Int32[])">
+            <inheritdoc />
+        </member>
+        <member name="M:Fundamentals.Lang.CSharp.IterationStatements.ForStatement.Sum(System.Collections.Generic.List{System.Int32})">
+            <inheritdoc />
+        </member>
+        <member name="T:Fundamentals.Lang.CSharp.IterationStatements.IIterationStatement">
+            <summary>
+            Exposes an operator that provides the iteration statement.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Lang.CSharp.IterationStatements.IIterationStatement.Sum(System.Int32[])">
+            <summary>
+            Calculates the sum of given numbers.
+            </summary>
+            <param name="numbers">The collection of numbers.</param>
+            <returns>The sum of given numbers.</returns>
+        </member>
+        <member name="M:Fundamentals.Lang.CSharp.IterationStatements.IIterationStatement.Sum(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Calculates the sum of given numbers.
+            </summary>
+            <param name="numbers">The collection of numbers.</param>
+            <returns>The sum of given numbers.</returns>
+        </member>
+        <member name="T:Fundamentals.Lang.CSharp.IterationStatements.LinkExpression">
+            <summary>
+            Represents a LINQ expression.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Lang.CSharp.IterationStatements.LinkExpression.Sum(System.Int32[])">
+            <inheritdoc />
+        </member>
+        <member name="M:Fundamentals.Lang.CSharp.IterationStatements.LinkExpression.Sum(System.Collections.Generic.List{System.Int32})">
+            <inheritdoc />
+        </member>
+        <member name="T:Fundamentals.Lang.CSharp.IterationStatements.WhileStatement">
+            <summary>
+            Represents a <c>while</c> statement.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Lang.CSharp.IterationStatements.WhileStatement.Sum(System.Int32[])">
+            <inheritdoc />
+        </member>
+        <member name="M:Fundamentals.Lang.CSharp.IterationStatements.WhileStatement.Sum(System.Collections.Generic.List{System.Int32})">
             <inheritdoc />
         </member>
     </members>

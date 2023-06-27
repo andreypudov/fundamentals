@@ -11,6 +11,7 @@ BenchmarkSwitcher
     {
         typeof(Fundamentals.Lang.CSharp.Benchmarks.Collections.Collection<,>).Assembly,
         typeof(Fundamentals.Lang.CSharp.Benchmarks.ConditionalOperators.ConditionalOperator<>).Assembly,
+        typeof(Fundamentals.Lang.CSharp.Benchmarks.IterationStatements.IterationStatement<>).Assembly,
         typeof(Fundamentals.Lang.CSharp.Benchmarks.ErrorHandling.ErrorHandler<>).Assembly,
         typeof(Fundamentals.Lang.FSharp.Benchmarks.TypeSystem.TypeInference<>).Assembly,
         typeof(Fundamentals.Lang.FSharp.Benchmarks.ConditionalOperators.ConditionalOperator<>).Assembly,

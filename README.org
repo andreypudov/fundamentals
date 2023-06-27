@@ -1,4 +1,8 @@
-# Fundamentals
+#+title: Fundamentals
+#+author: Andrey Pudov
+#+date: <2020-11-05 Thu>
+
+* Fundamentals
 Analyzes essential algorithms and data structures
 
 - [Casting of collections](results/collections-casting.md)

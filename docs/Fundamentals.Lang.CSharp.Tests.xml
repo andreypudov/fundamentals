@@ -90,5 +90,58 @@
             Represents a test class for <see cref="T:Fundamentals.Lang.CSharp.ConditionalOperators.TernaryOperator"/>.
             </summary>
         </member>
+        <member name="T:Fundamentals.Lang.CSharp.Tests.IterationStatements.DoStatement">
+            <summary>
+            Represents a test class for <see cref="T:Fundamentals.Lang.CSharp.IterationStatements.DoStatement"/>.
+            </summary>
+        </member>
+        <member name="T:Fundamentals.Lang.CSharp.Tests.IterationStatements.ForeachSpanStruct">
+            <summary>
+            Represents a test class for <see cref="T:Fundamentals.Lang.CSharp.IterationStatements.ForeachSpanStruct"/>.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Lang.CSharp.Tests.IterationStatements.ForeachSpanStruct.IterationStatement_PositiveSumOfArray_ReturnsSum(System.Int32[],System.Int32)">
+            <inheritdoc cref="T:Fundamentals.Lang.CSharp.Tests.IterationStatements.ForeachSpanStruct" />
+        </member>
+        <member name="T:Fundamentals.Lang.CSharp.Tests.IterationStatements.ForeachStatement">
+            <summary>
+            Represents a test class for <see cref="T:Fundamentals.Lang.CSharp.IterationStatements.ForeachStatement"/>.
+            </summary>
+        </member>
+        <member name="T:Fundamentals.Lang.CSharp.Tests.IterationStatements.ForStatement">
+            <summary>
+            Represents a test class for <see cref="T:Fundamentals.Lang.CSharp.IterationStatements.ForStatement"/>.
+            </summary>
+        </member>
+        <member name="T:Fundamentals.Lang.CSharp.Tests.IterationStatements.IterationStatement`1">
+            <summary>
+            Represents a base test fixture for <see cref="T:Fundamentals.Lang.CSharp.IterationStatements.IIterationStatement"/>.
+            </summary>
+            <typeparam name="T">The type of the <see cref="T:Fundamentals.Lang.CSharp.IterationStatements.IIterationStatement"/> implementation.</typeparam>
+        </member>
+        <member name="M:Fundamentals.Lang.CSharp.Tests.IterationStatements.IterationStatement`1.IterationStatement_PositiveSumOfArray_ReturnsSum(System.Int32[],System.Int32)">
+            <summary>
+            Represents a positive test case for the iteration statement.
+            </summary>
+            <param name="numbers">The collection of numbers.</param>
+            <param name="sum">The sum of numbers.</param>
+        </member>
+        <member name="M:Fundamentals.Lang.CSharp.Tests.IterationStatements.IterationStatement`1.IterationStatement_PositiveSumOfList_ReturnsSum(System.Int32[],System.Int32)">
+            <summary>
+            Represents a positive test case for the iteration statement.
+            </summary>
+            <param name="numbers">The collection of numbers.</param>
+            <param name="sum">The sum of numbers.</param>
+        </member>
+        <member name="T:Fundamentals.Lang.CSharp.Tests.IterationStatements.LinkExpression">
+            <summary>
+            Represents a test class for <see cref="T:Fundamentals.Lang.CSharp.IterationStatements.LinkExpression"/>.
+            </summary>
+        </member>
+        <member name="T:Fundamentals.Lang.CSharp.Tests.IterationStatements.WhileStatement">
+            <summary>
+            Represents a test class for <see cref="T:Fundamentals.Lang.CSharp.IterationStatements.WhileStatement"/>.
+            </summary>
+        </member>
     </members>
 </doc>
