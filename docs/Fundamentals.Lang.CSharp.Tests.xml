@@ -133,9 +133,9 @@
             <param name="numbers">The collection of numbers.</param>
             <param name="sum">The sum of numbers.</param>
         </member>
-        <member name="T:Fundamentals.Lang.CSharp.Tests.IterationStatements.LinkExpression">
+        <member name="T:Fundamentals.Lang.CSharp.Tests.IterationStatements.LinqExpression">
             <summary>
-            Represents a test class for <see cref="T:Fundamentals.Lang.CSharp.IterationStatements.LinkExpression"/>.
+            Represents a test class for <see cref="T:Fundamentals.Lang.CSharp.IterationStatements.LinqExpression"/>.
             </summary>
         </member>
         <member name="T:Fundamentals.Lang.CSharp.Tests.IterationStatements.WhileStatement">

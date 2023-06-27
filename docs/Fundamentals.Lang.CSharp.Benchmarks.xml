@@ -320,9 +320,9 @@
             </summary>
             <param name="numbers">The collection of numbers.</param>
         </member>
-        <member name="T:Fundamentals.Lang.CSharp.Benchmarks.IterationStatements.LinkExpression">
+        <member name="T:Fundamentals.Lang.CSharp.Benchmarks.IterationStatements.LinqExpression">
             <summary>
-            Represents a benchmark for <see cref="T:Fundamentals.Lang.CSharp.IterationStatements.LinkExpression"/>.
+            Represents a benchmark for <see cref="T:Fundamentals.Lang.CSharp.IterationStatements.LinqExpression"/>.
             </summary>
         </member>
         <member name="T:Fundamentals.Lang.CSharp.Benchmarks.IterationStatements.WhileStatement">

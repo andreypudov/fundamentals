@@ -5,27 +5,27 @@
 | DoStatement          | SumOfArray | Int32[1024]  | 332.9 ns    | 2.27 ns   | 2.12 ns   |
 | ForStatement         | SumOfArray | Int32[1024]  | 329.5 ns    | 1.06 ns   | 0.94 ns   |
 | **ForeachStatement** | SumOfArray | Int32[1024]  | 329.0 ns    | 0.91 ns   | 0.81 ns   |
-| LinkExpression       | SumOfArray | Int32[1024]  | 333.1 ns    | 1.52 ns   | 1.35 ns   |
+| LinqExpression       | SumOfArray | Int32[1024]  | 333.1 ns    | 1.52 ns   | 1.35 ns   |
 | WhileStatement       | SumOfArray | Int32[1024]  | 329.9 ns    | 1.53 ns   | 1.36 ns   |
 |----------------------+------------+--------------+-------------+-----------+-----------|
 | *ForeachSpanStruct*  | SumOfList  | Int32[1024]  | 548.1 ns    | 4.07 ns   | 3.60 ns   |
 | DoStatement          | SumOfList  | Int32[1024]  | 714.2 ns    | 2.36 ns   | 1.97 ns   |
 | ForStatement         | SumOfList  | Int32[1024]  | 739.0 ns    | 14.65 ns  | 16.28 ns  |
 | ForeachStatement     | SumOfList  | Int32[1024]  | 1,203.9 ns  | 2.40 ns   | 2.00 ns   |
-| LinkExpression       | SumOfList  | Int32[1024]  | 567.8 ns    | 3.84 ns   | 3.21 ns   |
+| LinqExpression       | SumOfList  | Int32[1024]  | 567.8 ns    | 3.84 ns   | 3.21 ns   |
 | WhileStatement       | SumOfList  | Int32[1024]  | 732.1 ns    | 14.46 ns  | 19.30 ns  |
 |----------------------+------------+--------------+-------------+-----------+-----------|
 | DoStatement          | SumOfArray | Int32[16384] | 5,147.7 ns  | 21.64 ns  | 18.07 ns  |
 | ForStatement         | SumOfArray | Int32[16384] | 5,164.0 ns  | 35.03 ns  | 32.76 ns  |
 | *ForeachStatement*   | SumOfArray | Int32[16384] | 5,122.9 ns  | 11.88 ns  | 9.92 ns   |
-| LinkExpression       | SumOfArray | Int32[16384] | 5,161.0 ns  | 28.37 ns  | 25.15 ns  |
+| LinqExpression       | SumOfArray | Int32[16384] | 5,161.0 ns  | 28.37 ns  | 25.15 ns  |
 | WhileStatement       | SumOfArray | Int32[16384] | 5,190.7 ns  | 53.71 ns  | 50.24 ns  |
 |----------------------+------------+--------------+-------------+-----------+-----------|
 | ForeachSpanStruct    | SumOfList  | Int32[16384] | 9,101.3 ns  | 92.60 ns  | 86.62 ns  |
 | DoStatement          | SumOfList  | Int32[16384] | 10,271.2 ns | 31.02 ns  | 25.90 ns  |
 | ForStatement         | SumOfList  | Int32[16384] | 10,072.4 ns | 50.44 ns  | 42.12 ns  |
 | ForeachStatement     | SumOfList  | Int32[16384] | 17,722.0 ns | 42.21 ns  | 37.42 ns  |
-| *LinkExpression*     | SumOfList  | Int32[16384] | 8,676.7 ns  | 84.21 ns  | 74.65 ns  |
+| *LinqExpression*     | SumOfList  | Int32[16384] | 8,676.7 ns  | 84.21 ns  | 74.65 ns  |
 | WhileStatement       | SumOfList  | Int32[16384] | 10,363.4 ns | 143.51 ns | 127.22 ns |
 
 ** Summary
