@@ -64,21 +64,21 @@
 
 ** Summary
 
-#+begin_quote
-BenchmarkDotNet=v0.13.1, OS=ubuntu 22.04<br>
-Intel Core i7-10850H CPU 2.70GHz, 1 CPU, 12 logical and 6 physical cores<br>
-.NET SDK=6.0.301<br>
-  [Host]     : .NET 6.0.6 (6.0.622.26707), X64 RyuJIT<br>
-  DefaultJob : .NET 6.0.6 (6.0.622.26707), X64 RyuJIT<br>
-#+end_quote
+#+begin_verse
+BenchmarkDotNet=v0.13.1, OS=ubuntu 22.04
+Intel Core i7-10850H CPU 2.70GHz, 1 CPU, 12 logical and 6 physical cores
+.NET SDK=6.0.301
+  [Host]     : .NET 6.0.6 (6.0.622.26707), X64 RyuJIT
+  DefaultJob : .NET 6.0.6 (6.0.622.26707), X64 RyuJIT
+#+end_verse
 
 ** Legends
 
-#+begin_quote
-array  : Value of the 'array' parameter<br>
-Mean   : Arithmetic mean of all measurements<br>
-Error  : Half of 99.9% confidence interval<br>
-StdDev : Standard deviation of all measurements<br>
-Median : Value separating the higher half of all measurements (50th percentile)<br>
-1 ns   : 1 Nanosecond (0.000000001 sec)<br>
-#+end_quote
+#+begin_verse
+array  : Value of the 'array' parameter
+Mean   : Arithmetic mean of all measurements
+Error  : Half of 99.9% confidence interval
+StdDev : Standard deviation of all measurements
+Median : Value separating the higher half of all measurements (50th percentile)
+1 ns   : 1 Nanosecond (0.000000001 sec)
+#+end_verse
