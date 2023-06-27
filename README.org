@@ -5,8 +5,9 @@
 * Fundamentals
 Analyzes essential algorithms and data structures
 
-- [Casting of collections](results/collections-casting.md)
-- [Collections](results/collections.md)
-- [Conditional expressions and operators](results/conditional-expressions.md)
-- [Error handling](results/error-handling.md)
-- [Sorting algorithms](results/sorting-algorithms.md)
+- [[./results/collections-casting.org][Casting of collections]]
+- [[./results/collections.org][Collections]]
+- [[./results/conditional-expressions.org][Conditional expressions and operators]]
+- [[./results/error-handling.org][Error handling]]
+- [[./results/iteration-statements.org][Iteration statements]]
+- [[./results/sorting-algorithms.org][Sorting algorithms]]
