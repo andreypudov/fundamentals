@@ -22,10 +22,10 @@
 
 ** Summary
 
-#+begin_verse
-BenchmarkDotNet=v0.13.1, OS=ubuntu 22.04
-Intel Core i7-10850H CPU 2.70GHz, 1 CPU, 12 logical and 6 physical cores
-.NET SDK=6.0.300
-  [Host]     : .NET 6.0.5 (6.0.522.21309), X64 RyuJIT
-  DefaultJob : .NET 6.0.5 (6.0.522.21309), X64 RyuJIT
-#+end_verse
+#+begin_quote
+BenchmarkDotNet=v0.13.1, OS=ubuntu 22.04\\
+Intel Core i7-10850H CPU 2.70GHz, 1 CPU, 12 logical and 6 physical cores\\
+.NET SDK=6.0.300\\
+  [Host]     : .NET 6.0.5 (6.0.522.21309), X64 RyuJIT\\
+  DefaultJob : .NET 6.0.5 (6.0.522.21309), X64 RyuJIT\\
+#+end_quote
