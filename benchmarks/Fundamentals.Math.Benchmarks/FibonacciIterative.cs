@@ -5,7 +5,7 @@
 namespace Fundamentals.Math.Benchmarks;
 
 /// <summary>
-/// Represents a benchmark for <see cref="Math.FibonacciIterative"/>.
+/// Represents a benchmark for <see cref="Fundamentals.Math.FibonacciIterative"/>.
 /// </summary>
 public class FibonacciIterative : Fibonacci<Math.FibonacciIterative>
 {

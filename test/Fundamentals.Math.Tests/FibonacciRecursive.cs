@@ -7,7 +7,7 @@ namespace Fundamentals.Math.Tests;
 using NUnit.Framework;
 
 /// <summary>
-/// Represents a test class for <see cref="Math.FibonacciRecursive"/>.
+/// Represents a test class for <see cref="Fundamentals.Math.FibonacciRecursive"/>.
 /// </summary>
 [TestFixture]
 public class FibonacciRecursive : Fibonacci<Math.FibonacciRecursive>

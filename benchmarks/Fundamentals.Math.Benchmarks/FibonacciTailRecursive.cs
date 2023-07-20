@@ -5,7 +5,7 @@
 namespace Fundamentals.Math.Benchmarks;
 
 /// <summary>
-/// Represents a benchmark for <see cref="Math.FibonacciTailRecursive"/>.
+/// Represents a benchmark for <see cref="Fundamentals.Math.FibonacciTailRecursive"/>.
 /// </summary>
 public class FibonacciTailRecursive : Fibonacci<Math.FibonacciTailRecursive>
 {
