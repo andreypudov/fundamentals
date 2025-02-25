@@ -1,0 +1,17 @@
+* Even check
+
+|             Type |  Method | value |        Mean |     Error |    StdDev |
+|----------------- |-------- |------ |------------:|----------:|----------:|
+|     EvenCheckAnd | General |    16 |   0.7978 ns | 0.0071 ns | 0.0055 ns |
+| EvenCheckModulus | General |    16 |   0.7978 ns | 0.0071 ns | 0.0059 ns |
+|   *EvenCheckXor* | General |    16 | *0.7969 ns* | 0.0106 ns | 0.0094 ns |
+
+** Summary
+
+#+begin_quote
+BenchmarkDotNet=v0.13.5, OS=macOS 15.3.1 (24D70) [Darwin 24.3.0]
+Apple M1 Pro, 1 CPU, 10 logical and 10 physical cores
+.NET SDK=8.0.101
+  [Host]     : .NET 7.0.5 (7.0.523.17405), Arm64 RyuJIT AdvSIMD
+  DefaultJob : .NET 7.0.5 (7.0.523.17405), Arm64 RyuJIT AdvSIMD
+#+end_quote

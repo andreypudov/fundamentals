@@ -15,6 +15,7 @@ BenchmarkSwitcher
         typeof(Fundamentals.Lang.CSharp.Benchmarks.ErrorHandling.ErrorHandler<>).Assembly,
         typeof(Fundamentals.Lang.FSharp.Benchmarks.TypeSystem.TypeInference<>).Assembly,
         typeof(Fundamentals.Lang.FSharp.Benchmarks.ConditionalOperators.ConditionalOperator<>).Assembly,
+        typeof(Fundamentals.Math.Benchmarks.EvenCheck<>).Assembly,
         typeof(Fundamentals.Math.Benchmarks.Fibonacci<>).Assembly,
         typeof(Fundamentals.Sorting.Benchmarks.Sort<>).Assembly,
     })

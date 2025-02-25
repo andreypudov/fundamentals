@@ -4,6 +4,52 @@
         <name>Fundamentals.Math.Tests</name>
     </assembly>
     <members>
+        <member name="T:Fundamentals.Math.Tests.EvenCheck`1">
+            <summary>
+            Represents a base test fixture for <see cref="T:Fundamentals.Math.IEvenCheck"/>.
+            </summary>
+            <typeparam name="T">The type of the <see cref="T:Fundamentals.Math.IEvenCheck"/> implementation.</typeparam>
+        </member>
+        <member name="M:Fundamentals.Math.Tests.EvenCheck`1.IsEven_Zero_ReturnsTrue">
+            <summary>
+            Represents a test case for zero.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Math.Tests.EvenCheck`1.IsEven_One_ReturnsFalse">
+            <summary>
+            Represents a test case for one.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Math.Tests.EvenCheck`1.IsEven_Two_ReturnsTrue">
+            <summary>
+            Represents a test case for two.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Math.Tests.EvenCheck`1.IsEven_Min_ReturnsTrue">
+            <summary>
+            Represents a test case for max value.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Math.Tests.EvenCheck`1.IsEven_Max_ReturnsFalse">
+            <summary>
+            Represents a test case for max value.
+            </summary>
+        </member>
+        <member name="T:Fundamentals.Math.Tests.EvenCheckAnd">
+            <summary>
+            Represents a test class for <see cref="T:Fundamentals.Math.EvenCheckAnd"/>.
+            </summary>
+        </member>
+        <member name="T:Fundamentals.Math.Tests.EvenCheckModulus">
+            <summary>
+            Represents a test class for <see cref="T:Fundamentals.Math.EvenCheckModulus"/>.
+            </summary>
+        </member>
+        <member name="T:Fundamentals.Math.Tests.EvenCheckXor">
+            <summary>
+            Represents a test class for <see cref="T:Fundamentals.Math.EvenCheckXor"/>.
+            </summary>
+        </member>
         <member name="T:Fundamentals.Math.Tests.Fibonacci`1">
             <summary>
             Represents a base test fixture for <see cref="T:Fundamentals.Math.IFibonacci"/>.

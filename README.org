@@ -9,5 +9,6 @@ Analyzes essential algorithms and data structures
 - [[./results/collections.org][Collections]]
 - [[./results/conditional-expressions.org][Conditional expressions and operators]]
 - [[./results/error-handling.org][Error handling]]
+- [[./results/even-checking.org][Even checking]]
 - [[./results/iteration-statements.org][Iteration statements]]
 - [[./results/sorting-algorithms.org][Sorting algorithms]]

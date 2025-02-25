@@ -4,6 +4,30 @@
         <name>Fundamentals.Math</name>
     </assembly>
     <members>
+        <member name="T:Fundamentals.Math.EvenCheckAnd">
+            <summary>
+            Represents an xor implementation for <see cref="M:Fundamentals.Math.IEvenCheck.IsEven(System.Int32)"/>.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Math.EvenCheckAnd.IsEven(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="T:Fundamentals.Math.EvenCheckModulus">
+            <summary>
+            Represents an modulus implementation for <see cref="M:Fundamentals.Math.IEvenCheck.IsEven(System.Int32)"/>.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Math.EvenCheckModulus.IsEven(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="T:Fundamentals.Math.EvenCheckXor">
+            <summary>
+            Represents an xor implementation for <see cref="M:Fundamentals.Math.IEvenCheck.IsEven(System.Int32)"/>.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Math.EvenCheckXor.IsEven(System.Int32)">
+            <inheritdoc />
+        </member>
         <member name="T:Fundamentals.Math.FibonacciIterative">
             <summary>
             Represents an iterative implementation for <see cref="M:Fundamentals.Math.IFibonacci.Fibonacci(System.Int32)"/>.
@@ -27,6 +51,18 @@
         </member>
         <member name="M:Fundamentals.Math.FibonacciTailRecursive.Fibonacci(System.Int32)">
             <inheritdoc />
+        </member>
+        <member name="T:Fundamentals.Math.IEvenCheck">
+            <summary>
+            Exposes a method that checks if the given number is even.
+            </summary>
+        </member>
+        <member name="M:Fundamentals.Math.IEvenCheck.IsEven(System.Int32)">
+            <summary>
+            Returns true if the provided value is even.
+            </summary>
+            <param name="value">The value to check.</param>
+            <returns>True if the provided value is even, and false otherwise..</returns>
         </member>
         <member name="T:Fundamentals.Math.IFibonacci">
             <summary>
